@@ -19,6 +19,9 @@ Import partials
 ---------------------------------------------
 */
 @import url(./partials/page-landing.css);
+@import url(./partials/page-location.css);
+@import url(./partials/page-login.css);
+@import url(./partials/page-register.css);
 
 /* 
 ---------------------------------------------
@@ -120,9 +123,14 @@ global styles
   --color-title-in-primary: rgba(9, 9, 9, 1);
   --color-text-title: rgba(12, 12, 12, 1);
   --color-text: rgba(16, 16, 16, 1);
-  --color-line-in-white: rgba(230, 230, 240, 1);
+  --color-footer-text: rgb(252, 252, 252);
+  --color-line: rgb(226, 226, 236);
 
   font-size: 62.5%; /* 10px */
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /*
@@ -134,44 +142,96 @@ header {
   width: 100vw;
   position: fixed;
   z-index: 90;
-  background-color: var(--color-background)
+  background-color: var(--color-background);
+  box-shadow: 0px 0px 10px 0px var(--color-line);
 }
 
 header .main-nav {
-  padding: 2rem 0px;
+  padding: 2rem 8rem;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .main-nav .logo {
-  font-size: 2.5rem;  
-  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 2px;  
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.main-nav ul {
+.main-nav .nav {
   padding: 0 1rem;
-  box-shadow: var(--color-line-in-white);
 }
 
 .main-nav ul li {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   display: inline;
   text-decoration: none;
   line-height: 4rem;
 }
 
-.main-nav ul:nth-child(2) li:nth-child(2) {
-  border-right: 3px solid var(--color-line-in-white);
-  border-left: 3px solid var(--color-line-in-white);
-}
-
 .main-nav ul li a {
-  font-size: 1.63rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
   transition: 0.6s;
 }
 
 .main-nav ul li a:hover {
   color: var(--color-primary);
+}
+
+
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+
+footer#about-us {
+  width: 100vw;
+  padding: 2rem 3rem;
+  background-color: var(--color-primary);
+}
+
+footer#about-us p{
+  color: var(--color-footer-text);
+}
+
+footer#about-us .footer-title h2 {
+  margin: 4rem 4rem;
+  color: var(--color-footer-text);
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+footer#about-us .footer-title h2 em {
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
+footer#about-us .footer-text {
+  margin: 1rem 0px 6rem 0px;
+  padding: 0px 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer#about-us .footer-text p {
+  width: 60%;
+}
+
+footer#about-us .footer-text p:nth-child(1){
+  margin: 0px 1rem 0px 0px;
+}
+
+footer#about-us .sub-footer {
+  margin: 4rem 0px 2rem 0px;
+  padding-top: 3rem;
+  text-align: center;
+  border-top: 2px solid rgba(226, 226, 236, 0.3);
 }
