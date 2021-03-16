@@ -23,6 +23,33 @@ Import partials
 @import url(./partials/page-login.css);
 @import url(./partials/page-register.css);
 
+@import url(./partials/bootstrap/bootstrap-grid.css);
+@import url(./partials/bootstrap/bootstrap-grid.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.min.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.css);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.min.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.min.css);
+@import url(./partials/bootstrap/bootstrap-reboot.css);
+@import url(./partials/bootstrap/bootstrap-reboot.css.map);
+@import url(./partials/bootstrap/bootstrap-reboot.rtl.css);
+@import url(./partials/bootstrap/bootstrap-reboot.rtl.min.css.map);
+@import url(./partials/bootstrap/bootstrap-utilities.css);
+@import url(./partials/bootstrap/bootstrap-utilities.css.map);
+@import url(./partials/bootstrap/bootstrap-utilities.min.css);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.css);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.css.map);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.min.css);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.min.css.map);
+@import url(./partials/bootstrap/bootstrap.css);
+@import url(./partials/bootstrap/bootstrap.css.map);
+@import url(./partials/bootstrap/bootstrap.min.css);
+@import url(./partials/bootstrap/bootstrap.min.css.map);
+@import url(./partials/bootstrap/bootstrap.rtl.css);
+@import url(./partials/bootstrap/bootstrap.rtl.css.map);
+@import url(./partials/bootstrap/bootstrap.rtl.min.css);
+@import url(./partials/bootstrap/bootstrap.rtl.min.css.map);
+
 /* 
 ---------------------------------------------
 font & reset css
@@ -193,6 +220,11 @@ header .main-nav {
 footer
 --------------------------------------------- 
 */
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
 
 footer#about-us {
   width: 100vw;
