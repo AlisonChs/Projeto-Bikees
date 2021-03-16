@@ -221,11 +221,6 @@ footer
 --------------------------------------------- 
 */
 
-footer {
-  position: absolute;
-  bottom: 0;
-}
-
 footer#about-us {
   width: 100vw;
   padding: 2rem 3rem;

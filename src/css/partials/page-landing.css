@@ -1,7 +1,7 @@
 #page-landing section#welcome-area {
     margin: 8rem 0;
     height: 100vh;
-    background-image: url(/Projeto-Bikees/src/media/img/banner-bg.png);
+    background-image: url(../../media/img/banner-bg.png);
     background-repeat: no-repeat;
     background-position: right top;
 }
