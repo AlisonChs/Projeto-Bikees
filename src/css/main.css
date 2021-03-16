@@ -160,6 +160,11 @@ html, body {
   overflow-x: hidden;
 }
 
+em {
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
 /*
 ---------------------------------------------
 header
@@ -238,11 +243,6 @@ footer#about-us .footer-title h2 {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
-}
-
-footer#about-us .footer-title h2 em {
-  color: var(--color-secondary);
-  font-style: normal;
 }
 
 footer#about-us .footer-text {
