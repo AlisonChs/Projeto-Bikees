@@ -1,0 +1,25 @@
+#page-landing section#welcome-area {
+    margin: 8rem 0;
+    height: 100vh;
+    background-image: url(/Projeto-Bikees/src/media/img/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#page-landing section#welcome-area .left-text {
+    height: 80%;
+    width: 40%;
+    padding: 20% 5% 0 5%;
+}
+
+#page-landing section#welcome-area .left-text h1 {    
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+#page-landing section#welcome-area .left-text p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
