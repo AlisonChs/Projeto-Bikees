@@ -22,6 +22,7 @@ Import partials
 @import url(./partials/page-location.css);
 @import url(./partials/page-login.css);
 @import url(./partials/page-register.css);
+@import url(./partials/custom.css);
 
 @import url(./partials/bootstrap/bootstrap-grid.css);
 @import url(./partials/bootstrap/bootstrap-grid.css.map);
@@ -170,12 +171,14 @@ em {
 header
 ---------------------------------------------
 */
+
 header {
   width: 100vw;
-  position: fixed;
+  position: sticky;
   z-index: 90;
   background-color: var(--color-background);
   box-shadow: 0px 0px 10px 0px var(--color-line);
+  top: 0!important;
 }
 
 header .main-nav {

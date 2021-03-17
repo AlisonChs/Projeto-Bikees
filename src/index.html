@@ -11,59 +11,75 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
   </head>
 
   <body id="page-landing">
 
-    <header class="header-area header-sticky">
-      <div class="main-nav">
-        <div class="logo">
-          BIKEES
-        </div>
+    <div id="container-page-landing-cont">
 
-        <ul class="nav">
-          <li><a href="./index.html" class="menu-item">Página Inicial</a></li>
-          <li><a href="./page-location.html" class="menu-item">Alugue sua Bikee</a></li>
-          <li><a href="#about-us" class="menu-item">Sobre Nós</a></li>
-        </ul>
+      <header class="header-area header-sticky">
+        <div class="main-nav">
+          <div class="logo">
+            BIKEES
+          </div>
+
+          <ul class="nav">
+            <li><a href="./index.html" class="menu-item">Página Inicial</a></li>
+            <li><a href="./page-location.html" class="menu-item">Alugue sua Bikee</a></li>
+            <li><a href="#about-us" class="menu-item">Sobre Nós</a></li>
+          </ul>
+          
+          <ul class="nav">
+            <li><a href="#login" onclick="login()">Entrar</a></li>           
+          </ul>
+        </div>
+      </header>
+
+      <section id="welcome-area">
+        <div class="left-text">
+          <h1>Alugue uma <em>Bikee</em></h1>
+          <p>Ajude o meio-ambiente! Alugue uma bikee para diminiur a poluição.</p> 
+        </div>
+      </section>
+
+      <section id="about-bike">
         
-        <ul class="nav">
-          <li><a href="./page-login.html">Entrar</a></li>           
-        </ul>
-      </div>
-    </header>
+      </section>
 
-    <section id="welcome-area">
-      <div class="left-text">
-        <h1>Alugue uma <em>Bikee</em></h1>
-        <p>Ajude o meio-ambiente! Alugue uma bikee para diminiur a poluição.</p> 
-      </div>
-    </section>
-
-    <section id="about-bike">
-      
-    </section>
-
-      <footer id="about-us">
-        <div class="footer-content">
-          <div class="footer-title">
-            <h2>Mais sobre <em>nós</em></h2>
+        <footer id="about-us">
+          <div class="footer-content">
+            <div class="footer-title">
+              <h2>Mais sobre <em>nós</em></h2>
+            </div>
+            <div class="footer-text">
+              <p>Para evitar isso, disponibilizamos cerca de 200 estações com mais de 2.000 bikees, feitas para lhe dar conforto, segurança e uma experiência única; seja em eventos profissionais ou de lazer.
+              </p>
+              <p>A Bikees foi inaugurada no dia 5 de janeiro de 2021, com o objetivo de diminuir a poluição da nossa cidade e tornar a sua vida mais saudável, pois, de acordo com os especialistas, o trânsito é um dos maiores causadores de estresse.</p>
+            </div>
           </div>
-          <div class="footer-text">
-            <p>Para evitar isso, disponibilizamos cerca de 200 estações com mais de 2.000 bikees, feitas para lhe dar conforto, segurança e uma experiência única; seja em eventos profissionais ou de lazer.
-            </p>
-            <p>A Bikees foi inaugurada no dia 5 de janeiro de 2021, com o objetivo de diminuir a poluição da nossa cidade e tornar a sua vida mais saudável, pois, de acordo com os especialistas, o trânsito é um dos maiores causadores de estresse.</p>
+          <div class="sub-footer">
+            <p>Copyright &copy; 2020 
+            | Todos direitos reservados</p>
+          </div>
+        </footer>
+
+      </div>
+
+      <!-- Escondidos -->
+
+      <!-- Modal (no nootstrap) -->
+      <div id="login" class="loginBox">
+        <div class="box-content">
+          <div class="form-login" id="rotateAnONE">
+            
+          </div>
+          <div class="form-illustration" id="rotateAnTWO">
+            <a href="#fechar" title="Fechar" class="fechar" onclick="loginrev()">x</a>
           </div>
         </div>
-        <div class="sub-footer">
-          <p>Copyright &copy; 2020 
-          | Todos direitos reservados</p>
-        </div>
-      </footer>
-
       </div>
-
 
   </body>
 </html>
