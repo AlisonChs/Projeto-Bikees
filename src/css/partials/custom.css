@@ -1,0 +1,25 @@
+#login form input {
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    font-family: 'Syne Mono', monospace;
+    background-color: #ccffcc;
+}
+
+#login form .container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+#login form button {
+    background-color: #ccffcc;
+    border-radius: 100%;
+    width: 5vw;
+    height: 10vh;
+    margin-top: 20%;
+}
+
+#login small {margin-top: 20%;}

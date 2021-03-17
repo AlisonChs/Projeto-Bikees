@@ -58,6 +58,7 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 /*
   reset
 */
@@ -170,7 +171,6 @@ em {
 small {
   text-align: center;
   opacity: 0.5;
-  align-self: flex-end;
 }
 
 /*
@@ -377,6 +377,14 @@ login
   color: gray;
   animation: go-back 1s;
   position: absolute;
+}
+
+#login form h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 5%;
 }
 
 @keyframes rotate {
