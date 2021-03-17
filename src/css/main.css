@@ -336,6 +336,42 @@ login
 .registerBox .box-content .form-illustration h1 {font-size: 3rem; width: 90%; text-align: center;}
 .registerBox .box-content .form-illustration h1 span {color: #B0FF5D;}
 
+#closeLoginBox {
+  top: 18%;
+  left: 11%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #B0FF5D;
+  position: absolute;
+  border-radius: 1em;
+  box-shadow: #FFF450 0 0 5px;
+  font-size: 3rem;
+  color: gray;
+  animation: rotate 0.9s;
+}
+
+#closeRegisterBox {
+  top: 16%;
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #B0FF5D;
+  border-radius: 1em;
+  box-shadow: #FFF450 0 0 5px;
+  font-size: 3rem;
+  color: gray;
+  animation: rotate 0.9s;
+  position: absolute;
+}
+
+#close:hover {
+  animation: rotate linear .5s;
+  color: black;
+  opacity: 1;
+}
+
 @keyframes rotate {
 0% {
   transform: rotate(0);
