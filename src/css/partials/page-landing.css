@@ -23,3 +23,49 @@
     letter-spacing: 1px;
     font-weight: 300;
 }
+
+#page-landing #advantage-bike {
+    margin: 1rem auto 20rem auto;
+    width: 85vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-landing #advantage-bike .advantage-item {
+    width: 25vw;
+}
+
+#page-landing #advantage-bike .advantage-item h2 {
+    font-size: 12rem;
+    color: rgba(16, 16, 16, 0.05);
+    margin-bottom: -8rem;
+}
+
+#page-landing #advantage-bike .advantage-item .advantage-txt-center {
+    width: 100%;
+    vertical-align: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#page-landing #advantage-bike .advantage-item .advantage-txt-center img {
+    width: 60%;
+    margin-bottom: 3rem;
+}
+
+#page-landing #advantage-bike .advantage-item:last-child img{
+    margin-top: 1.5rem;
+    width: 78%;
+}
+
+#page-landing #advantage-bike .advantage-item .advantage-txt-center h4 {
+    font-size: 2.1rem;
+    margin-bottom: 1.4rem;
+}
+
+#page-landing #advantage-bike .advantage-item h4,
+#page-landing #advantage-bike .advantage-item p {
+    width: 80%;
+    margin: 0 auto;
+}
