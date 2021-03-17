@@ -167,6 +167,12 @@ em {
   font-style: normal;
 }
 
+small {
+  text-align: center;
+  opacity: 0.5;
+  align-self: flex-end;
+}
+
 /*
 ---------------------------------------------
 header
@@ -227,7 +233,7 @@ login
   cursor: pointer;
 }
 
- .loginBox {
+ .loginBox, .registerBox {
   position: fixed;
   top: 0;
   right: 0;
@@ -248,21 +254,21 @@ login
   align-items: center;
 }
 
- .loginBox:target {
+ .loginBox:target, .registerBox:target {
   opacity: 1;
   pointer-events: auto;
 }
 
- .loginBox .box-content {
+ .loginBox .box-content, .registerBox .box-content {
   display: flex;
   flex-direction: space-between;
 }
 
- .loginBox .box-content div {
+ .loginBox .box-content div, .registerBox .box-content div {
   border-radius: 10px 10px 10px 10px;
 }
 
- .loginBox .box-content .form-illustration {
+ .loginBox .box-content .form-illustration, .registerBox .box-content .form-register {
   width: 50vw;
   height: 60vh;
   background: rgba(129,227,120,1);
@@ -280,11 +286,12 @@ login
   -webkit-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
   -moz-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
   box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
- .loginBox .box-content .form-login {
+.loginBox .box-content .form-illustration {border-top-right-radius: 0;border-bottom-right-radius: 0;}
+.registerBox .box-content .form-register {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+
+ .loginBox .box-content .form-login, .registerBox .box-content .form-illustration {
   width: 25vw;
   height: 75vh;
   background: rgba(193,255,128,1);
@@ -301,7 +308,7 @@ login
   display: inline-block;
 }
 
-.loginBox .box-content .form-illustration {
+.loginBox .box-content .form-illustration, .registerBox .box-content .form-register {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -317,14 +324,17 @@ login
   background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bolder;
+  font-weight: 800;
 }
 
-.loginBox .box-content .form-illustration h1 {
-  font-size: 5rem;
+.loginBox .box-content .form-illustration h1, .registerBox .box-content .form-illustration h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
 }
+
+.loginBox .box-content .form-illustration h1 {font-size: 5rem;}
+.registerBox .box-content .form-illustration h1 {font-size: 3rem; width: 90%; text-align: center;}
+.registerBox .box-content .form-illustration h1 span {color: #B0FF5D;}
 
 @keyframes rotate {
 0% {
