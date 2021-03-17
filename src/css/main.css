@@ -286,7 +286,13 @@ login
   -webkit-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
   -moz-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
   box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
+  animation: back-go 1s;
 }
+
+.loginBox .box-content .form-illustration {animation: back-go 1s;}
+.loginBox .box-content .form-login {animation: go-back 1s;}
+.registerBox .box-content .form-illustration {animation: back-go 1s;}
+.registerBox .box-content .form-register {animation: go-back 1s;}
 
 .loginBox .box-content .form-illustration {border-top-right-radius: 0;border-bottom-right-radius: 0;}
 .registerBox .box-content .form-register {border-top-left-radius: 0;border-bottom-left-radius: 0;}
@@ -348,7 +354,7 @@ login
   box-shadow: #FFF450 0 0 5px;
   font-size: 3rem;
   color: gray;
-  animation: rotate 0.9s;
+  animation: back-go 1s;
 }
 
 #closeRegisterBox {
@@ -362,14 +368,8 @@ login
   box-shadow: #FFF450 0 0 5px;
   font-size: 3rem;
   color: gray;
-  animation: rotate 0.9s;
+  animation: go-back 1s;
   position: absolute;
-}
-
-#close:hover {
-  animation: rotate linear .5s;
-  color: black;
-  opacity: 1;
 }
 
 @keyframes rotate {
@@ -380,6 +380,26 @@ login
   transform: rotate(360deg);
 }
 }
+
+@keyframes go-back {
+	from {
+		transform: translateX(100px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes back-go {
+	from {
+		transform: translateX(-100px);
+	}
+	to {
+		transform: translateX(0x);
+	}
+}
+
+
 
 /* 
 ---------------------------------------------
