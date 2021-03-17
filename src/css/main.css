@@ -240,7 +240,7 @@ login
   bottom: 0;
   left: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: rgba(0,0,0,0.8);
+  background: rgba(37, 37, 37, 0.8);
   z-index: 99999;
   opacity:0;
   -webkit-transition: opacity 400ms ease-in;
@@ -265,7 +265,7 @@ login
 }
 
  .loginBox .box-content div, .registerBox .box-content div {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 8px 8px 8px 8px;
 }
 
  .loginBox .box-content .form-illustration, .registerBox .box-content .form-register {
