@@ -1,0 +1,267 @@
+/* Neste arquivo css, vamos apenas linkar todos os outros arquivos CSS3 e deixar só as configurações principais*/ 
+
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. import partials
+02. font & reset css
+03. reset
+04. global styles
+05. header
+06. footer
+07. preloader
+--------------------------------------------- */
+
+/*
+---------------------------------------------
+Import partials
+---------------------------------------------
+*/
+@import url(./partials/page-landing.css);
+@import url(./partials/page-location.css);
+@import url(./partials/page-login.css);
+@import url(./partials/page-register.css);
+@import url(./partials/custom.css);
+
+@import url(./partials/bootstrap/bootstrap-grid.css);
+@import url(./partials/bootstrap/bootstrap-grid.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.min.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.css);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.min.css.map);
+@import url(./partials/bootstrap/bootstrap-grid.rtl.min.css);
+@import url(./partials/bootstrap/bootstrap-reboot.css);
+@import url(./partials/bootstrap/bootstrap-reboot.css.map);
+@import url(./partials/bootstrap/bootstrap-reboot.rtl.css);
+@import url(./partials/bootstrap/bootstrap-reboot.rtl.min.css.map);
+@import url(./partials/bootstrap/bootstrap-utilities.css);
+@import url(./partials/bootstrap/bootstrap-utilities.css.map);
+@import url(./partials/bootstrap/bootstrap-utilities.min.css);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.css);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.css.map);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.min.css);
+@import url(./partials/bootstrap/bootstrap-utilities.rtl.min.css.map);
+@import url(./partials/bootstrap/bootstrap.css);
+@import url(./partials/bootstrap/bootstrap.css.map);
+@import url(./partials/bootstrap/bootstrap.min.css);
+@import url(./partials/bootstrap/bootstrap.min.css.map);
+@import url(./partials/bootstrap/bootstrap.rtl.css);
+@import url(./partials/bootstrap/bootstrap.rtl.css.map);
+@import url(./partials/bootstrap/bootstrap.rtl.min.css);
+@import url(./partials/bootstrap/bootstrap.rtl.min.css.map);
+
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/*
+  reset
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: var(--color-background);
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+  
+.clearfix {
+  display: inline-block;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(136, 136, 136, 1);
+}
+
+/*
+---------------------------------------------
+global styles
+---------------------------------------------
+*/
+:root {
+  --color-background: rgba(240, 240, 247, 1);
+  --color-primary-light: rgba(36, 242, 109, 1);
+  --color-primary: rgba(25, 166, 75, 1);
+  --color-primary-dark: rgba(1, 82, 47, 1);
+  --color-secondary: rgba(251, 167, 11, 1);
+  --color-secondary-dark: rgba(241,85,106,1);
+  --color-title-in-primary: rgba(9, 9, 9, 1);
+  --color-text-title: rgba(12, 12, 12, 1);
+  --color-text: rgba(16, 16, 16, 1);
+  --color-footer-text: rgb(252, 252, 252);
+  --color-line: rgb(226, 226, 236);
+
+  font-size: 62.5%; /* 10px */
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+em {
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
+/*
+---------------------------------------------
+header
+---------------------------------------------
+*/
+
+header {
+  width: 100vw;
+  position: sticky;
+  z-index: 90;
+  background-color: var(--color-background);
+  box-shadow: 0px 0px 10px 0px var(--color-line);
+  top: 0!important;
+}
+
+header .main-nav {
+  padding: 2rem 8rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav .logo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;  
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-nav .nav {
+  padding: 0 1rem;
+}
+
+.main-nav ul li {
+  padding: 0 1.5rem;
+  display: inline;
+  text-decoration: none;
+  line-height: 4rem;
+}
+
+.main-nav ul li a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: 0.6s;
+}
+
+.main-nav ul li a:hover {
+  color: var(--color-primary);
+}
+
+
+/* 
+---------------------------------------------
+footer
+--------------------------------------------- 
+*/
+
+footer#about-us {
+  width: 100vw;
+  padding: 2rem 3rem;
+  background-color: var(--color-primary);
+}
+
+footer#about-us p{
+  color: var(--color-footer-text);
+}
+
+footer#about-us .footer-title h2 {
+  margin: 4rem 4rem;
+  color: var(--color-footer-text);
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+footer#about-us .footer-text {
+  margin: 1rem 0px 6rem 0px;
+  padding: 0px 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer#about-us .footer-text p {
+  width: 60%;
+}
+
+footer#about-us .footer-text p:nth-child(1){
+  margin: 0px 1rem 0px 0px;
+}
+
+footer#about-us .sub-footer {
+  margin: 4rem 0px 2rem 0px;
+  padding-top: 3rem;
+  text-align: center;
+  border-top: 2px solid rgba(226, 226, 236, 0.3);
+}
