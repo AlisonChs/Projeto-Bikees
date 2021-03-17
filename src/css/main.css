@@ -301,6 +301,30 @@ login
   display: inline-block;
 }
 
+.loginBox .box-content .form-login {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-style: normal;
+  text-align: center;
+}
+
+.loginBox .box-content .form-login h2 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loginBox .box-content .form-login h1 {
+  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
 @keyframes rotate {
 0% {
   transform: rotate(0);
