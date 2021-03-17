@@ -262,7 +262,7 @@ login
   border-radius: 10px 10px 10px 10px;
 }
 
- .loginBox .box-content .form-login {
+ .loginBox .box-content .form-illustration {
   width: 50vw;
   height: 60vh;
   background: rgba(129,227,120,1);
@@ -284,7 +284,7 @@ login
   border-bottom-right-radius: 0;
 }
 
- .loginBox .box-content .form-illustration {
+ .loginBox .box-content .form-login {
   width: 25vw;
   height: 75vh;
   background: rgba(193,255,128,1);
@@ -301,7 +301,7 @@ login
   display: inline-block;
 }
 
-.loginBox .box-content .form-login {
+.loginBox .box-content .form-illustration {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -310,16 +310,17 @@ login
   text-align: center;
 }
 
-.loginBox .box-content .form-login h2 {
+.loginBox .box-content .form-illustration h2 {
   font-size: 3rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bolder;
 }
 
-.loginBox .box-content .form-login h1 {
+.loginBox .box-content .form-illustration h1 {
   font-size: 5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
