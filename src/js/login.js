@@ -1,14 +1,33 @@
 function login () {
     document.getElementById("container-page-landing-cont").style.transition = "ease-in 400ms";
     document.getElementById("container-page-landing-cont").style.filter = "blur(3px)";
-    document.getElementById("rotateAnONE").style.animation = "rotate 0.9s";
-    document.getElementById("rotateAnTWO").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationLog-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("login-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationLog-box-content-animations").style.animation = "back-go 1s";
+    document.getElementById("login-box-content-animations").style.animation = "go-back 1s";
+}
+
+function register () {
+    document.getElementById("register-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationReg-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationReg-box-content-animations").style.animation = "back-go 1s";
+    document.getElementById("register-box-content-animations").style.animation = "go-back 1s";   
 }
 
 function loginrev () {
     document.getElementById("container-page-landing-cont").style.filter = "blur(0px)";
-    document.getElementById("rotateAnONE").style.animation = "rotate 0.9s";
-    document.getElementById("rotateAnTWO").style.animation = "rotate 0.9s";
+    document.getElementById("login-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationLog-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationLog-box-content-animations").style.animation = "back-go 1s";
+    document.getElementById("login-box-content-animations").style.animation = "go-back 1s";
+}
+
+function registerrev () {
+    document.getElementById("container-page-landing-cont").style.filter = "blur(0px)";
+    document.getElementById("register-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationReg-box-content-animations").style.animation = "rotate 0.9s";
+    document.getElementById("illustrationReg-box-content-animations").style.animation = "back-go 1s";
+    document.getElementById("register-box-content-animations").style.animation = "go-back 1s";
 }
 
 var div = document.getElementById("texto-decorativo-login");

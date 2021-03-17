@@ -286,7 +286,6 @@ login
   -webkit-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
   -moz-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
   box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
-  animation: back-go 1s;
 }
 
 .loginBox .box-content .form-illustration {animation: back-go 1s;}
