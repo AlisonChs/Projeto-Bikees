@@ -22,7 +22,7 @@
 
 ## :bookmark: Sobre
 
-O <strong>Devflix</strong> é uma aplicação web para o compartilhamento de vídeos sobre desenvolvimento e tecnologia em que é possível cadastrar novos vídeos e categorias.
+O <strong>Bikees</strong> é uma aplicação web para o aluguel de bikees em toda a cidade - Experimente você mesmo
 
 ## :rocket: Tecnologias Utilizadas
 
