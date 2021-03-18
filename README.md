@@ -2,7 +2,7 @@
     <img alt="Logo" title="#logo" width="1200px" src="./github_assets/banner.png">
     <br>
 </h3>
-<p align="center"><strong font-size=5px> 🚲 Bikees 🚲</strong><br>
+<p align="center"><strong font-size=large> 🚲 Bikees 🚲</strong><br>
     Aplicação desenvolvida por estudantes para trabalho escolar
  </p>
 
