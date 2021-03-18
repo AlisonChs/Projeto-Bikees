@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="1200px" src="./docs/media/img/left-image.png">
+    <img alt="Logo" title="#logo" width="200px" src="./docs/media/img/left-image.png">
     <br>
 </h3>
 <p align="center"><strong font-size="large";> 🚲 Bikees 🚲</strong><br>
@@ -37,7 +37,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## :heavy_check_mark: Resultado:
 
 <h3 align="center">
-<img alt="web gif" title="#logo" width="700px" src="./github_assets/webgif.gif">
+Em construção!
 </h3>
 
 ## :fire: Ver resultado
