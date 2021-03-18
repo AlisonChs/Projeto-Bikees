@@ -25,9 +25,8 @@
 }
 
 #page-landing #advantage-bike {
-    margin: 1rem auto 20rem auto;
-    width: 85vw;
-
+    margin: 0rem auto 1rem auto;
+    width: 88vw;
     display: flex;
     justify-content: space-between;
 }
@@ -69,3 +68,41 @@
     width: 80%;
     margin: 0 auto;
 }
+
+#page-landing #advantage-bike .advantage-item p {
+    font-size: 1.55rem;
+}
+/* 
+---------------------------------------------
+hire-bikee
+--------------------------------------------- 
+*/
+
+#page-landing section#hire-bikee {
+    padding-top: 22.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    background-image: url(../../media/img/left-bg-decor.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+}
+
+#page-landing section#hire-bikee .right-text {
+    width: 40%;
+    padding-right: 15rem;
+}
+
+#page-landing section#hire-bikee .right-text h4 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#page-landing section#hire-bikee .right-text p {
+    margin-bottom: 1rem;
+} 
+
+}
+
