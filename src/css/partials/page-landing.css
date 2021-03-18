@@ -40,7 +40,7 @@ Advantage Bikee
 */
 
 #page-landing #advantage-bike {
-    margin: 0rem auto 20rem auto;
+    margin: 0rem auto 1rem auto;
     width: 88vw;
 
     display: flex;
@@ -97,6 +97,7 @@ hire-bikee
 
 #page-landing section#hire-bikee {
     padding-top: 22.5rem;
+    margin-bottom: 2rem;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -112,5 +113,10 @@ hire-bikee
 }
 
 #page-landing section#hire-bikee .right-text h4 {
-    
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
+
+#page-landing section#hire-bikee .right-text p {
+    margin-bottom: 1rem;
+} 
