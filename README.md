@@ -31,12 +31,13 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JavaScript]
+- <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+JavaScript" style="text-decoration:none" > JavaScript </a>
 
 
 ## :heavy_check_mark: Resultado:
 
-<h3 align="center">
+<h3>
 Em construção!
 </h3>
 
