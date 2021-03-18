@@ -41,14 +41,14 @@ Advantage Bikee
 
 #page-landing #advantage-bike {
     margin: 0rem auto 20rem auto;
-    width: 85vw;
+    width: 88vw;
 
     display: flex;
     justify-content: space-between;
 }
 
 #page-landing #advantage-bike .advantage-item {
-    width: 25vw;
+    width: 30vw;
 }
 
 #page-landing #advantage-bike .advantage-item h2 {
@@ -65,17 +65,18 @@ Advantage Bikee
 }
 
 #page-landing #advantage-bike .advantage-item .advantage-txt-center img {
-    width: 60%;
+    width: 70%;
     margin-bottom: 3rem;
 }
 
 #page-landing #advantage-bike .advantage-item:last-child img{
     margin-top: 1.5rem;
-    width: 78%;
+    margin-bottom: 3.99rem;
+    width: 89%;
 }
 
 #page-landing #advantage-bike .advantage-item .advantage-txt-center h4 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     margin-bottom: 1.4rem;
 }
 
@@ -85,12 +86,31 @@ Advantage Bikee
     margin: 0 auto;
 }
 
+#page-landing #advantage-bike .advantage-item p {
+    font-size: 1.55rem;
+}
 /* 
 ---------------------------------------------
 hire-bikee
 --------------------------------------------- 
 */
 
-#page-landing {
+#page-landing section#hire-bikee {
+    padding-top: 22.5rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    background-image: url(../../media/img/left-bg-decor.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+}
+
+#page-landing section#hire-bikee .right-text {
+    width: 40%;
+    padding-right: 15rem;
+}
+
+#page-landing section#hire-bikee .right-text h4 {
     
 }

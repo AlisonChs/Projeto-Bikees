@@ -180,7 +180,7 @@ header
 */
 
 header {
-  width: 100vw;
+  width: 98.7vw;
   position: fixed;
   z-index: 90;
   background-color: var(--color-background);
