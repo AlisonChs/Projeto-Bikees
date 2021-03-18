@@ -27,6 +27,7 @@
 #page-landing #advantage-bike {
     margin: 1rem auto 20rem auto;
     width: 85vw;
+
     display: flex;
     justify-content: space-between;
 }
