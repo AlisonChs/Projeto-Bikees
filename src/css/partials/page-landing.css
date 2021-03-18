@@ -1,19 +1,19 @@
 #page-landing section#welcome-area {
-    margin: 0 0 8rem 0;
     height: 100vh;
-    background-image: url(../../media/img/banner-bg.png);
-    background-repeat: no-repeat;
-    background-position: right top;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
 }
 
 #page-landing section#welcome-area .left-text {
-    height: 80%;
-    width: 40%;
-    padding: 20% 5% 0 5%;
+    height: 85%;
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
 
 #page-landing section#welcome-area .left-text h1 {    
-    font-size: 5rem;
+    font-size: 5.5rem;
     margin-bottom: 20px;
     font-weight: 800;
 }
@@ -24,8 +24,23 @@
     font-weight: 300;
 }
 
+#page-landing section#welcome-area .right-image {
+    text-align: center;
+    width: 100%;
+}
+
+#page-landing section#welcome-area .right-image img {
+    width: 100%;
+}
+
+/* 
+---------------------------------------------
+Advantage Bikee
+--------------------------------------------- 
+*/
+
 #page-landing #advantage-bike {
-    margin: 1rem auto 20rem auto;
+    margin: 0rem auto 20rem auto;
     width: 85vw;
 
     display: flex;
@@ -68,4 +83,14 @@
 #page-landing #advantage-bike .advantage-item p {
     width: 80%;
     margin: 0 auto;
+}
+
+/* 
+---------------------------------------------
+hire-bikee
+--------------------------------------------- 
+*/
+
+#page-landing {
+    
 }

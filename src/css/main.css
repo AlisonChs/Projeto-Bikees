@@ -160,7 +160,7 @@ global styles
 }
 
 html, body {
-  overflow-x: hidden;
+
 }
 
 em {
@@ -192,13 +192,22 @@ header .main-nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  transition: 0.6s;
 }
 
 .main-nav .logo {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   letter-spacing: 2px;  
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.main-nav .logo a {
+  transition: .6s;
+}
+
+.main-nav .logo a:hover {
+  color: var(--color-primary);
 }
 
 .main-nav .nav {
@@ -214,9 +223,9 @@ header .main-nav {
 
 .main-nav ul li a {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
-  transition: 0.6s;
+  transition: .5s;
 }
 
 .main-nav ul li a:hover {
@@ -511,7 +520,6 @@ form label {
 }
 
 
-
 /* 
 ---------------------------------------------
 footer
@@ -519,7 +527,7 @@ footer
 */
 
 footer#about-us {
-  width: 100vw;
+  width: 98.7vw;
   padding: 2rem 3rem;
   background-color: var(--color-primary);
 }
@@ -550,7 +558,7 @@ footer#about-us .footer-text p {
 }
 
 footer#about-us .footer-text p:nth-child(1){
-  margin: 0px 1rem 0px 0px;
+ margin-right: 1rem;
 }
 
 footer#about-us .sub-footer {
