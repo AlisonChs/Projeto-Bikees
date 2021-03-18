@@ -1,8 +1,8 @@
-h3 align="center">
+<h3 align="center">
     <img alt="Logo" title="#logo" width="1200px" src="./github_assets/banner.png">
     <br>
 </h3>
-<p align="center"> 🚀 <strong>DevFlix</strong> Aplicação desenvolvida com base na Imersão React da Alura.
+<p align="center"> 🚀 <strong>Bikees</strong> Aplicação desenvolvida por estudantes para trabalho escolar
  </p>
 
 <p align="center">
