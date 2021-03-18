@@ -2,7 +2,7 @@
     <img alt="Logo" title="#logo" width="1200px" src="./github_assets/banner.png">
     <br>
 </h3>
-<p align="center"><strong>🚲 Bikees 🚲</strong><br>
+<p align="center"><strong font-size=5px> 🚲 Bikees 🚲</strong><br>
     Aplicação desenvolvida por estudantes para trabalho escolar
  </p>
 
@@ -31,7 +31,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JavaScript] (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [JS] (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## :heavy_check_mark: Resultado:
 
