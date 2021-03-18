@@ -1,8 +1,8 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="1200px" src="./github_assets/banner.png">
+    <img alt="Logo" title="#logo" width="1200px" src="./docs/media/img/left-image.png">
     <br>
 </h3>
-<p align="center"><strong font-size=large> 🚲 Bikees 🚲</strong><br>
+<p align="center"><strong font-size="large";> 🚲 Bikees 🚲</strong><br>
     Aplicação desenvolvida por estudantes para trabalho escolar
  </p>
 
@@ -27,11 +27,12 @@ O <strong>Bikees</strong> é uma aplicação web para o aluguel de bikees em tod
 
 ## :rocket: Tecnologias Utilizadas
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JS] (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [JavaScript]
+
 
 ## :heavy_check_mark: Resultado:
 
