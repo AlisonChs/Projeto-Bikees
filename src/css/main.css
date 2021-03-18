@@ -379,12 +379,108 @@ login
   position: absolute;
 }
 
-#login form h1 {
+#login form h1, #register .form-register h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
   text-align: center;
   margin-top: 5%;
+}
+
+#login form input {
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  font-family: 'Syne Mono', monospace;
+  background-color: #ccffcc;
+}
+
+#register form .input-text {
+  width: 100%;
+  border-radius: 5px;
+  font-family: 'Syne Mono, monospace';
+  background-color: #ccffcc;
+} 
+
+#register .form-register h1 {  
+  background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#login .form-login h1 {  
+  background: -webkit-linear-gradient(45deg, #B0FF5D, green 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form .container-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+#login form button {
+  background: rgba(99,232,73,1);
+  background: -moz-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: linear-gradient(135deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
+  border-radius: 100%;
+  width: 5vw;
+  height: 10vh;
+  margin-top: 20%;
+}
+
+#login form button:hover, #register form button:hover {
+  background: rgba(99,232,73,1);
+  background: -moz-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
+  background: -webkit-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
+}
+
+#login small {margin-top: 20%;}
+
+#register .form-register {display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+#register small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90%;
+}
+
+#register form button {
+  position: fixed;
+  font-family: 'Syne Mono', monospace;
+  border-radius: 5px;
+  width: 10%;
+  top: 78%;
+  background: rgba(99,232,73,1);
+  background: -moz-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  background: linear-gradient(135deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
+}
+
+form label {
+  margin-top: 5%;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Syne Mono', monospace;
 }
 
 @keyframes rotate {

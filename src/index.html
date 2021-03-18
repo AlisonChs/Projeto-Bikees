@@ -12,6 +12,7 @@
 
     <script type="text/javascript" src="js/login.js"></script>
     <script src="https://kit.fontawesome.com/f30884d5f9.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
   </head>
@@ -148,9 +149,31 @@
             <h1> Seja bem-vindo<br> a comunidade <span>Bikees</span> </h1>
             <br><br>
             <img src="./media/img/rodalog.png">
+            <small><a href="#login">Já sou registrado.</a></small>
           </div>
           <div class="form-register" id="register-box-content-animations">
-            <small><a href="#login">Já sou registrado.</a></small>
+
+            <h1>Sign Up</h1>
+
+            <form>
+
+              <div class="container-form">
+
+                <label for="email">Digite seu e-mail favorito</label>
+                <input type="email" placeholder="lorem@ipsum.com" class="input-text" required>
+
+                <label for="usuario">De que apelido você gosta?</label>
+                <input type="text" placeholder="Nome de usuário.." class="input-text" required>
+
+                <label for="senha">Escolha uma senha difícil</label>
+                <input type="password" placeholder="Senha.." class="input-text" required>
+
+                <button type="submit">Registrar</button>
+
+              </div>
+              
+            </form>
+
           </div>
         </div>
       </div>
