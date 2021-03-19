@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/AlisonChs/Projeto-Bikees/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees"></a>
   <space> <space>
-  <a href="https://github.com/AlisonChs/Projeto-Bikees/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/YanMCoutinho/Projeto-Bikees"></a>
+  <a href="https://github.com/AlisonChs/Projeto-Bikees/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/AlisonChs/Projeto-Bikees"></a>
   <space> <space>
   <a href="https://github.com/AlisonChs/Projeto-Bikees/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees"></a>
 </p>
