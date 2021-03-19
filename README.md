@@ -2,7 +2,8 @@
     <img alt="Logo" title="#logo" width="200px" src="./docs/media/img/left-image.png">
     <br>
 </p>
-<p align="center">Bikees</p>
+<h1 align="center">Bikees</h1>
+<br>
 <p align="center"><small>Aplicação desenvolvida por estudantes para trabalho escolar</small></p>
 
 <p align="center">
