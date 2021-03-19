@@ -1,16 +1,19 @@
-<h3 align="center">
+<p align="center">
     <img alt="Logo" title="#logo" width="200px" src="./docs/media/img/left-image.png">
     <br>
-</h3>
-<p align="center"><strong font-size="large";> 🚲 Bikees 🚲</strong><br>
-    Aplicação desenvolvida por estudantes para trabalho escolar
- </p>
+</p>
+<h1 align="center"><strong> 🚲 Bikees 🚲</strong></h1>
+<p>Aplicação desenvolvida por estudantes para trabalho escolar</p>
 
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
-  </a>
+  [![GitHub stars](https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees)](https://github.com/YanMCoutinho/Projeto-Bikees/stargazers)
+  <space> <space>
+  [![GitHub license](https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees)](https://github.com/YanMCoutinho/Projeto-Bikees/blob/master/LICENSE)
+  <space> <space>
+  [![GitHub forks](https://img.shields.io/github/forks/YanMCoutinho/Projeto-Bikees)](https://github.com/YanMCoutinho/Projeto-Bikees/network)
 </p>
+
+---
 
 # Índice
 
@@ -20,6 +23,8 @@
 - [Como Contribuir](#como-contribuir)
 
 <a id="sobre"></a>
+
+---
 
 ## :bookmark: Sobre
 
@@ -34,12 +39,15 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 JavaScript" style="text-decoration:none" > JavaScript </a>
 
+---
 
 ## :heavy_check_mark: Resultado:
 
 <h3>
 Em construção!
 </h3>
+
+---
 
 ## :fire: Ver resultado
 
@@ -48,12 +56,16 @@ Em construção!
 Veja o resultado aproximado hospedado nestes domínios:
 https://bit.ly/3ttakTa
 
+---
+
 ## :recycle: Como contribuir
 - Primeiro, deixe uma ⭐ se você gostou!
 - Faça um Fork desse repositório;
 - Crie uma branch com a sua feature: `git checkout -b my-feature`
 - Commit suas mudanças: `git commit -m 'feat: My new feature'`
 - Push a sua branch: `git push origin my-feature`
+
+---
 
 ## :memo: License
 
