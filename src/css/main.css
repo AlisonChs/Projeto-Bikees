@@ -144,7 +144,7 @@ global styles
 ---------------------------------------------
 */
 :root {
-  --color-background: rgba(240, 240, 247, 1);
+  --color-background: rgb(243, 243, 247);
   --color-primary-light: rgba(36, 242, 109, 1);
   --color-primary: rgba(25, 166, 75, 1);
   --color-primary-dark: rgba(1, 82, 47, 1);
@@ -655,4 +655,25 @@ footer#about-us .sub-footer {
   padding-top: 3rem;
   text-align: center;
   border-top: 2px solid rgba(226, 226, 236, 0.3);
+}
+
+@media (max-width: 800px) {
+  footer#about-us .footer-text {
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  footer#about-us .footer-content .footer-title {
+    text-align: center;
+  }
+
+  footer#about-us .footer-text p {
+    width: 90%;
+    text-indent: 2rem;
+  }
+
+  footer#about-us .footer-text p:first-child{
+    margin-bottom: 2rem;
+  }
+
 }
