@@ -62,5 +62,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 <h4 align="center">
-    Feito com 💜 por <a href="https://www.linkedin.com/in/alisonchs" target="_blank">Alison Christian</a>
+    Feito com 💜 por <a href="https://www.linkedin.com/in/alisonchs" target="_blank">Alison Christian</a> 
+    e <a href="https://github.com/YanMCoutinho">Yan M. Coutinho</a>
 </h4>
