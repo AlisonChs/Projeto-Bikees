@@ -3,7 +3,7 @@
     <br>
 </p>
 <p align="center"><strong>Bikees</strong></p>
-<p align="center">Aplicação desenvolvida por estudantes para trabalho escolar</p>
+<p align="center"><small>Aplicação desenvolvida por estudantes para trabalho escolar</small></p>
 
 <p align="center">
   <a href="https://github.com/YanMCoutinho/Projeto-Bikees/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees"></a>
