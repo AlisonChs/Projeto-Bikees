@@ -6,7 +6,7 @@
 <p>Aplicação desenvolvida por estudantes para trabalho escolar</p>
 
 <p align="center">
-  ![Badge]https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees
+  ![Badge](https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees)
   <space> <space>
   [![GitHub license](https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees)](https://github.com/YanMCoutinho/Projeto-Bikees/blob/master/LICENSE)
   <space> <space>
