@@ -2,7 +2,7 @@
     <img alt="Logo" title="#logo" width="200px" src="./docs/media/img/left-image.png">
     <br>
 </p>
-<font-size=28px><p align="center"><strong> 🚲 Bikees 🚲</strong></p></font-size>
+<font-size=28px><p align="center"><strong> 🚲 Bikees 🚲</strong></p></font>
 <p align="center">Aplicação desenvolvida por estudantes para trabalho escolar</p>
 
 <p align="center">
