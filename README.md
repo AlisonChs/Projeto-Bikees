@@ -7,11 +7,11 @@
 <p align="center"><small>Aplicação desenvolvida por estudantes para trabalho escolar</small></p>
 
 <p align="center">
-  <a href="https://github.com/YanMCoutinho/Projeto-Bikees/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees"></a>
+  <a href="https://github.com/AlisonChs/Projeto-Bikees/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees"></a>
   <space> <space>
-  <a href="https://github.com/YanMCoutinho/Projeto-Bikees/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/YanMCoutinho/Projeto-Bikees"></a>
+  <a href="https://github.com/AlisonChs/Projeto-Bikees/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/YanMCoutinho/Projeto-Bikees"></a>
   <space> <space>
-  <a href="https://github.com/YanMCoutinho/Projeto-Bikees/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees"></a>
+  <a href="https://github.com/AlisonChs/Projeto-Bikees/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees"></a>
 </p>
       
 <br>
@@ -45,8 +45,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-JavaScript" style="text-decoration:none" > JavaScript </a>
+- <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" style="text-decoration:none" > JavaScript </a>
 
 <br>
 
