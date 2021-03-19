@@ -89,7 +89,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 <br>
 
---
+---
 
 <h4 align="center">
     Feito com 💜 por <a href="https://www.linkedin.com/in/alisonchs" target="_blank">Alison Christian</a> 
