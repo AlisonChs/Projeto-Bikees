@@ -8,9 +8,9 @@
 <p align="center">
   <a href="https://github.com/YanMCoutinho/Projeto-Bikees/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/YanMCoutinho/Projeto-Bikees"></a>
   <space> <space>
-  [![GitHub license](https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees)](https://github.com/YanMCoutinho/Projeto-Bikees/blob/master/LICENSE)
+  <a href="https://github.com/YanMCoutinho/Projeto-Bikees/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/YanMCoutinho/Projeto-Bikees"></a>
   <space> <space>
-  [![GitHub forks](https://img.shields.io/github/forks/YanMCoutinho/Projeto-Bikees)](https://github.com/YanMCoutinho/Projeto-Bikees/network)
+  <a href="https://github.com/YanMCoutinho/Projeto-Bikees/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/YanMCoutinho/Projeto-Bikees"></a>
 </p>
 
 ---
