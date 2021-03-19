@@ -194,6 +194,49 @@ header .main-nav {
   justify-content: space-between;
   transition: 0.6s;
 }
+  
+.main-nav .logo {
+  font-size: 2.7rem;
+  letter-spacing: 2px;  
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-nav .logo a {
+  transition: .6s;
+}
+
+.main-nav .logo a:hover {
+  color: var(--color-primary);
+}
+
+.main-nav .nav {
+  padding: 0 1rem;
+}
+
+.main-nav ul li {
+  padding: 0 1.5rem;
+  display: inline;
+  text-decoration: none;
+  line-height: 4rem;
+}
+
+.main-nav ul li a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+
+.main-nav ul li a:hover {
+  color: var(--color-primary);
+}
+
+@media (min-width:1000px) { 
+  header input, header span {
+    display: none;
+  }
+}
 
 @media (max-width: 900px) {
 
@@ -281,46 +324,6 @@ header .main-nav {
   }
 
 }
-
-@media (min-width:1000px) { header input, header span {display: none;}}
-  
-.main-nav .logo {
-  font-size: 2.7rem;
-  letter-spacing: 2px;  
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.main-nav .logo a {
-  transition: .6s;
-}
-
-.main-nav .logo a:hover {
-  color: var(--color-primary);
-}
-
-.main-nav .nav {
-  padding: 0 1rem;
-}
-
-.main-nav ul li {
-  padding: 0 1.5rem;
-  display: inline;
-  text-decoration: none;
-  line-height: 4rem;
-}
-
-.main-nav ul li a {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  transition: .5s;
-}
-
-.main-nav ul li a:hover {
-  color: var(--color-primary);
-}
-
 /* 
 ---------------------------------------------
 login

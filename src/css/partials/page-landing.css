@@ -149,22 +149,15 @@ Mobile
 --------------------------------------------- 
 */
 
-@media (max-height: 630) {
-    #page-landing #advantage-bike {
-        padding-top: 13rem;
+@media (max-width: 1015px) {
+    #page-landing #advantage-bike .advantage-item h2 {
+        font-size: 9rem;
     }
-}
 
-@media (max-width: 520px) {
-    :root {
-        font-size: 60%;
+    #page-landing section#hire-bikee .right-text {
+        padding: 0 5%;
     }
-}
-
-@media (max-width: 520px) {
-    #page-landing section#hire-bikee .left-image img {
-        width: 90%;
-    }
+    
 }
 
 @media (max-width: 900px) {
@@ -257,13 +250,17 @@ Mobile
     }
 }
 
-@media (max-width: 1015px) {
-    #page-landing #advantage-bike .advantage-item h2 {
-        font-size: 9rem;
+@media (max-height: 630) {
+    #page-landing #advantage-bike {
+        padding-top: 13rem;
     }
+}
 
-    #page-landing section#hire-bikee .right-text {
-        padding: 0 5%;
+@media (max-width: 520px) {
+    :root {
+        font-size: 60%;
     }
-    
+    #page-landing section#hire-bikee .left-image img {
+        width: 90%;
+    }
 }
