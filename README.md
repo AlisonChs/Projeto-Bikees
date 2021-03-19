@@ -24,11 +24,14 @@
 
 <a id="sobre"></a>
 
+
 ---
 
 ## :bookmark: Sobre
 
 O <strong>Bikees</strong> é uma aplicação web para o aluguel de bikees em toda a cidade - Experimente você mesmo
+
+
 
 ## :rocket: Tecnologias Utilizadas
 
@@ -39,6 +42,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 JavaScript" style="text-decoration:none" > JavaScript </a>
 
+
+
+
 ---
 
 ## :heavy_check_mark: Resultado:
@@ -46,6 +52,8 @@ JavaScript" style="text-decoration:none" > JavaScript </a>
 <h3>
 Em construção!
 </h3>
+
+
 
 ---
 
@@ -56,6 +64,8 @@ Em construção!
 Veja o resultado aproximado hospedado nestes domínios:
 https://bit.ly/3ttakTa
 
+
+
 ---
 
 ## :recycle: Como contribuir
@@ -65,11 +75,17 @@ https://bit.ly/3ttakTa
 - Commit suas mudanças: `git commit -m 'feat: My new feature'`
 - Push a sua branch: `git push origin my-feature`
 
+
+
+
 ---
 
 ## :memo: License
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+
+
 
 ---
 
