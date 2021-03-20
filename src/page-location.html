@@ -17,21 +17,33 @@
   </head>
 
   <body id="page-location">
+
     <header class="header-area header-sticky">
       <div class="main-nav">
         <div class="logo">
-          BIKEES
+          <a href="index.html">
+            BIKEES
+          </a>
         </div>
 
-        <ul class="nav">
-          <li><a href="./index.html" class="menu-item">Página Inicial</a></li>
-          <li><a href="./page-location.html" class="menu-item">Alugue sua Bikee</a></li>
-          <li><a href="#about-us" class="menu-item">Sobre Nós</a></li>
-        </ul>
+        <div class="menu-section">            
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+
+          <ul class="nav">
+            <li><a href="./index.html" class="menu-item">Página Inicial</a></li>
+            <li><a href="./page-location.html" class="menu-item">Alugue sua Bikee</a></li>
+            <li><a href="#about-us" class="menu-item">Sobre Nós</a></li>
+          </ul>
+
+          <ul class="nav" id="nav-login">
+            <li><a href="#login" onclick="login()">Entrar</a></li>
+          </ul>
         
-        <ul class="nav">
-          <li><a href="#login">Entrar</a></li>           
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -137,6 +149,8 @@
         </div>
       </div>
     </div>
+
+    <script src="./js/header.js"></script>
 
   </body>
 </html>
