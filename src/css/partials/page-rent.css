@@ -1,0 +1,181 @@
+#page-rent #rent-a-bikee {
+    padding: 18rem 0 50rem 0;
+    width: 100vw;
+    background-image: url(../../media/img/bike-background.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 200px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee {
+    width: 65%;
+    padding: 3% 5% 6% 5%;
+    border-radius: 20px;
+    background-color: rgb(244, 247, 255);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee h1 {
+    color: var(--color-secondary-dark);
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 2rem 0 4rem 0;    
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee p {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    line-height: 2.8rem;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #maps {
+    height: 30rem;
+    width: 100%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text {
+    width: 50%;
+    padding-left: 5%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text h4 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    color: rgb(43, 43, 43);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-area h5 {
+    font-weight: 500;
+    padding-left: 1rem;
+    margin: 4rem 0 1.5rem 0;
+    color: rgb(61, 59, 59);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div {
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    display: flex;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+    height: 2.6rem;
+    width: 31%;
+    margin-bottom: 10px;
+    margin-right: 9px;
+    border-color: rgba(46, 46, 46, 0.541);
+    border-radius: 5px;
+    background-color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div p {
+    font-size: 1.4rem;
+    margin: 0;
+    color: rgb(68, 65, 65);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .right-text p small {
+    font-size: 1.2rem;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #bt-submit {
+    width: 90%;
+    height: 4rem;
+    margin: 3rem auto 0 auto;
+    cursor: pointer;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 13px;
+    background-color: var(--color-primary);
+    color: #fff6f6;
+    transition-duration: .8s;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #bt-submit:hover {
+    background-color: var(--color-primary-dark);
+}
+
+@media (max-width: 1100px) {
+    #page-rent #rent-a-bikee #form-rent-bikee {
+        width: 75%;
+    }
+}
+
+@media (max-width: 910px) {
+    #page-rent #rent-a-bikee #form-rent-bikee {
+        width: 80%;
+    }
+}
+
+@media (max-width: 850px) {
+    #page-rent #rent-a-bikee {
+        padding-bottom: 30rem;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset {
+        flex-flow: column;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text {
+        width: 100%;
+        margin: 0;
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text h4 {
+        margin-top: 3rem;
+        padding-left: 0px;
+     } 
+
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div {
+        justify-content: space-around;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+        width: 9rem;
+        margin: 0 10px 0 30%;
+        
+    }
+}
+
+@media (max-width: 750px) {
+    #page-rent #rent-a-bikee #form-rent-bikee {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    :root {
+        font-size: 60%;
+    }
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+        margin-left: 10%;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div p {
+        font-size: 1.2rem;
+    }
+}

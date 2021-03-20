@@ -20,9 +20,7 @@ Import partials
 ---------------------------------------------
 */
 @import url(./partials/page-landing.css);
-@import url(./partials/page-location.css);
-@import url(./partials/page-login.css);
-@import url(./partials/page-register.css);
+@import url(./partials/page-rent.css);
 @import url(./partials/custom.css);
 
 @import url(./partials/bootstrap/bootstrap-grid.css);
@@ -65,6 +63,7 @@ font & reset css
 
 * {
     box-sizing: border-box;
+    transition-duration: 0.6s;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
@@ -170,7 +169,7 @@ em {
 
 small {
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 /*
@@ -179,7 +178,7 @@ header
 ---------------------------------------------
 */
 
-header {
+header.header-area {
   width: 100vw;
   position: fixed;
   z-index: 10;
@@ -213,6 +212,11 @@ header .main-nav {
 
 .main-nav .menu-section {
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav .menu-section ul {
   display: flex;
   justify-content: space-between;
 }
