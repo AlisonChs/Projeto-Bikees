@@ -135,7 +135,7 @@ hire-bikee
     border-radius: 8px;
     color: rgb(240, 240, 240);
     background-image: linear-gradient(245deg, rgba(20, 175, 74, 1), rgba(13, 155, 63, 1) 100%);
-    transition: .8s;
+    transition-duration: .8s;
 }
 
 #page-landing section#hire-bikee .right-text .main-button:hover {
