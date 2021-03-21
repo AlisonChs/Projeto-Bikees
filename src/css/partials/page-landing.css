@@ -255,9 +255,14 @@ Mobile
     }
 }
 
-@media (max-height: 630) {
+@media (max-height: 960px) {
     #page-landing #advantage-bike {
         padding-top: 13rem;
+    }
+
+    #page-landing section#welcome-area .right-image img {
+        width: auto;
+        height: 100%;
     }
 }
 
