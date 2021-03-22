@@ -94,11 +94,11 @@ advantage-bike
 }
 /* 
 ---------------------------------------------
-hire-bikee
+rent-bikee
 --------------------------------------------- 
 */
 
-#page-landing section#hire-bikee {
+#page-landing section#rent-bikee {
     padding-top: 24rem;
     padding-bottom: 28rem;
     display: flex;
@@ -109,38 +109,43 @@ hire-bikee
 
 }
 
-#page-landing section#hire-bikee .right-text {
+#page-landing section#rent-bikee .right-text {
     width: 45%;
     margin-top: 7rem;
     padding-right: 10%;
 }
 
-#page-landing section#hire-bikee .right-text h4 {
+#page-landing section#rent-bikee .right-text h4 {
     font-size: 3.6rem;
     margin-bottom: 3.5rem;
     text-align: center;
 }
 
-#page-landing section#hire-bikee .right-text p {
+#page-landing section#rent-bikee .right-text p {
     font-size: 1.7rem;
     margin-bottom: 2.5rem;
     line-height: 2.9rem;
 }
 
-#page-landing section#hire-bikee .right-text button.main-button {
+#page-landing section#rent-bikee .right-text button.main-button {
     width: 100%;
-    height: 4rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: Poppins;
     margin-top: 2rem;    
     border: 1px solid var(--color-line-in-white);
     border-radius: 8px;
     color: rgb(240, 240, 240);
-    background-image: linear-gradient(245deg, rgba(20, 175, 74, 1), rgba(13, 155, 63, 1) 100%);
-    transition-duration: .8s;
+    cursor: pointer;
+    background-color: rgb(13, 175, 70);
+    transition-duration: 0.8s;
 }
 
-#page-landing section#hire-bikee .right-text .main-button:hover {
+#page-landing section#rent-bikee .right-text .main-button:hover {
     color: rgb(228, 228, 228);
-    background-image: linear-gradient(245deg, rgba(13, 155, 63, 1), rgb(11, 131, 53) 100%);
+
+    background-color: rgb(12, 117, 49);
 }
 
 /* 
@@ -154,7 +159,7 @@ Mobile
         font-size: 9rem;
     }
 
-    #page-landing section#hire-bikee .right-text {
+    #page-landing section#rent-bikee .right-text {
         padding: 0 5%;
     }
     
@@ -220,39 +225,44 @@ Mobile
     }
 
     /* 
-    hire a bike
+    rent a bike
     */
 
-    #page-landing section#hire-bikee {
+    #page-landing section#rent-bikee {
         flex-flow: column;
         padding-bottom: 15rem;
     }
 
-    #page-landing section#hire-bikee .right-text {
+    #page-landing section#rent-bikee .right-text {
         width: 75%;
         margin: 22rem auto 0 auto;
     }
     
-    #page-landing section#hire-bikee .right-text h4 {
+    #page-landing section#rent-bikee .right-text h4 {
         font-size: 3.5rem;
         margin-bottom: 3.5rem;
         text-align: center;
     }
     
-    #page-landing section#hire-bikee .right-text p {
+    #page-landing section#rent-bikee .right-text p {
         margin-bottom: 2.5rem;
         font-size: 1.7rem;
         line-height: 2.9rem;
     }
 
-    #page-landing section#hire-bikee .right-text button.main-button {
+    #page-landing section#rent-bikee .right-text button.main-button {
         height: 5rem;
     }
 }
 
-@media (max-height: 630) {
+@media (max-height: 960px) {
     #page-landing #advantage-bike {
         padding-top: 13rem;
+    }
+
+    #page-landing section#welcome-area .right-image img {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -260,7 +270,7 @@ Mobile
     :root {
         font-size: 60%;
     }
-    #page-landing section#hire-bikee .left-image img {
+    #page-landing section#rent-bikee .left-image img {
         width: 90%;
     }
 }

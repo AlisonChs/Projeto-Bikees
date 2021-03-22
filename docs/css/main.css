@@ -20,9 +20,7 @@ Import partials
 ---------------------------------------------
 */
 @import url(./partials/page-landing.css);
-@import url(./partials/page-location.css);
-@import url(./partials/page-login.css);
-@import url(./partials/page-register.css);
+@import url(./partials/page-rent.css);
 @import url(./partials/custom.css);
 
 @import url(./partials/bootstrap/bootstrap-grid.css);
@@ -65,6 +63,7 @@ font & reset css
 
 * {
     box-sizing: border-box;
+    transition-duration: 0.6s;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
@@ -170,7 +169,7 @@ em {
 
 small {
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 /*
@@ -179,7 +178,7 @@ header
 ---------------------------------------------
 */
 
-header {
+header.header-area {
   width: 100vw;
   position: fixed;
   z-index: 10;
@@ -213,6 +212,11 @@ header .main-nav {
 
 .main-nav .menu-section {
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav .menu-section ul {
   display: flex;
   justify-content: space-between;
 }
@@ -407,10 +411,15 @@ login
 .loginBox .box-content .form-illustration {border-top-right-radius: 0;border-bottom-right-radius: 0;}
 .registerBox .box-content .form-register {border-top-left-radius: 0;border-bottom-left-radius: 0;}
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .registerBox .box-content .form-illustration img {
-  width: 20%;
-  left: 14%;
-  position: absolute;
+  width: 70%;
+  margin: 0;
   animation: rotate .7s linear infinite;
 }
 
@@ -431,6 +440,15 @@ login
   display: inline-block;
 }
 
+@media (max-width: 900px) {
+  .loginBox .box-content .form-login, .registerBox .box-content .form-register {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+
+}
+
 .loginBox .box-content .form-illustration, .registerBox .box-content .form-register {
   display: flex;
   align-items: center;
@@ -438,6 +456,21 @@ login
   justify-content: center;
   font-style: normal;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  #login .form-login, #register .form-register {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    align-items: 0;
+    flex-direction: 0;
+    justify-content: 0;
+  }
+
+  .loginBox .box-content .form-illustration, .registerBox .box-content .form-illustration {
+    display: none;
+  }
 }
 
 .loginBox .box-content .form-illustration h2 {
@@ -475,6 +508,17 @@ login
   animation: back-go 1s;
 }
 
+@media (max-width: 900px) {
+  #closeLoginBox {
+    top: 2%;
+    left: 2%;
+    background-color: transparent;
+    color: black;
+    border: 0;
+  }
+}
+
+
 #closeRegisterBox {
   top: 16%;
   left: 85%;
@@ -488,6 +532,17 @@ login
   color: gray;
   animation: go-back 1s;
   position: absolute;
+}
+
+@media (max-width: 900px) {
+  #closeRegisterBox {
+    top: 2%;
+    left: 2%;
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+    box-shadow: none;
+  }
 }
 
 #login form h1, #register .form-register h1 {
@@ -523,15 +578,28 @@ login
   background: -webkit-linear-gradient(45deg, #B0FF5D, green 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 10%;
 }
 
-form .container-form {
+#login form .container-form {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10%;
+}
+
+#register form .container-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#register form .container-form input {
+  width: 50%;
+}
+
+form .container-form input {
+  height: 4.5vh
 }
 
 #login form button {
@@ -546,7 +614,16 @@ form .container-form {
   border-radius: 100%;
   width: 5vw;
   height: 10vh;
-  margin-top: 20%;
+  margin-top: 17%;
+}
+
+@media (max-width: 1000px) {
+  #login form button, #login form button:hover {
+    width: 20%;
+    height: 50%;
+    border: 0;
+    background: none;
+  }
 }
 
 #login form button:hover, #register form button:hover {
@@ -560,23 +637,74 @@ form .container-form {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
 }
 
+@media (max-width: 1000px) {
+  #login form {margin-top: 30%;}
+  #login form button:hover {
+    width: 20%;
+    height: 50%;
+    border: 0;
+    background: none;
+  }
+  #register .menu-toggle {
+    width: 40px;
+    height: 30px;
+    text-align: end;
+    position: absolute;
+    top: 2rem;
+    right: 6%;
+  }
+  #register .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  #register .menu-toggle .two {
+    opacity: 0;
+  }
+  #register .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+  #register .one,
+  #register .two,
+  #register .three {
+    background-color: var(--color-text-title);
+    height: 5px;
+    width: 70%;
+    margin: 6px auto;
+    border-radius: 6px;
+    transition-duration: .4s;
+  }
+}
+
 #login small {margin-top: 20%;}
 
-#register .form-register {display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#register .form-register {display: block;}
 
-#register small {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 90%;
+@media (max-width: 900px) {
+  #register .form-register {
+    display: block;
+  }
+
+  #register .container-form {
+    height: 50vh;
+    margin-top: 20%;
+  }
+
+  #register label {
+    margin-top: 10%;
+  }
+}
+
+#register .form-illustration {
+  position: relative;
 }
 
 #register form button {
-  position: fixed;
+  position: absolute;
   font-family: 'Syne Mono', monospace;
   border-radius: 5px;
   width: 10%;
   top: 78%;
+  left: 58%;
   background: rgba(99,232,73,1);
   background: -moz-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
@@ -585,6 +713,15 @@ form .container-form {
   background: -ms-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   background: linear-gradient(135deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
+}
+
+@media (max-width: 900px) {
+  #register form button {
+    position: static;
+    margin-top: 15%;
+    align-self: center;
+    width: 30%;
+  }
 }
 
 form label {
