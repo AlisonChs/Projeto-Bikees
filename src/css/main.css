@@ -411,10 +411,15 @@ login
 .loginBox .box-content .form-illustration {border-top-right-radius: 0;border-bottom-right-radius: 0;}
 .registerBox .box-content .form-register {border-top-left-radius: 0;border-bottom-left-radius: 0;}
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .registerBox .box-content .form-illustration img {
-  width: 20%;
-  left: 14%;
-  position: absolute;
+  width: 70%;
+  margin: 0;
   animation: rotate .7s linear infinite;
 }
 
@@ -612,6 +617,15 @@ form .container-form input {
   margin-top: 17%;
 }
 
+@media (max-width: 1000px) {
+  #login form button, #login form button:hover {
+    width: 20%;
+    height: 50%;
+    border: 0;
+    background: none;
+  }
+}
+
 #login form button:hover, #register form button:hover {
   background: rgba(99,232,73,1);
   background: -moz-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
@@ -621,6 +635,44 @@ form .container-form input {
   background: -ms-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   background: linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
+}
+
+@media (max-width: 1000px) {
+  #login form {margin-top: 30%;}
+  #login form button:hover {
+    width: 20%;
+    height: 50%;
+    border: 0;
+    background: none;
+  }
+  #register .menu-toggle {
+    width: 40px;
+    height: 30px;
+    text-align: end;
+    position: absolute;
+    top: 2rem;
+    right: 6%;
+  }
+  #register .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  #register .menu-toggle .two {
+    opacity: 0;
+  }
+  #register .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+  #register .one,
+  #register .two,
+  #register .three {
+    background-color: var(--color-text-title);
+    height: 5px;
+    width: 70%;
+    margin: 6px auto;
+    border-radius: 6px;
+    transition-duration: .4s;
+  }
 }
 
 #login small {margin-top: 20%;}
@@ -642,11 +694,8 @@ form .container-form input {
   }
 }
 
-#register small {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 90%;
+#register .form-illustration {
+  position: relative;
 }
 
 #register form button {

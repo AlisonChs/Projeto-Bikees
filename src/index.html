@@ -157,6 +157,7 @@
 
                 <small><a href="#register" onclick="register()">Não tem uma conta? Registre-se!</a></small>
               </div>
+
             </form>
 
           </div>
@@ -172,15 +173,27 @@
 
        <!-- Modal (no nootstrap) -->
        <div id="register" class="registerBox">
-        <a href="#close" id="closeRegisterBox" onclick="registerrev()"><i class='fas fa-arrow-left' style='font-size:30px'></i></a>
+        <a href="#login" id="closeRegisterBox"><i class='fas fa-arrow-left' style='font-size:30px'></i></a>
         <div class="box-content">
           <div class="form-illustration" id="illustrationReg-box-content-animations">
             <h1> Seja bem-vindo<br> a comunidade <span>Bikees</span> </h1>
             <br><br>
-            <img src="./media/img/rodalog.png">
-            <small><a href="#login">Já sou registrado.</a></small>
+
+            <div class="roda flex-center">
+              <img src="./media/img/rodalog.png">
+            </div>
+
+            <div class="registrado flex-center"><small><a href="#login">Já sou registrado.</a></small></div>
           </div>
           <div class="form-register" id="register-box-content-animations">
+
+            <a href="#close" onclick="registerrev()">
+              <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+            </a>
 
             <form>
 
@@ -209,6 +222,7 @@
           </div>
         </div>
       </div>
+
       <!--Imports JS-->
       <script src="./js/header.js"></script>
       <script type="text/javascript" src="./js/login.js"></script>
