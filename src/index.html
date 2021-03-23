@@ -42,7 +42,7 @@
             </ul>
 
             <ul class="nav" id="nav-login">
-              <li><a href="#login" onclick="login()">Entrar</a></li>
+              <li><a href="#login" onclick="sign()">Entrar</a></li>
             </ul>
           
           </div>
@@ -125,39 +125,40 @@
       <!-- Login & Register -->
 
       <!-- Modal (no nootstrap) -->
-      <div id="login" class="loginBox">
+      <div id="login" class="sign-box">
 
         <div class="box-content">
 
-          <div class="form-illustration" id="illustrationLog-box-content-animations">
-              <b>
-                <h1> Bem-Vindo de volta! </h1>
+          <div class="box big-box flex-center flex-column not-a-form">
+              
+                <!--MarginTop temporário, não sei o por que do texto não centralizar com o display flex. -->
+                <h1 style="font-size: 5rem; margin-top: 20%;"> Bem-Vindo de volta! </h1>
                 <br><br>
-                <h2 id="texto-decorativo-login"></h2>
-              </b>
+                <h2 id="decorative-text"></h2>
+              
           </div>
 
-          <div class="form-login" id="login-box-content-animations">
+          <div class="box small-box" id="login-box-content-animations">
 
-            <a href="#close" onclick="registerrev()" alt="Voltar">
+            <a href="#close" onclick="signrev()" alt="Voltar">
               <i class="fa fa-arrow-left back" alt="Voltar"></i>
             </a>
             
             <form>
 
-              <div class="container-form">
+              <div class="container-form flex-center flex-column">
 
                 <h1>Log In</h1>
 
                   <label for="usuario"></label>
-                  <input type="text" placeholder="Digite seu usuário" required>
+                  <input type="text" placeholder="Digite seu usuário" style="width: 80%;" required>
 
                   <label for="password"></label>
-                  <input type="password" placeholder="Digite sua senha" required>
+                  <input type="password" placeholder="Digite sua senha" style="width: 80%;" required>
 
                 <button type="submit"><i class='fas fa-chevron-right' style='font-size:36px'></i></button>
 
-                <small><a href="#register" onclick="register()">Não tem uma conta? Registre-se!</a></small>
+                <small><a href="#register">Não tem uma conta? Registre-se!</a></small>
               </div>
 
             </form>
@@ -169,26 +170,31 @@
       </div>
       
       <script type="text/javascript">
-        var div = document.getElementById("texto-decorativo-login");
+        var div = document.getElementById("decorative-text");
         var textos = ['Hoje está um lindo dia!', 'Que tal uma pedalada mais tarde?', 'Fazer esporte é tão bom!', 'Com o meu histórico de bicicletista, certeza que esse corona nem me toca!'];
       </script>
 
        <!-- Modal (no nootstrap) -->
-       <div id="register" class="registerBox">
+       <div id="register" class="sign-box">
+
         <div class="box-content">
-          <div class="form-illustration" id="illustrationReg-box-content-animations">
-            <h1> Seja bem-vindo<br> a comunidade <span>Bikees</span> </h1>
+
+          <div class="box small-box flex-center flex-column not-a-form">
+            
+            <h2 style="font-size: 3rem; width: 90%; text-align: center;"> Seja bem-vindo<br> a comunidade <span style="color: #B0FF5D;">Bikees</span> </h2>
             <br><br>
 
             <div class="roda flex-center">
               <img src="./media/img/rodalog.png">
             </div>
 
-            <div class="registrado flex-center"><small><a href="#login">Já sou registrado.</a></small></div>
+            <small><a href="#login">Já sou registrado.</a></small>
+          
           </div>
-          <div class="form-register" id="register-box-content-animations">
 
-            <a href="#close" onclick="registerrev()">
+          <div class="box big-box">
+
+            <a href="#close" onclick="signrev()">
               <div class="menu-toggle">
                 <div class="one"></div>
                 <div class="two"></div>
@@ -198,20 +204,20 @@
 
             <form>
 
-              <div class="container-form">
+              <div class="container-form flex-center flex-column">
 
-                <h1>Sign Up</h1>
+                <h3>Sign Up</h3>
 
                 <label for="email">Digite seu e-mail favorito
-                  <input type="email" placeholder="lorem@ipsum.com" class="input-text" required>
+                  <input type="email" placeholder="lorem@ipsum.com" style="width: 50%;" required>
                 </label>
 
                 <label for="usuario">De que apelido você gosta?
-                  <input type="text" placeholder="Nome de usuário.." class="input-text" required>
+                  <input type="text" placeholder="Nome de usuário.." style="width: 50%;" required>
                 </label>
 
                 <label for="senha">Escolha uma senha difícil
-                  <input type="password" placeholder="Senha.." class="input-text" required>
+                  <input type="password" placeholder="Senha.." style="width: 50%;" required>
                 </label>
 
                 <button type="submit">Registrar</button>
@@ -226,7 +232,7 @@
 
       <!--Imports JS-->
       <script src="./js/header.js"></script>
-      <script type="text/javascript" src="./js/login.js"></script>
+      <script type="text/javascript" src="./js/sign.js"></script>
       <script type="text/javascript" src="./js/jquery/jquery-3.6.0.js"></script>
 
   </body>

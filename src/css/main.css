@@ -19,36 +19,10 @@ Table of contents
 Import partials
 ---------------------------------------------
 */
+
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
 @import url(./partials/custom.css);
-
-@import url(./partials/bootstrap/bootstrap-grid.css);
-@import url(./partials/bootstrap/bootstrap-grid.css.map);
-@import url(./partials/bootstrap/bootstrap-grid.min.css.map);
-@import url(./partials/bootstrap/bootstrap-grid.rtl.css);
-@import url(./partials/bootstrap/bootstrap-grid.rtl.css.map);
-@import url(./partials/bootstrap/bootstrap-grid.rtl.min.css.map);
-@import url(./partials/bootstrap/bootstrap-grid.rtl.min.css);
-@import url(./partials/bootstrap/bootstrap-reboot.css);
-@import url(./partials/bootstrap/bootstrap-reboot.css.map);
-@import url(./partials/bootstrap/bootstrap-reboot.rtl.css);
-@import url(./partials/bootstrap/bootstrap-reboot.rtl.min.css.map);
-@import url(./partials/bootstrap/bootstrap-utilities.css);
-@import url(./partials/bootstrap/bootstrap-utilities.css.map);
-@import url(./partials/bootstrap/bootstrap-utilities.min.css);
-@import url(./partials/bootstrap/bootstrap-utilities.rtl.css);
-@import url(./partials/bootstrap/bootstrap-utilities.rtl.css.map);
-@import url(./partials/bootstrap/bootstrap-utilities.rtl.min.css);
-@import url(./partials/bootstrap/bootstrap-utilities.rtl.min.css.map);
-@import url(./partials/bootstrap/bootstrap.css);
-@import url(./partials/bootstrap/bootstrap.css.map);
-@import url(./partials/bootstrap/bootstrap.min.css);
-@import url(./partials/bootstrap/bootstrap.min.css.map);
-@import url(./partials/bootstrap/bootstrap.rtl.css);
-@import url(./partials/bootstrap/bootstrap.rtl.css.map);
-@import url(./partials/bootstrap/bootstrap.rtl.min.css);
-@import url(./partials/bootstrap/bootstrap.rtl.min.css.map);
 
 /* 
 ---------------------------------------------
@@ -173,6 +147,17 @@ small {
   opacity: 0.9;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-column {flex-direction: column;}
+
+.flex-row{flex-direction: row;}
+
 /*
 ---------------------------------------------
 header
@@ -194,6 +179,10 @@ header .main-nav {
   display: flex;
   justify-content: space-between;
   transition: 0.6s;
+}
+
+header ul li #login {
+  cursor: pointer;
 }
   
 .main-nav .logo {
@@ -339,17 +328,14 @@ header .main-nav {
     color: rgb(255, 255, 255);
   }
 }
+
 /* 
 ---------------------------------------------
-login
+Modal login/register (iguais)
 --------------------------------------------- 
 */
 
- header ul li #login {
-  cursor: pointer;
-}
-
- .loginBox, .registerBox {
+ .sign-box {
   position: fixed;
   top: 0;
   right: 0;
@@ -370,21 +356,21 @@ login
   align-items: center;
 }
 
- .loginBox:target, .registerBox:target {
+ .sign-box:target {
   opacity: 1;
   pointer-events: auto;
 }
 
- .loginBox .box-content, .registerBox .box-content {
+ .sign-box .box-content {
   display: flex;
   flex-direction: space-between;
 }
 
- .loginBox .box-content div, .registerBox .box-content div {
+ .sign-box .box-content div {
   border-radius: 8px 8px 8px 8px;
 }
 
- .loginBox .box-content .form-illustration, .registerBox .box-content .form-register {
+ .sign-box .box-content .big-box {
   width: 50vw;
   height: 60vh;
   background: rgba(129,227,120,1);
@@ -404,27 +390,13 @@ login
   box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
 }
 
-.loginBox .box-content .form-illustration {animation: back-go 1s;}
-.loginBox .box-content .form-login {animation: go-back 1s;}
-.registerBox .box-content .form-illustration {animation: back-go 1s;}
-.registerBox .box-content .form-register {animation: go-back 1s;}
-
-.loginBox .box-content .form-illustration {border-top-right-radius: 0;border-bottom-right-radius: 0;}
-.registerBox .box-content .form-register {border-top-left-radius: 0;border-bottom-left-radius: 0;}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.registerBox .box-content .form-illustration img {
+.sign-box .box-content .box img {
   width: 70%;
   margin: 0;
   animation: rotate .7s linear infinite;
 }
 
- .loginBox .box-content .form-login, .registerBox .box-content .form-illustration {
+ .sign-box .box-content .small-box {
   width: 25vw;
   height: 75vh;
   background: rgba(193,255,128,1);
@@ -442,25 +414,15 @@ login
 }
 
 @media (max-width: 900px) {
-  .loginBox .box-content .form-login, .registerBox .box-content .form-register {
+  .sign-box .box-content .box {
     width: 100vw;
     height: 100vh;
     display: block;
   }
-
-}
-
-.loginBox .box-content .form-illustration, .registerBox .box-content .form-register {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  font-style: normal;
-  text-align: center;
 }
 
 @media (max-width: 900px) {
-  #login .form-login, #register .form-register {
+  .sign-box .box-content .box {
     width: 100vw;
     height: 100vh;
     display: block;
@@ -468,13 +430,9 @@ login
     flex-direction: 0;
     justify-content: 0;
   }
-
-  .loginBox .box-content .form-illustration, .registerBox .box-content .form-illustration {
-    display: none;
-  }
 }
 
-.loginBox .box-content .form-illustration h2 {
+.sign-box .box-content .big-box h2 {
   font-size: 3rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -485,73 +443,17 @@ login
   margin: 5px;
 }
 
-.loginBox .box-content .form-illustration h1, .registerBox .box-content .form-illustration h1 {
+.box h1, .box h2, .box h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
 }
-
-.loginBox .box-content .form-illustration h1 {font-size: 5rem;}
-.registerBox .box-content .form-illustration h1 {font-size: 3rem; width: 90%; text-align: center;}
-.registerBox .box-content .form-illustration h1 span {color: #B0FF5D;}
 
 .back {
   font-size: 2.5rem;
   margin: 10px;
 }
 
-#closeLoginBox {
-  top: 18%;
-  left: 11%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  background-color: #B0FF5D;
-  position: absolute;
-  border-radius: 1em;
-  box-shadow: #FFF450 0 0 5px;
-  font-size: 3rem;
-  color: gray;
-  animation: back-go 1s;
-}
-
-@media (max-width: 900px) {
-  #closeLoginBox {
-    top: 2%;
-    left: 2%;
-    background-color: transparent;
-    color: black;
-    border: 0;
-  }
-}
-
-
-#closeRegisterBox {
-  top: 16%;
-  left: 85%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  background-color: #B0FF5D;
-  border-radius: 1em;
-  box-shadow: #FFF450 0 0 5px;
-  font-size: 3rem;
-  color: gray;
-  animation: go-back 1s;
-  position: absolute;
-}
-
-@media (max-width: 900px) {
-  #closeRegisterBox {
-    top: 2%;
-    left: 2%;
-    background-color: transparent;
-    color: black;
-    border-color: transparent;
-    box-shadow: none;
-  }
-}
-
-#login form h1, #register .form-register h1 {
+.sign-box .box-content .box form h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 3.5rem;
@@ -559,56 +461,33 @@ login
   margin-top: 5%;
 }
 
-#login form input {
-  width: 80%;
+.sign-box .box-content .box form input {
   border-radius: 5px;
-  margin-bottom: 5%;
   font-family: 'Syne Mono', monospace;
   background-color: #ccffcc;
 }
 
-#register form .input-text {
-  width: 100%;
-  border-radius: 5px;
-  font-family: 'Syne Mono, monospace';
-  background-color: #ccffcc;
-} 
-
-#register .form-register h1 {  
+.sign-box .box-content .big-box h3 {  
   background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  margin-top: 5%;
+  font-weight: 800;
 }
 
-#login .form-login h1 {  
+.sign-box .box-content .small-box h1 {  
   background: -webkit-linear-gradient(45deg, #B0FF5D, green 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 10%;
+  margin-bottom: 10%; /* temp */
 }
 
-#login form .container-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#register form .container-form {
-  display: flex;
-  flex-direction: column;
-}
-
-#register form .container-form input {
-  width: 50%;
-}
-
-form .container-form input {
+.sign-box .box-content .box form .container-form input {
   height: 4.5vh
 }
 
-#login form button {
+.sign-box .box-content .small-box form button {
   background: rgba(99,232,73,1);
   background: -moz-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
@@ -624,7 +503,7 @@ form .container-form input {
 }
 
 @media (max-width: 1000px) {
-  #login form button, #login form button:hover {
+  .sign-box .box-content .small-box form button, .sign-box .box-content .small-box form button:hover {
     width: 20%;
     height: 50%;
     border: 0;
@@ -632,7 +511,7 @@ form .container-form input {
   }
 }
 
-#login form button:hover, #register form button:hover {
+.sign-box .box-content .small-box form button:hover, .sign-box .box-content .big-box form button:hover {
   background: rgba(99,232,73,1);
   background: -moz-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
@@ -644,16 +523,19 @@ form .container-form input {
 }
 
 @media (max-width: 1000px) {
-  #login form {margin-top: 30%;}
-  #login form button:hover {
+
+  .sign-box .box-content .small-box form {margin-top: 30%;}
+
+  .sign-box .box-content .small-box form button:hover {
     width: 20%;
     height: 50%;
     border: 0;
     background: none;
   }
+
 }
 
- #register .menu-toggle {
+  .sign-box .menu-toggle {
     width: 40px;
     height: 30px;
     text-align: end;
@@ -661,19 +543,22 @@ form .container-form input {
     top: 2rem;
     right: 6%;
   }
-  #register .menu-toggle .one {
+
+  .sign-box .menu-toggle .one {
     transform: rotate(45deg) translate(7px, 7px);
   }
 
-  #register .menu-toggle .two {
+  .sign-box .menu-toggle .two {
     opacity: 0;
   }
-  #register .menu-toggle .three {
+
+  .sign-box .menu-toggle .three {
     transform: rotate(-45deg) translate(8px, -9px);
   }
-  #register .one,
-  #register .two,
-  #register .three {
+
+  .sign-box .one,
+  .sign-box .two,
+  .sign-box .three {
     background-color: var(--color-text-title);
     height: 5px;
     width: 70%;
@@ -682,30 +567,28 @@ form .container-form input {
     transition-duration: .4s;
   }
 
-#login small {margin-top: 17%;}
-
-#register .form-register {display: block;}
+.sign-box .box-content .small-box small {margin-top: 17%;}
 
 @media (max-width: 900px) {
-  #register .form-register {
-    display: block;
+
+  .sign-box .box-content .not-a-form {
+    display: none;
   }
 
-  #register .container-form {
+  .sign-box .box-content .big-box .container-form {
     height: 50vh;
     margin-top: 20%;
   }
 
-  #register label {
+  .sign-box .box-content .big-box label {
     margin-top: 10%;
   }
+
+  .sign-box .box-content .big-box h3 {margin-bottom: 10%;}
+
 }
 
-#register .form-illustration {
-  position: relative;
-}
-
-#register form button {
+.sign-box .box-content .big-box form button {
   position: absolute;
   font-family: 'Syne Mono', monospace;
   border-radius: 5px;
@@ -722,8 +605,13 @@ form .container-form input {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
 }
 
+/* Aditional styles (need changes) */
+
+#login .box-content .big-box {border-top-right-radius: 0;border-bottom-right-radius: 0;}
+#register .box-content .big-box {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+
 @media (max-width: 900px) {
-  #register form button {
+  .sign-box .box-content .big-box form button {
     position: static;
     margin-top: 15%;
     align-self: center;
@@ -731,8 +619,10 @@ form .container-form input {
   }
 }
 
+/*  */
+
 form label {
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Syne Mono', monospace;
