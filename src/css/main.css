@@ -494,6 +494,11 @@ login
 .registerBox .box-content .form-illustration h1 {font-size: 3rem; width: 90%; text-align: center;}
 .registerBox .box-content .form-illustration h1 span {color: #B0FF5D;}
 
+.back {
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
 #closeLoginBox {
   top: 18%;
   left: 11%;
@@ -646,7 +651,9 @@ form .container-form input {
     border: 0;
     background: none;
   }
-  #register .menu-toggle {
+}
+
+ #register .menu-toggle {
     width: 40px;
     height: 30px;
     text-align: end;
@@ -674,9 +681,8 @@ form .container-form input {
     border-radius: 6px;
     transition-duration: .4s;
   }
-}
 
-#login small {margin-top: 20%;}
+#login small {margin-top: 17%;}
 
 #register .form-register {display: block;}
 
