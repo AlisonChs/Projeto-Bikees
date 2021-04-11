@@ -22,7 +22,6 @@ Import partials
 
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
-@import url(./partials/custom.css);
 
 /* 
 ---------------------------------------------
@@ -167,7 +166,8 @@ header
 header.header-area {
   width: 100vw;
   position: fixed;
-  z-index: 10;
+  backface-visibility: hidden;
+  z-index: 101;
   background-color: var(--color-background);
   box-shadow: 0px 0px 5px 0px rgba(70, 70, 70, 0.7);
 }
@@ -269,18 +269,20 @@ header ul li #login {
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
+    backface-visibility: hidden;
     top: 0px;
     left: 0px;
     width: 100vw;
     height: 100vh;
-    z-index: 11;
+    z-index: 100;
     background-image: linear-gradient(145deg, var(--color-secondary), var(--color-secondary-dark) 100%);
   }
 
   .main-nav .menu-section.on .menu-toggle {
     text-align: end;
     position: absolute;
+    backface-visibility: hidden;
     top: 2rem;
     right: 6%;
   }
@@ -331,328 +333,182 @@ header ul li #login {
 
 /* 
 ---------------------------------------------
-Modal login/register (iguais)
+Modal login/register
 --------------------------------------------- 
 */
 
- .sign-box {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: rgba(37, 37, 37, 0.8);
-  z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
+#box-login-register,
+#register,
+#login {
+  display: none;
+}
+
+#box-login-register.on,
+#register.on,
+#login.on {
+  display: initial;
+}
+
+#box-login-register.on {
   width: 100%;
+  height: 100vh;
+  position: fixed;
+  backface-visibility: hidden;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 102;
+  background-color: rgba(0, 0, 0, 0.199);
 }
 
- .sign-box:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-
- .sign-box .box-content {
-  display: flex;
-  flex-direction: space-between;
-}
-
- .sign-box .box-content div {
-  border-radius: 8px 8px 8px 8px;
-}
-
- .sign-box .box-content .big-box {
-  width: 50vw;
-  height: 60vh;
-  background: rgba(129,227,120,1);
-  background: rgba(129,227,120,1);
-  background: -moz-linear-gradient(left, rgba(129,227,120,1) 0%, rgba(137,245,162,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(129,227,120,1)), color-stop(100%, rgba(137,245,162,1)));
-  background: -webkit-linear-gradient(left, rgba(129,227,120,1) 0%, rgba(137,245,162,1) 100%);
-  background: -o-linear-gradient(left, rgba(129,227,120,1) 0%, rgba(137,245,162,1) 100%);
-  background: -ms-linear-gradient(left, rgba(129,227,120,1) 0%, rgba(137,245,162,1) 100%);
-  background: linear-gradient(to right, rgba(129,227,120,1) 0%, rgba(137,245,162,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81e378', endColorstr='#89f5a2', GradientType=1 );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81e378', endColorstr='#89f5a2', GradientType=1 );
-  align-self: center;
-  display: inline-block;
-  -webkit-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
-  -moz-box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
-  box-shadow: 10px 10px 300px -54px rgba(99,228,9,1);
-}
-
-.sign-box .box-content .box img {
-  width: 70%;
-  margin: 0;
-  animation: rotate .7s linear infinite;
-}
-
- .sign-box .box-content .small-box {
-  width: 25vw;
-  height: 75vh;
-  background: rgba(193,255,128,1);
-  background: -moz-linear-gradient(45deg, rgba(193,255,128,1) 0%, rgba(255,246,117,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(193,255,128,1)), color-stop(100%, rgba(255,246,117,1)));
-  background: -webkit-linear-gradient(45deg, rgba(193,255,128,1) 0%, rgba(255,246,117,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(193,255,128,1) 0%, rgba(255,246,117,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(193,255,128,1) 0%, rgba(255,246,117,1) 100%);
-  background: linear-gradient(45deg, rgba(193,255,128,1) 0%, rgba(255,246,117,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1ff80', endColorstr='#fff675', GradientType=1 );
-  -webkit-box-shadow: 0px 0px 300px 16px rgba(210,232,73,1);
-  -moz-box-shadow: 0px 0px 300px 16px rgba(210,232,73,1);
-  box-shadow: 0px 0px 300px 16px rgba(210,232,73,1);
-  display: inline-block;
-}
-
-@media (max-width: 900px) {
-  .sign-box .box-content .box {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-  }
-}
-
-@media (max-width: 900px) {
-  .sign-box .box-content .box {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    align-items: 0;
-    flex-direction: 0;
-    justify-content: 0;
-  }
-}
-
-.sign-box .box-content .big-box h2 {
-  font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  margin: 5px;
-}
-
-.box h1, .box h2, .box h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-}
-
-.back {
-  font-size: 2.5rem;
-  margin: 10px;
-}
-
-.sign-box .box-content .box form h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 3.5rem;
-  text-align: center;
-  margin-top: 5%;
-}
-
-.sign-box .box-content .box form input {
-  border-radius: 5px;
-  font-family: 'Syne Mono', monospace;
-  background-color: #ccffcc;
-}
-
-.sign-box .box-content .big-box h3 {  
-  background: -webkit-linear-gradient(45deg, #B0FF5D, #FFF450 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 3rem;
-  margin-top: 5%;
-  font-weight: 800;
-}
-
-.sign-box .box-content .small-box h1 {  
-  background: -webkit-linear-gradient(45deg, #B0FF5D, green 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10%; /* temp */
-}
-
-.sign-box .box-content .box form .container-form input {
-  height: 4.5vh
-}
-
-.sign-box .box-content .small-box form button {
-  background: rgba(99,232,73,1);
-  background: -moz-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
-  background: -webkit-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: linear-gradient(135deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
-  border-radius: 100%;
-  width: 5vw;
-  height: 10vh;
-  margin-top: 17%;
-}
-
-@media (max-width: 1000px) {
-  .sign-box .box-content .small-box form button, .sign-box .box-content .small-box form button:hover {
-    width: 20%;
-    height: 50%;
-    border: 0;
-    background: none;
-  }
-}
-
-.sign-box .box-content .small-box form button:hover, .sign-box .box-content .big-box form button:hover {
-  background: rgba(99,232,73,1);
-  background: -moz-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
-  background: -webkit-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: linear-gradient(45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
-}
-
-@media (max-width: 1000px) {
-
-  .sign-box .box-content .small-box form {margin-top: 30%;}
-
-  .sign-box .box-content .small-box form button:hover {
-    width: 20%;
-    height: 50%;
-    border: 0;
-    background: none;
-  }
-
-}
-
-  .sign-box .menu-toggle {
-    width: 40px;
-    height: 30px;
-    text-align: end;
-    position: absolute;
-    top: 2rem;
-    right: 6%;
-  }
-
-  .sign-box .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-  }
-
-  .sign-box .menu-toggle .two {
-    opacity: 0;
-  }
-
-  .sign-box .menu-toggle .three {
-    transform: rotate(-45deg) translate(8px, -9px);
-  }
-
-  .sign-box .one,
-  .sign-box .two,
-  .sign-box .three {
-    background-color: var(--color-text-title);
-    height: 5px;
-    width: 70%;
-    margin: 6px auto;
-    border-radius: 6px;
-    transition-duration: .4s;
-  }
-
-.sign-box .box-content .small-box small {margin-top: 17%;}
-
-@media (max-width: 900px) {
-
-  .sign-box .box-content .not-a-form {
-    display: none;
-  }
-
-  .sign-box .box-content .big-box .container-form {
-    height: 50vh;
-    margin-top: 20%;
-  }
-
-  .sign-box .box-content .big-box label {
-    margin-top: 10%;
-  }
-
-  .sign-box .box-content .big-box h3 {margin-bottom: 10%;}
-
-}
-
-.sign-box .box-content .big-box form button {
-  position: absolute;
-  font-family: 'Syne Mono', monospace;
-  border-radius: 5px;
-  width: 10%;
-  top: 78%;
-  left: 58%;
-  background: rgba(99,232,73,1);
-  background: -moz-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(99,232,73,1)), color-stop(50%, rgba(177,255,93,1)), color-stop(100%, rgba(255,244,80,1)));
-  background: -webkit-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  background: linear-gradient(135deg, rgba(99,232,73,1) 0%, rgba(177,255,93,1) 50%, rgba(255,244,80,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e849', endColorstr='#fff450', GradientType=1 );
-}
-
-/* Aditional styles (need changes) */
-
-#login .box-content .big-box {border-top-right-radius: 0;border-bottom-right-radius: 0;}
-#register .box-content .big-box {border-top-left-radius: 0;border-bottom-left-radius: 0;}
-
-@media (max-width: 900px) {
-  .sign-box .box-content .big-box form button {
-    position: static;
-    margin-top: 15%;
-    align-self: center;
-    width: 30%;
-  }
-}
-
-/*  */
-
-form label {
-  margin-top: 3%;
+#box-login-register.on form {
+  padding: 5rem 4rem;
+  border-radius: 12px;
+  background: rgb(250, 250, 250);
+  box-shadow: 2px 2px 2px 2px rgba(12, 12, 12, 0.295);
+  width: 50%;
   font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Syne Mono', monospace;
 }
 
-@keyframes rotate {
-0% {
-  transform: rotate(0);
-}
-100% {
-  transform: rotate(360deg);
-}
+
+#box-login-register.on form .box-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-@keyframes go-back {
-	from {
-		transform: translateX(100px);
-	}
-	to {
-		transform: translateX(0);
-	}
+#box-login-register.on form .box-content .close {
+  margin: 0rem 0 0rem 85%;
+  cursor: pointer;
 }
 
-@keyframes back-go {
-	from {
-		transform: translateX(-100px);
-	}
-	to {
-		transform: translateX(0x);
-	}
+#box-login-register.on form .box-content .close .one,
+#box-login-register.on form .box-content .close .two,
+#box-login-register.on form .box-content .close .three {
+  background-color: var(--color-text-title);
+  height: 4px;
+  margin: 3px auto;
+  border-radius: 6px;
+  transition-duration: .4s;
+  width: 30px;
+  background-color: rgb(0, 0, 0);
+}
+
+#box-login-register.on form .box-content .close .one {
+  transform: rotate(45deg) translate(6px, 2px);
+}
+
+#box-login-register.on form .box-content .close .two {
+  opacity: 0;
+}
+
+#box-login-register.on form .box-content .close .three {
+  transform: rotate(-45deg) translate(8.5px, -4px);
+}
+
+#box-login-register.on form .box-content h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#box-login-register.on form .box-content .special-input {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+#box-login-register.on form .box-content .special-input:nth-child(2) {
+  margin-top: 2rem;
+}
+
+#box-login-register.on form .box-content .special-input img {
+  width: 7%;
+  margin: 5%;
+}
+
+#box-login-register.on form .box-content .special-input input {
+  height: 3rem;
+  width: 85%;
+  border: none;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.001);
+}
+
+#box-login-register.on form .box-content .special-input ::placeholder {
+  font-size: 1.46rem;
+  letter-spacing: .2px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+
+#box-login-register.on form .box-content .special-button {
+  height: 5rem;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: Poppins;
+  margin-top: 2rem;   
+  border: none; 
+  border: 1px solid var(--color-line-in-white);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(13, 175, 70);
+  transition-duration: 0.8s;
+}
+
+#box-login-register.on form .box-content .special-button:hover {
+  background-color: rgb(12, 117, 49);
+}
+
+#box-login-register.on form .box-content p {
+  margin-top: 1.3rem;
+}
+
+#box-login-register.on form .box-content p em {
+  font-weight: 600;
+  cursor: pointer;
+  word-wrap: unset;
+}
+
+@media (max-width: 900px) {
+  #box-login-register.on form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  #box-login-register.on form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  #box-login-register.on form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  #box-login-register.on form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  #box-login-register.on form {
+    width: 97%;
+  }
 }
 
 
