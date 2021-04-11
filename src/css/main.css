@@ -341,6 +341,7 @@ Modal login/register
 #register,
 #login {
   display: none;
+  transition: 2s;
 }
 
 #box-login-register.on,
@@ -431,7 +432,8 @@ Modal login/register
 }
 
 #box-login-register.on form .box-content .special-input img {
-  width: 7%;
+  min-width: 5%;
+  width: 3.5rem;
   margin: 5%;
 }
 
