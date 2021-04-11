@@ -266,11 +266,50 @@ Mobile
     }
 }
 
+@media (max-width: 666px) {
+    #page-landing section#welcome-area .right-image {
+        margin-top: 10%;
+    }
+}
+
 @media (max-width: 520px) {
     :root {
         font-size: 60%;
     }
+
     #page-landing section#rent-bikee .left-image img {
         width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-landing section#rent-bikee .right-text {
+        padding-top: 50%;
+        margin-top: 0;
+    }
+
+    #page-landing section#rent-bikee .left-image {
+        margin-top: 15rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #page-landing section#welcome-area .text-flex h1 {
+        font-size: 4.5rem;
+    }
+
+    #page-landing section#welcome-area .right-image {
+        margin-top: 16%;
+    }
+
+}
+
+@media (max-width: 380px) {
+    #page-landing section#rent-bikee .left-image {
+        margin-top: 20rem;
+    }
+
+        #page-landing section#rent-bikee .right-text {
+        padding-top: 77%;
     }
 }
