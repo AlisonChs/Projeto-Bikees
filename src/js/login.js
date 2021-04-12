@@ -6,14 +6,14 @@ const formRegister = document.querySelector("#register");
 function login() {
     BoxLoginRegister.classList.add("on")
     formLogin.classList.add("on")
-    document.getElementById("container-page-landing").style.filter = "blur(1px)";
+    document.querySelector(".container").style.filter = "blur(1px)";
 }
 
 function toClose() {
     BoxLoginRegister.classList.remove("on")
     formLogin.classList.remove("on")
     formRegister.classList.remove("on")
-    document.getElementById("container-page-landing").style.filter = "blur(0px)";
+    document.querySelector(".container").style.filter = "blur(0px)";
 }
 
 function register() {
