@@ -76,7 +76,7 @@
         <div class="right-text">
           <h4>Alugue sua Bikee V4</h4>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seu design é feito para se adaptar perfeitamente em qualquer tipo de físico, podendo suportar até 115 quilos e contém aros tamanho 24 para atender as mais variadas estaturas. Fora isso, ela tem um banco de altura adaptável, correntes com proteção para evitar acidentes e uma cestinha adaptável que não acumula líquidos ou sujeira – ótimas para trazer as compras. </p>
-          <a href="./page-rent.html">
+          <a href="./page-rent.php">
             <button class="main-button">Alugar uma Bikee</button>
           </a>
         </div>
