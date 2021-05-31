@@ -10,6 +10,10 @@
       require('./html-partials/login-register.html');
     ?>
 
+    <?php
+      require('./html-partials/preloader.html');
+    ?>
+
     <div id="container">
 
       <?php

@@ -1,6 +1,6 @@
      <!--LOGIN MODAL-->
-     <div id="box-login-register" class="">
-        <form action="" method="post" id="login" class="">
+     <div id="box-login-register">
+        <form action="" method="post" id="login">
           <div class="box-content">
             <div class="close" onclick="toClose()">
               <div class="one"></div>
@@ -10,16 +10,16 @@
             <h3>Login</h3>
             <div class="special-input">
               <img src="./media/img/black-email.svg" alt="">
-              <input type="email" name="email-login" id="email-login" placeholder="Digite seu Email" required>
+              <input type="email" name="email-login" id="email-login" placeholder="Digite seu Email" autocomplete="email" required>
             </div>
             <div class="special-input">
               <img src="./media/img/black-password.svg" alt="">                  
-              <input type="password" name="senha-login" id="senha-login" placeholder="Digite sua Senha" required>
+              <input type="password" name="senha-login" id="senha-login" placeholder="Digite sua Senha" autocomplete="current-password" required>
             </div>
             <button type="submit" class="special-button">
               Entrar
             </button>
-            <p>Não tem uma conta? <em onclick="register()">Registre-se</em></p>
+            <p>Não tem uma conta? <em onclick="switchRegisterLogin()">Registre-se</em></p>
           </div>
         </form>
   
@@ -35,24 +35,24 @@
             <h3>Registre-se</h3>
             <div class="special-input">
               <img src="./media/img/black-email.svg" alt="">
-              <input type="email" name="email-register" id="email-register" placeholder="Digite seu Email" required>
+              <input type="email" name="email-register" id="email-register" placeholder="Digite seu Email" autocomplete="email" required>
             </div>
             <div class="special-input">
               <img src="./media/img/usuario1.svg" alt="">
-              <input type="text" name="user-register" id="user-register" placeholder="Digite seu Usuário" required>
+              <input type="text" name="user-register" id="user-register" placeholder="Digite seu Usuário" autocomplete="username" required>
             </div>
             <div class="special-input">
               <img src="./media/img/black-password.svg" alt="">                  
-              <input type="password" name="senha-register" id="senha-register" placeholder="Digite sua Senha" required>
+              <input type="password" name="senha-register" id="senha-register" placeholder="Digite sua Senha" autocomplete="new-password" required>
             </div>
             <div class="special-input">
               <img src="./media/img/black-password.svg" alt="">                  
-              <input type="password" name="senha-register-confirm" id="senha-register-confirm" placeholder="Confirme sua Senha" required>
+              <input type="password" name="senha-register-confirm" id="senha-register-confirm" placeholder="Confirme sua Senha" autocomplete="new-password" required>
             </div>
             <button type="submit" class="special-button">
               Registrar-se
             </button>
-            <p>Já tem uma conta? <em onclick="register()">Faça Login</em></p>
+            <p>Já tem uma conta? <em onclick="switchRegisterLogin()">Faça Login</em></p>
           </div>
         </form>
       </div>
