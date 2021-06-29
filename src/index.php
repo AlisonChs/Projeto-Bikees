@@ -5,11 +5,6 @@
   ?>
 
   <body id="page-landing">
-
-    <?php
-      require('./html-partials/login-register.html');
-    ?>
-
     <?php
       require('./html-partials/preloader.html');
     ?>

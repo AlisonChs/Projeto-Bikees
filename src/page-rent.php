@@ -7,10 +7,6 @@
   <body id="page-rent">
 
     <?php
-      require('./html-partials/login-register.html');
-    ?>
-
-    <?php
       require('./html-partials/preloader.html');
     ?>
 
@@ -43,7 +39,7 @@
             </div>
           </fieldset>
 
-          <div id="bt-submit">Alugar</div>
+          <div type="submit" id="bt-submit">Alugar</div>
         </form>
       </section>
 

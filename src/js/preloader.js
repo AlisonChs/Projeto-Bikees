@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-    var id = 'preloader'
-    var time = 0.3
-    fadeOut(id, time, 80)
-    fadeRemoveItem(id, time)
+    var preloader = document.getElementById('preloader')
+    var time = 1.2 * 1000
+    preloader.classList.add('fade-out')
+    setTimeout( () => {preloader.parentElement.removeChild(preloader)}, time)
 })

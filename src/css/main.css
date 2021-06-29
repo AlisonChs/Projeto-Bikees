@@ -9,9 +9,9 @@ Table of contents
 03. reset
 04. global styles
 05. header
-06. login
 07. footer
 08. preloader
+09. keyframes
 --------------------------------------------- */
 
 /*
@@ -22,6 +22,7 @@ Import partials
 
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
+@import url(./partials/login-register.css);
 
 /* 
 ---------------------------------------------
@@ -333,194 +334,6 @@ header ul li #login {
 
 /* 
 ---------------------------------------------
-Modal login/register
---------------------------------------------- 
-*/
-
-#box-login-register,
-#register,
-#login {
-  display: none;
-  transition: 2s;
-}
-
-#box-login-register.on {
-  opacity: 0;
-}
-
-#box-login-register.on,
-#register.on,
-#login.on {
-  display: initial;
-}
-
-#box-login-register.on {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  top: 0;
-  left: 0;
-  z-index: 102;
-  background-color: rgba(0, 0, 0, 0.479);
-}
-
-#box-login-register.on form {
-  padding: 5rem 4rem;
-  border-radius: 12px;
-  background: rgb(250, 250, 250);
-  box-shadow: 2px 2px 2px 2px rgba(12, 12, 12, 0.295);
-  width: 50%;
-  font-size: 2rem;
-}
-
-
-#box-login-register.on form .box-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-#box-login-register.on form .box-content .close {
-  margin: 0rem 0 0rem 85%;
-  cursor: pointer;
-}
-
-#box-login-register.on form .box-content .close .one,
-#box-login-register.on form .box-content .close .two,
-#box-login-register.on form .box-content .close .three {
-  background-color: var(--color-text-title);
-  height: 4px;
-  margin: 3px auto;
-  border-radius: 6px;
-  transition-duration: .4s;
-  width: 30px;
-  background-color: rgb(0, 0, 0);
-}
-
-#box-login-register.on form .box-content .close .one {
-  transform: rotate(45deg) translate(6px, 2px);
-}
-
-#box-login-register.on form .box-content .close .two {
-  opacity: 0;
-}
-
-#box-login-register.on form .box-content .close .three {
-  transform: rotate(-45deg) translate(8.5px, -4px);
-}
-
-#box-login-register.on form .box-content h3 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-
-#box-login-register.on form .box-content .special-input {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.03);
-  border-radius: 10px;
-  margin: 1rem 0;
-}
-
-#box-login-register.on form .box-content .special-input:nth-child(2) {
-  margin-top: 2rem;
-}
-
-#box-login-register.on form .box-content .special-input img {
-  min-width: 5%;
-  width: 3.5rem;
-  margin: 5%;
-}
-
-#box-login-register.on form .box-content .special-input input {
-  height: 3rem;
-  width: 85%;
-  border: none;
-  border-radius: 0px;
-  background: rgba(0, 0, 0, 0.001);
-}
-
-#box-login-register.on form .box-content .special-input ::placeholder {
-  font-size: 1.46rem;
-  letter-spacing: .2px;
-  font-weight: 500;
-  font-family: Poppins;
-}
-
-#box-login-register.on form .box-content .special-button {
-  height: 5rem;
-  width: 100%;
-  letter-spacing: 1px;
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-family: Poppins;
-  margin-top: 2rem;   
-  border: none; 
-  border: 1px solid var(--color-line-in-white);
-  border-radius: 8px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  background-color: rgb(13, 175, 70);
-  transition-duration: 0.8s;
-}
-
-#box-login-register.on form .box-content .special-button:hover {
-  background-color: rgb(12, 117, 49);
-}
-
-#box-login-register.on form .box-content p {
-  margin-top: 1.3rem;
-}
-
-#box-login-register.on form .box-content p em {
-  font-weight: 600;
-  cursor: pointer;
-  word-wrap: unset;
-}
-
-@media (max-width: 900px) {
-  #box-login-register.on form {
-    width: 60%;
-  }
-}
-
-@media (max-width: 700px) {
-  #box-login-register.on form {
-    width: 70%;
-  }
-}
-
-@media (max-width: 600px) {
-  #box-login-register.on form {
-    width: 80%;
-  }
-}
-
-@media (max-width: 500px) {
-  #box-login-register.on form {
-    width: 90%;
-  }
-}
-
-@media (max-width: 400px) {
-  #box-login-register.on form {
-    width: 97%;
-  }
-}
-
-
-
-/* 
----------------------------------------------
 footer
 --------------------------------------------- 
 */
@@ -650,6 +463,12 @@ preloader
   animation-delay: 0.66666s;
 }
 
+/*
+---------------------------------------------
+09. Keyframes
+---------------------------------------------
+*/
+
 @-webkit-keyframes jumper {
   0% {
     opacity: 0;
@@ -679,5 +498,30 @@ preloader
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fadeOut 1s 0s linear normal forwards;
+  animation: fadeOut 1s 0s linear normal forwards;
+}
+
+@-webkit-keyframes fadeOut {
+ from {
+   opacity: 100%;
+ }
+
+ to {
+   opacity: 0%;
+ }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 100%;
+  }
+ 
+  to {
+    opacity: 0%;
   }
 }
