@@ -1,5 +1,5 @@
 #page-rent #rent-a-bikee {
-    padding: 18rem 0 50rem 0;
+    padding: 18rem 0 20rem 0;
     width: 100vw;
     background-image: url(../../media/img/bike-background.png);
     background-attachment: fixed;
@@ -108,7 +108,9 @@
 #page-rent #rent-a-bikee #form-rent-bikee #bt-submit:hover {
     background-color: var(--color-primary-dark);
 }
-
+#page-rent footer {
+    box-shadow: 0px -3px 10px 3px rgba(0, 0, 0, 0.131);
+}
 @media (max-width: 1100px) {
     #page-rent #rent-a-bikee #form-rent-bikee {
         width: 75%;
