@@ -18,7 +18,7 @@
             <h3>Login</h3>
             <div class="special-input">
                 <img src="./media/img/black-email.svg" alt="">
-                <input type="email" name="email" id="email" placeholder="Digite seu Email" autocomplete="email" onfocus="highlightInputParent([id])" onblur="playDownInputParent([id])" autofocus required>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email" autocomplete="email" onfocus="highlightInputParent([id])" onblur="playDownInputParent([id])" required>
             </div>
             <div class="special-input">
                 <img src="./media/img/black-password.svg" alt="">                  
