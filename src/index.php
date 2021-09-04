@@ -1,3 +1,6 @@
+<?php
+  require('./php-partials/login-partials/start-session.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <?php
