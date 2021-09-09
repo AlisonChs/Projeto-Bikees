@@ -1,5 +1,5 @@
 <?php
-  require('./php-partials/login-partials/start-session.php');
+    require('./php-partials/login-partials/start-login-session.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,12 +12,12 @@
     ?>
 
     <?php
-        require('./html-partials/header-login-register.html');
+        require('./php-partials/header-login-register.php');
     ?>
 
     <div class="container login-register">
 
-        <form action="" method="post" id="login">
+        <form action="./php-partials/login-partials/restricted-files/do-login.php" method="post" id="login">
             <h3>Login</h3>
             <div class="special-input">
                 <img src="./media/img/black-email.svg" alt="">

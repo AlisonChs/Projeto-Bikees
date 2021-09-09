@@ -218,17 +218,29 @@ header ul li #login {
   line-height: 4rem;
 }
 
-.main-nav ul li a {
+.main-nav ul li a,
+.log-button {
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 1px;
   transition: .5s;
 }
 
-.main-nav ul li a:hover {
+.main-nav ul li a:hover,
+.log-button:hover {
   color: var(--color-primary);
 }
 
+.main-nav ul li button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  line-height: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--color-text);
+}
 
 @media (max-width: 1000px) {
   .main-nav ul li {

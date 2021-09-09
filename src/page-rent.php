@@ -1,5 +1,5 @@
 <?php
-  require('./php-partials/login-partials/start-session.php');
+  require('./php-partials/start-session.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,11 +15,11 @@
 
     <div class="container"></div>
       <?php
-        require('./html-partials/header.html');
+        require('./php-partials/header.php');
       ?>
 
       <section id="rent-a-bikee">
-        <form action="" method="post" id="form-rent-bikee">
+        <form action="./php-partials/login-partials/acess-restricted-page.php" method="post" id="form-rent-bikee">
           <h1>Alugue uma Bikee</h1>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipada com um guidão e quadro step thru ultra resistente juntamente do melhor dos acolchoamentos em seu banco, a nossa nova bicicleta da Bikees é capaz de dar o melhor dos dois mundos (conforto e segurança).</p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seu design é feito para se adaptar perfeitamente em qualquer tipo de físico, podendo suportar até 115 quilos e contém aros tamanho 24 para atender as mais variadas estaturas. Fora isso, ela tem um banco de altura adaptável, correntes com proteção para evitar acidentes e uma cestinha adaptável que não acumula líquidos ou sujeira – ótimas para trazer as compras. </p>
@@ -41,8 +41,9 @@
               </p>
             </div>
           </fieldset>
-
-          <div type="submit" id="bt-submit">Alugar</div>
+          <div class="div-bt">
+            <button type="submit" id="bt-submit">Alugar</button>
+          </div>
         </form>
       </section>
 
