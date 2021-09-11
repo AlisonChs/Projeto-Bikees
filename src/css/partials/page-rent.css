@@ -32,44 +32,44 @@
     line-height: 2.8rem;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
     margin-top: 4rem;
     padding: 2rem;
     border-radius: 20px;
     display: flex;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee #maps {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee #maps {
     height: 30rem;
     width: 100%;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text {
     width: 50%;
     padding-left: 5%;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text h4 {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text h4 {
     font-size: 1.9rem;
     font-weight: 500;
     padding-left: 1rem;
     color: rgb(43, 43, 43);
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-area h5 {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-area h5 {
     font-weight: 500;
     padding-left: 1rem;
     margin: 4rem 0 1.5rem 0;
     color: rgb(61, 59, 59);
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div {
     margin-bottom: 2.5rem;
     padding-left: 1rem;
     display: flex;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div input {
     height: 2.6rem;
     width: 31%;
     margin-bottom: 10px;
@@ -82,13 +82,13 @@
     line-height: 1rem;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div p {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div p {
     font-size: 1.4rem;
     margin: 0;
     color: rgb(68, 65, 65);
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee .right-text p small {
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text p small {
     font-size: 1.2rem;
 }
 
@@ -96,7 +96,8 @@
     display: flex;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee button#bt-submit {
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt button {
+    display: block;
     width: 90%;
     height: 4rem;
     margin: 3rem auto 0 auto;
@@ -138,29 +139,29 @@
         padding-bottom: 30rem;
     }
 
-    #page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
         flex-flow: column;
     }
 
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text {
         width: 100%;
         margin: 0;
         padding-left: 0px;
         text-align: center;
     }
     
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text h4 {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text h4 {
         margin-top: 3rem;
         padding-left: 0px;
      } 
 
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div {
         justify-content: space-around;
         text-align: left;
         padding-left: 0px;
     }
 
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text #map-a-bikee .input-div input {
         width: 9rem;
         margin: 0 10px 0 30%;
         
@@ -177,17 +178,17 @@
     :root {
         font-size: 60%;
     }
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div input {
         margin-left: 22%;
     }
 }
 
 @media (max-width: 480px) {
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div input {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div input {
         margin-left: 10%;
     }
 
-    #page-rent #rent-a-bikee #form-rent-bikee .right-text .input-div p {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div p {
         font-size: 1.2rem;
     }
 }
