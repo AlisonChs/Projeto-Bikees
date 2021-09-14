@@ -1,3 +1,24 @@
+const highlight = {
+    confirmPassword:input => highlightPassword(input),
+    password:input => highlightPassword(input),
+    email:input => highlightEmail(input),
+    username:input => highlightUser(input),
+    fullname:input => highlightFullName(input),
+    birthdate:input => highlightBirthdate(input),
+    cep:input => highlightCep(input)
+}
+
+const playDown = {
+    confirmPassword:input => playDownPassword(input),
+    password:input => playDownPassword(input),
+    email:input => playDownEmail(input),
+    username:input => playDownUser(input),
+    fullname:input => playDownFullName(input),
+    birthdate:input => playDownBirthdate(input),
+    cep:input => playDownCep(input)
+}
+
+
 export function highlightInput(input) {
     const inputType = input.dataset.type
 
@@ -16,21 +37,11 @@ export function playDownInput(input) {
     }
 }
 
-const highlight = {
-    confirmPassword:input => highlightPassword(input),
-    password:input => highlightPassword(input),
-    email:input => highlightEmail(input),
-    username:input => highlightUser(input)
-}
-
-const playDown = {
-    confirmPassword:input => playDownPassword(input),
-    password:input => playDownPassword(input),
-    email:input => playDownEmail(input),
-    username:input => playDownUser(input)
-}
-
-
+/*
+*********************
+General Fuctions
+**********************
+*/ 
 function highlightInputParent(input) {
     var target = input.parentElement
     target.style.border = '3px solid rgba(25, 166, 75, 0.479)'
@@ -41,7 +52,11 @@ function playDownInputParent(input) {
     target.style.border = '3px solid rgba(25, 166, 75, 0)'
 }
 
-
+/*
+*********************
+Playdown unique fuctions
+**********************
+*/
 function playDownPassword(input) {
     var target = input.parentElement
     var image = target.querySelector('img')
@@ -60,7 +75,29 @@ function playDownUser(input) {
     image.src = './media/img/black-usuario.svg'
 }
 
+function playDownFullName(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/black-fullname.svg'
+}
 
+function playDownBirthdate(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/black-birthdate.svg'
+}
+
+function playDownCep(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/black-address.svg'
+}
+
+/*
+****************************
+Highlights unique fuctions
+****************************
+*/
 function highlightPassword(input) {
     var target = input.parentElement
     var image = target.querySelector('img')
@@ -77,4 +114,22 @@ function highlightUser(input) {
     var target = input.parentElement
     var image = target.querySelector('img')
     image.src = './media/img/onfocus-usuario.svg'
+}
+
+function highlightFullName(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/onfocus-fullname.svg'
+}
+
+function highlightBirthdate(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/onfocus-birthdate.svg'
+}
+
+function highlightCep(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/onfocus-address.svg'
 }
