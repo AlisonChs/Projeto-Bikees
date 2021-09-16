@@ -25,6 +25,6 @@
         header("location: ../../../restricted-page.php");
     } else {
         $_SESSION['login'] = 'nao';
-        header("location: ../../../index.php");
+        header("location: ../../../log-in.php");
     }
 ?>
