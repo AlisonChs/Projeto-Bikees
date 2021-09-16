@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Set-2021 às 15:12
+-- Tempo de geração: 16-Set-2021 às 17:53
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 8.0.2
 
@@ -24,39 +24,46 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tbusuario`
+-- Estrutura da tabela `tb_user`
 --
 
-CREATE TABLE `tbusuario` (
-  `idUsuario` int(11) NOT NULL,
-  `nomeUsuario` text NOT NULL,
-  `emailUsuario` text NOT NULL,
-  `senhaUsuario` text NOT NULL,
-  `pontosUsuario` int(11) NOT NULL,
-  `formasPagUsuario` text NOT NULL,
-  `hisBikeUsadasUsuario` text NOT NULL
+CREATE TABLE `tb_user` (
+  `id_user` int(11) NOT NULL,
+  `user_name` text NOT NULL,
+  `user_full_name` text NOT NULL,
+  `user_email` text NOT NULL,
+  `user_password` text NOT NULL,
+  `user_cep` text NOT NULL,
+  `user_birthdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `tb_user`
+--
+
+INSERT INTO `tb_user` (`id_user`, `user_name`, `user_full_name`, `user_email`, `user_password`, `user_cep`, `user_birthdate`) VALUES
+(1, 'yan', 'yan yan', 'yancoutinho10@gmail.com', '!Ca123456', '01001000', '2000-10-10');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `tbusuario`
+-- Índices para tabela `tb_user`
 --
-ALTER TABLE `tbusuario`
-  ADD PRIMARY KEY (`idUsuario`),
-  ADD UNIQUE KEY `emailUsuario` (`emailUsuario`) USING HASH;
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id_user`),
+  ADD UNIQUE KEY `user_email` (`user_email`) USING HASH;
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `tbusuario`
+-- AUTO_INCREMENT de tabela `tb_user`
 --
-ALTER TABLE `tbusuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `tb_user`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
