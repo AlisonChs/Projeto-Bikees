@@ -1,27 +1,29 @@
 // Função básica para 'passar' o conteúdo da página, será aprimorado com o tempo
 
 $(document).ready(function() {
-    $("#choose-a-bikee").hide();
+    $("#choose-a-plan").hide();
     $("#map-a-bikee").hide();
 });
 
-let idy = 0;
+let section = 0;
 
 $(document).ready(function() {
 
     $("#bt-next").on("click", function () {
 
-        idy++;
+        section++;
 
-        if (idy === 1) { // Nota: Aqui também poderia ter sido usado o 'document.getElementById(el).style.display = 'none/block';'
+        if (section === 1) {
             $("#description").hide();
-            $("#choose-a-bikee").show();
+            $("#choose-a-plan").show();
         }
         
         else {
-            $("#choose-a-bikee").hide();
-            $("#map-a-bikee").show();
-            $("#bt-next").hide();
+            if (section === 2) {
+                $("#choose-a-plan").hide();
+                $("#map-a-bikee").show();
+                $("#div-bt").hide();
+            }
         }
 
     });

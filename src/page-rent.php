@@ -38,8 +38,152 @@
 
           <!-- Seção 2: Escolha do plano -->
 
-          <section id="choose-a-bikee">
-            <h1>Escolha uma Bikee</h1> <!-- Carrossel -->
+          <section id="choose-a-plan">
+
+            <h1>Escolha um plano</h1>
+
+            <div id="card-group">
+
+              <label class="card-plan">
+
+                <span> <h1> Normal </h1> </span>
+
+                <span> <p> Com este plano, você tem direito aos benefícios básicos, alguns deles são: </p>   
+
+                <br>
+
+                <details>
+                  <summary> 2 BIKEES diferentes </summary>
+                  <br>
+                  <p><small>Você tem o direito de escolher uma das duas bicicletas inclusas no plano.</small></p>
+                </details>
+
+                <details>
+                  <summary> Bikees perto de você, na sua cidade </summary>
+                  <br>
+                  <p><small>Os pontos Bikees estão disponibilizados na maioria da grande São Paulo.</small></p>
+                </details>
+
+                <details>
+                  <summary> 4 horas por dia para pedalar </summary>
+                  <br>
+                  <p><small>Você pode utilizar das bikees por até quatro horas durante um único dia.</small></p>
+                </details>
+
+                <details>
+                  <summary> Suporte básico no Bikees System </summary>
+                  <br>
+                  <p><small>Para qualquer problema, você tem o suporte básico do sistema para utilizar.</small></p>
+                </details>
+
+                <div id="slider_one" class="slider">
+                  <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
+                  <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde">
+                </div>
+
+                <p> Tudo isto pelo baixíssimo e econômico preço de: </p> </span>
+
+                <span> 
+                  <h2> 28,90 R$ </h2> 
+                  <small> mensais </small> 
+                </span>
+
+                <span>
+                  
+                  <details>
+
+                    <summary> Saiba mais </summary>
+
+                    <br>
+
+                    <p> Selecionando este plano, você tem um desconto de aproximadamente 13,50 R$,
+                    que clientes pagam usando as Bikees em dias aleatórios. </p>
+
+                  </details>
+
+                </span>
+
+                  <label class="radio"> 
+                    <input type="radio" name="selected-plan" id="selected-plan" value="Normal"></input>
+                  </label>
+      
+              </label>
+
+              <label class="card-plan">
+
+                <span> <h1> Premium </h1> </span>
+
+                <span> <p> Com este plano, você tem direito aos benefícios PREMIUM, alguns deles são: </p>
+
+                <br>
+
+                <details>
+                  <summary> 5 BIKEES diferentes </summary>
+                  <br>
+                  <p><small>Você tem o direito de escolher até duas das cinco bicicletas inclusas no plano.</small></p>
+                </details>
+
+                <details>
+                  <summary> Bikees perto de você, na sua cidade </summary>
+                  <br>
+                  <p><small>Os pontos Bikees estão disponibilizados na maioria da grande São Paulo.</small></p>
+                </details>
+
+                <details>
+                  <summary> Até 7 horas por dia para pedalar </summary>
+                  <br>
+                  <p><small>Você pode utilizar das bikees por até sete horas durante um único dia.</small></p>
+                </details>
+
+                <details>
+                  <summary> Suporte prioritário no Bikees System </summary>
+                  <br>
+                  <p><small>Para qualquer problema, você tem o suporte prioritário do sistema para utilizar.</small></p>
+                </details>
+
+                <div id="slider_two" class="slider">
+                  <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
+                  <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde">
+                  <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca">
+                  <img src="./media/img/black-bikee-slider.png" alt="Bikee Preta">
+                </div>
+
+                <p> Tudo isto pelo baixíssimo e econômico preço de: </p> </span>
+
+                <span> 
+                  <h2><del> 60,90 R$ </del></h2> 
+                  <small> mensais </small> 
+                </span>
+                <span> 
+                  <h2> 48,90 R$ </h2> 
+                  <small> mensais </small> 
+                </span>
+
+                <span>
+                  
+                  <details>
+
+                    <summary> Saiba mais </summary>
+
+                    <br>
+
+                    <p> Selecionando este plano, você tem um desconto de aproximadamente 18,50 R$,
+                    que clientes pagam usando as Bikees em dias aleatórios. </p>
+
+                  </details>
+
+                </span>
+
+                <span>
+                  <label class="radio"> 
+                    <input type="radio" name="selected-plan" id="selected-plan" value="Premium" checked></input>
+                  </label>
+                </span>
+                
+              </label>
+
+            </label>
+
           </section>
 
           <!-- Seção 3: Mapear bikee -->
@@ -57,11 +201,7 @@
               <div class="right-text">
                 <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
                 <div class="input-area">
-                  <h5>Coloque o tempo desejado para ficar com a Bikee</h5>
-                  <div class="input-div">
-                    <input type="time" name="time" id="time">
-                    <p>R$ 4,00 por minuto</p>
-                  </div>
+                  <h5>Procure uma bikee perto de você.</h5>
                 </div>
                 <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small>
                 </p>
