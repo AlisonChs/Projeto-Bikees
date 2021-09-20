@@ -208,7 +208,7 @@
 
                   if (isset($_SESSION['login'])) {
                     if ($_SESSION['login'] != "sim") {
-                      echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee!</small>';
+                      echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee!</small></p>';
                     } 
                   }
 
@@ -220,7 +220,6 @@
 
                    ?>
 
-                </p>
               </div>
 
             </fieldset>
