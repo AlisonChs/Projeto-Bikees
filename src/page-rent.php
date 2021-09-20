@@ -40,7 +40,7 @@
 
           <section id="choose-a-plan" id="normal">
 
-            <h1>Escolha um plano</h1>
+            <h1 style="color: black;">Escolha um plano</h1>
 
             <div id="card-group">
 
