@@ -38,13 +38,13 @@
 
           <!-- Seção 2: Escolha do plano -->
 
-          <section id="choose-a-plan">
+          <section id="choose-a-plan" id="normal">
 
             <h1>Escolha um plano</h1>
 
             <div id="card-group">
 
-              <label class="card-plan">
+              <label class="card-plan" id="normal">
 
                 <span> <h1> Normal </h1> </span>
 
@@ -102,14 +102,10 @@
                   </details>
 
                 </span>
-
-                  <label class="radio"> 
-                    <input type="radio" name="selected-plan" id="selected-plan" value="Normal"></input>
-                  </label>
       
               </label>
 
-              <label class="card-plan">
+              <label class="card-plan" id="premium">
 
                 <span> <h1> Premium </h1> </span>
 
@@ -173,14 +169,15 @@
                   </details>
 
                 </span>
-
-                <span>
-                  <label class="radio"> 
-                    <input type="radio" name="selected-plan" id="selected-plan" value="Premium" checked></input>
-                  </label>
-                </span>
                 
               </label>
+
+              <span>
+                  <label class="radio"> 
+                    <input type="radio" name="selected-plan" id="selected-plan" value="Normal"></input>
+                    <input type="radio" name="selected-plan" id="selected-plan" value="Premium"></input>
+                  </label>
+              </span>
 
             </label>
 

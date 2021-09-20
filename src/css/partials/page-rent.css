@@ -60,12 +60,17 @@
     overflow: hidden;
     margin: 9px;
     cursor: pointer;
+    border: 9px inset #5CA40D;
 }
 
 @media (max-width: 910px) {
     #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan {
         width: 100%;
     }  
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .radio input {
+    display: none;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan details[open] summary ~ * {
