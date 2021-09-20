@@ -203,7 +203,23 @@
                 <div class="input-area">
                   <h5>Procure uma bikee perto de você.</h5>
                 </div>
-                <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small>
+
+                <?php 
+
+                  if (isset($_SESSION['login'])) {
+                    if ($_SESSION['login'] != "sim") {
+                      echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee!</small>';
+                    } 
+                  }
+
+                  // Se estiver logado, aparecerá nada
+
+                  else {
+                    echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee!</small>';
+                  }
+
+                   ?>
+
                 </p>
               </div>
 
