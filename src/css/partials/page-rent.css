@@ -69,12 +69,18 @@
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan details[open] summary ~ * {
-    animation: sweep 1s ease-in-out;
+    animation: sweepin 1s ease-in-out;
 }
-  
-@keyframes sweep {
+ 
+@keyframes sweepin {
     0%    {opacity: 0; margin-left: -20px}
     50% {opacity: 0.6; margin-left: 30px}
+    100%  {opacity: 1;}
+}
+
+@keyframes sweepout {
+    0%    {opacity: 1; margin-left: 20px}
+    50% {opacity: 0.6; margin-left: -30px}
     100%  {opacity: 1;}
 }
 

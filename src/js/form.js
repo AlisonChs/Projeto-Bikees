@@ -1,13 +1,11 @@
 // Função básica para 'passar' o conteúdo da página, será aprimorado com o tempo
 
-$(document).ready(function() {
-    $("#choose-a-plan").hide();
-    $("#map-a-bikee").hide();
-});
-
 let section = 0;
 
 $(document).ready(function() {
+
+    $("#choose-a-plan").hide();
+    $("#map-a-bikee").hide();
 
     $("#bt-next").on("click", function () {
 
@@ -22,9 +20,10 @@ $(document).ready(function() {
             if (section === 2) {
                 $("#choose-a-plan").hide();
                 $("#map-a-bikee").show();
-                $("#div-bt").hide();
+                $("#bt-next").hide();
             }
         }
 
     });
+
 });
