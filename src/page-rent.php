@@ -44,7 +44,7 @@
 
             <div id="card-group">
 
-              <label class="card-plan" id="normal">
+              <label class="card-plan not-selected" id="normal">
 
                 <span> <h1> Normal </h1> </span>
 
@@ -105,7 +105,7 @@
       
               </label>
 
-              <label class="card-plan" id="premium">
+              <label class="card-plan not-selected" id="premium">
 
                 <span> <h1> Premium </h1> </span>
 

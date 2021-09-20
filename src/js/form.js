@@ -5,23 +5,41 @@ let section = 0;
 $(document).ready(function() {
 
     $('.card-plan').click(function() {
-        $('.card-plan').css("box-shadow", "");
-        $(this).css("box-shadow", "-1px 2px 21px 15px rgba(8,77,22,1)");
-        $("#bt-next").show();
-    });
 
-    $('#premium').click(function() {
-        $("#selected-plan[value=Normal]").removeAttr('checked');
-        $("#selected-plan[value=Premium]").attr('checked', 'checked');
-    });
+        // Change radio buttons
 
-    $('#normal').click(function() {
-        $("#selected-plan[value=Premium]").removeAttr('checked');
-        $("#selected-plan[value=Normal]").attr('checked', 'checked');
-    });
+        var isChecked = $('#selected-plan').attr('checked');
 
-    $("#choose-a-plan").hide();
-    $("#map-a-bikee").hide();
+        if ($(this).is('#premium')) {
+            if (typeof isChecked !== typeof undefined && isChecked !== false) {
+                $("#selected-plan").removeAttr('checked');
+              }
+            $("#selected-plan[value=Premium]").attr('checked', 'checked');
+        }
+
+        else {
+            if (typeof isChecked !== typeof undefined && isChecked !== false) {
+                $("#selected-plan").removeAttr('checked');
+              }
+            $("#selected-plan[value=Normal]").attr('checked', 'checked');
+        }
+
+        // Add effect in clicked card 
+
+        if ($('.card-plan').hasClass('selected')) {
+            $('.card-plan').removeClass('selected');
+            $(this).addClass('selected');
+
+            $("#bt-next").show();
+        }
+
+        else {
+            $(this).addClass('selected');
+
+            $("#bt-next").show();
+        }
+
+    });
 
     $("#bt-next").on("click", function () {
 
