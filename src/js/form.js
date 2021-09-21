@@ -27,14 +27,14 @@ $(document).ready(function() {
         // Add effect in clicked card 
 
         if ($('.card-plan').hasClass('selected')) {
-            $('.card-plan').removeClass('selected');
-            $(this).addClass('selected');
+            $('.card-plan').removeClass('selected').addClass('not-selected');
+            $(this).removeClass('not-selected').addClass('selected');
 
             $("#bt-next").show();
         }
 
         else {
-            $(this).addClass('selected');
+            $(this).removeClass('not-selected').addClass('selected');
 
             $("#bt-next").show();
         }

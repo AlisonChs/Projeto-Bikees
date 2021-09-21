@@ -94,6 +94,8 @@
 
                 <p> Tudo isto pelo baixíssimo e econômico preço de: </p> </span>
 
+                <h3> Selecionado </h3>
+
                 <span> 
                   <h2> 28,90 R$ </h2> 
                   <small> mensais </small> 
@@ -161,6 +163,9 @@
                   <h2><del> 60,90 R$ </del></h2> 
                   <small> mensais </small> 
                 </span>
+
+                <h3> Selecionado </h3>
+
                 <span> 
                   <h2> 48,90 R$ </h2> 
                   <small> mensais </small> 
