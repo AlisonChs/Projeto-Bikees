@@ -1,3 +1,5 @@
+// This carousel needs clean
+
 const imgs = document.querySelector("#slider_one");
 const img = document.querySelectorAll("#slider_one img");
 
