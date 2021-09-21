@@ -14,7 +14,6 @@ function carousel () {
     }
 
     imgs.style.transform = `translateX(${-idx * 100}%)`;
-    imgs_2.style.transform = `translateX(${-idz * 100}%)`;
 }
 
 setInterval(carousel, 2000);
