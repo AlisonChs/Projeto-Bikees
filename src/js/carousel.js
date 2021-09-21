@@ -4,6 +4,7 @@ const img = document.querySelectorAll("#slider_one img");
 const imgs_2 = document.querySelector("#slider_two");
 const img_2 = document.querySelectorAll("#slider_two img");
 
+let idz = 0;
 let idx = 0;
 
 function carousel () {
@@ -20,7 +21,6 @@ setInterval(carousel, 2000);
 
 // 2nd carousel
 
-let idz = 0;
 
 function carouseltwo () {
     idz++;

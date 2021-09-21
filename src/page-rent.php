@@ -38,7 +38,7 @@
 
           <!-- Seção 2: Escolha do plano -->
 
-          <section id="choose-a-plan" id="normal">
+          <section id="choose-a-plan" class="flex flex-center flex-column">
 
             <h1>Escolha um plano</h1>
 
@@ -53,9 +53,9 @@
 
             <br>
 
-            <div id="card-group">
+            <div id="card-group" class="flex flex-wrap">
 
-              <label class="card-plan not-selected" id="normal">
+              <label class="card-plan flex flex-center flex-column not-selected" id="normal-plan">
 
                 <span> <h1> Normal </h1> </span>
 
@@ -87,7 +87,7 @@
                   <p><small>Para qualquer problema, você tem o suporte básico do sistema para utilizar.</small></p>
                 </details>
 
-                <div id="slider_one" class="slider">
+                <div id="slider_one" class="slider flex flex-row">
                   <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
                   <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde">
                 </div>
@@ -118,7 +118,7 @@
       
               </label>
 
-              <label class="card-plan not-selected" id="premium">
+              <label class="card-plan flex flex-center flex-column not-selected" id="premium-plan">
 
                 <span> <h1> Premium </h1> </span>
 
@@ -150,7 +150,7 @@
                   <p><small>Para qualquer problema, você tem o suporte prioritário do sistema para utilizar.</small></p>
                 </details>
 
-                <div id="slider_two" class="slider">
+                <div id="slider_two" class="slider flex flex-row">
                   <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
                   <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde">
                   <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca">

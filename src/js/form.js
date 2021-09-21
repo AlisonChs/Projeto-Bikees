@@ -1,5 +1,3 @@
-// Função básica para 'passar' o conteúdo da página, será aprimorado com o tempo
-
 let section = 0;
 
 $(document).ready(function() {
@@ -10,7 +8,7 @@ $(document).ready(function() {
 
         var isChecked = $('#selected-plan').attr('checked');
 
-        if ($(this).is('#premium')) {
+        if ($(this).is('#premium-plan')) {
             if (typeof isChecked !== typeof undefined && isChecked !== false) {
                 $("#selected-plan").removeAttr('checked');
               }
@@ -46,6 +44,16 @@ $(document).ready(function() {
     $("#bt-next").on("click", function () {
 
         section++;
+
+        // Section starts with 0, increments on button.click
+
+        /* 
+
+            When section is 0, the atual section is the description.
+            When section is 1, the atual section is the choose of plan.
+            When section is 2, the atual section is the map of bikee.
+
+        */
 
         if (section === 1) {
             $("#description").hide();
