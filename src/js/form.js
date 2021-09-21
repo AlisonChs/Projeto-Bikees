@@ -41,6 +41,8 @@ $(document).ready(function() {
 
     });
 
+    // Passing sections
+
     $("#bt-next").on("click", function () {
 
         section++;

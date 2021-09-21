@@ -30,6 +30,7 @@
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
     line-height: 2.8rem;
+    text-align: center;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan {
@@ -37,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group {

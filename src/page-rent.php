@@ -40,7 +40,18 @@
 
           <section id="choose-a-plan" id="normal">
 
-            <h1 style="color: black;">Escolha um plano</h1>
+            <h1>Escolha um plano</h1>
+
+            <h3> Vamos economizar? </h3>
+
+            <p> 
+              Escolhendo um plano mensal na Bikees, você ganha um desconto e tem suas bikees reservadas
+              para usar quando quiser, sem burocracia e sem filas.  
+            </p>
+
+            <hr />
+
+            <br>
 
             <div id="card-group">
 
