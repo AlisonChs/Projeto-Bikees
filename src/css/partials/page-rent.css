@@ -62,6 +62,7 @@
     overflow: hidden;
     margin: 9px;
     cursor: pointer;
+    transition-duration: .2s;
 }
 
 @media (max-width: 910px) {
@@ -69,6 +70,19 @@
         width: 100%;
     }  
 }
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan .right-text {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 60%;
+    text-align: center;
+    background: #5CA40D;
+    color: black;
+    transform: rotate(90deg);
+    align-items: center;
+    justify-content: center;
+    margin-left: 95%;
+}  
 
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.selected {
     border: 9px inset #5CA40D;
@@ -80,17 +94,15 @@
     color: #f5f788;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.selected h3 {
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.selected .right-text {
     display: flex;
-    transform: rotate(90deg);
-    margin-left: 90%;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.not-selected {
     box-shadow: 0;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.not-selected h3 {
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.not-selected .right-text {
     display: none;
 }
 
@@ -101,7 +113,7 @@
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan details[open] summary ~ * {
     animation: sweepin 0.5s ease-in-out;
 }
- 
+
 @keyframes sweepin {
     0%    {opacity: 0; margin-left: -20px}
     50% {opacity: 0.6; margin-left: 30px}
