@@ -8,23 +8,22 @@
 
     require '../../db-partials/restricted-files/connect-db.php';
 
-    $strSQL = "SELECT emailUsuario, senhaUsuario FROM tbusuario WHERE emailUsuario = '$email'";
+    $strSQL = "SELECT user_email, user_password FROM tb_user WHERE user_email = '$email'";
 
     $consult = mysqli_query($connection, $strSQL);
 
     while($row = mysqli_fetch_array($consult)) {
-        $emailDB = $row['emailUsuario'];
-        $passwordDB = $row['senhaUsuario'];
+        $emailDB = $row['user_email'];
+        $passwordDB = $row['user_password'];
     }
 
     require '../../db-partials/restricted-files/disconnect-db.php';
+    session_start();
 
      if ($email == $emailDB && $password == $passwordDB) {
-        session_start();
         $_SESSION["login"] = 'sim';
         header("location: ../../../restricted-page.php");
     } else {
-        session_start();
         $_SESSION['login'] = 'nao';
         header("location: ../../../log-in.php");
     }

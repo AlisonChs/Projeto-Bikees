@@ -69,11 +69,15 @@
                   <p><small>Você tem o direito de escolher uma das duas bicicletas inclusas no plano.</small></p>
                 </details>
 
+                <br>
+
                 <details>
                   <summary> Bikees perto de você, na sua cidade </summary>
                   <br>
                   <p><small>Os pontos Bikees estão disponibilizados na maioria da grande São Paulo.</small></p>
                 </details>
+
+                <br>
 
                 <details>
                   <summary> 4 horas por dia para pedalar </summary>
@@ -81,11 +85,15 @@
                   <p><small>Você pode utilizar das bikees por até quatro horas durante um único dia.</small></p>
                 </details>
 
+                <br>
+
                 <details>
                   <summary> Suporte básico no Bikees System </summary>
                   <br>
                   <p><small>Para qualquer problema, você tem o suporte básico do sistema para utilizar.</small></p>
                 </details>
+
+                <br>
 
                 <div id="slider_one" class="slider flex flex-row">
                   <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
@@ -114,6 +122,8 @@
 
                   </details>
 
+                  <br>
+
                 </span>
       
               </label>
@@ -132,11 +142,15 @@
                   <p><small>Você tem o direito de escolher até duas das cinco bicicletas inclusas no plano.</small></p>
                 </details>
 
+                <br>
+
                 <details>
                   <summary> Bikees perto de você, na sua cidade </summary>
                   <br>
                   <p><small>Os pontos Bikees estão disponibilizados na maioria da grande São Paulo.</small></p>
                 </details>
+
+                <br>
 
                 <details>
                   <summary> Até 7 horas por dia para pedalar </summary>
@@ -144,11 +158,15 @@
                   <p><small>Você pode utilizar das bikees por até sete horas durante um único dia.</small></p>
                 </details>
 
+                <br>
+
                 <details>
                   <summary> Suporte prioritário no Bikees System </summary>
                   <br>
                   <p><small>Para qualquer problema, você tem o suporte prioritário do sistema para utilizar.</small></p>
                 </details>
+
+                <br>
 
                 <div id="slider_two" class="slider flex flex-row">
                   <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
@@ -183,6 +201,8 @@
                     que clientes pagam usando as Bikees em dias aleatórios. </p>
 
                   </details>
+
+                  <br>
 
                 </span>
                 
