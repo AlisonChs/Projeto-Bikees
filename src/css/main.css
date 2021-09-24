@@ -147,8 +147,11 @@ small {
   opacity: 0.9;
 }
 
-.flex-center {
+.flex {
   display: flex;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -157,6 +160,8 @@ small {
 .flex-column {flex-direction: column;}
 
 .flex-row{flex-direction: row;}
+
+.flex-wrap {flex-wrap: wrap;}
 
 /*
 ---------------------------------------------
