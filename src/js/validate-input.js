@@ -24,12 +24,23 @@ function checkPasswordValidity(confirmPassword) {
 }
 
 function checkDateValidity(input) {
-    var birthdate = new Date(input.value)
-    var message = ''
-    if (checkAgeMajority(birthdate)) {
-        message = 'Você precisa ter mais de 18 anos'
+    if (input.value) {
+        if (input.classList.contains("empty")) {
+            console.log("Entrou no remover")
+            input.classList.remove("empty")
+        }
+        var birthdate = new Date(input.value)
+        var message = ''
+        if (checkAgeMajority(birthdate)) {
+            message = 'Você precisa ter mais de 18 anos'
+        }
+        input.setCustomValidity(message)
+    } else {
+        if (!input.classList.contains("empty")) {
+            console.log("Entrou no adicionar")
+            input.classList.add("empty")
+        }        
     }
-    input.setCustomValidity(message)
 }
 
 function comparePassword(confirmPassword) {
@@ -45,9 +56,10 @@ function checkAgeMajority(birthdate) {
 }
 
 function checkCepValidity(input) {
+    var message = ''
     if (input.value.length == 9) {
         if (input.value != inputCepValue) {
-            input.setCustomValidity('')        
+            input.setCustomValidity(message)        
             inputCepValue = input.value
 
             if (input.validity.valid) { 
@@ -58,7 +70,10 @@ function checkCepValidity(input) {
                 getRequest(url, thisCepIsValid, cannotCheckCepValidity);
             }
         }
-    }       
+    } else {
+        message = 'Você precisa digitar o cep completo, com os 8 dígitos!'
+    }
+    input.setCustomValidity(message)      
 }
 
 function thisCepIsValid(cepInString) {

@@ -29,7 +29,7 @@
             </div>
             <div class="special-input">
                 <img src="./media/img/black-birthdate.svg" alt="">
-                <input type="date" name="birthdate" id="birthdate" placeholder="Digite o ano de seu nascimento" autocomplete="birthdate" data-type="birthdate" min="1890-01-01" max="9999-12-31" required>
+                <input type="date" name="birthdate" id="birthdate" class="empty" placeholder="Digite o ano de seu nascimento" autocomplete="birthdate" data-type="birthdate" min="1890-01-01" max="9999-12-31" required>
             </div>
             <div class="special-input">
                 <img src="./media/img/black-address.svg" alt="">
@@ -43,6 +43,10 @@
                 <input type="hidden" name="gia" id="gia">
                 <input type="hidden" name="ddd" id="ddd">
                 <input type="hidden" name="siafi" id="siafi">
+            </div>
+            <div class="special-input">
+                <img src="./media/img/black-cpf.svg" alt="">
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" autocomplete="cpf" data-type="cpf" required>
             </div>
             <div class="special-input">
                 <img src="./media/img/black-email.svg" alt="">

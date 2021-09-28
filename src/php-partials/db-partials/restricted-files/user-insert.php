@@ -36,15 +36,16 @@
         $_SESSION['cep'] = $cep;
         $_SESSION['email'] = $email;
 
-        if (isset($_SESSION['url'])) {
+        if ("./index.php" != $_SESSION['url']) {
             header("location:". $_SESSION['url']);
         } else {
-            header("location: ../../../index.php");
+            header("location: ../../../page-rent.php");
         }
     } else {
-        header("location: ../../../log-in.php");
-        //echo 'error: ';
+        header("location: ../../../register.php");
+        //echo 'erro';
         //echo mysqli_error($connection);
+        //echo mysqli_connect_error();
     }
 
     require './disconnect-db.php';

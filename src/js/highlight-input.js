@@ -5,7 +5,8 @@ const highlight = {
     username:input => highlightUser(input),
     fullname:input => highlightFullName(input),
     birthdate:input => highlightBirthdate(input),
-    cep:input => highlightCep(input)
+    cep:input => highlightCep(input),
+    cpf:input => highlightCpf(input)
 }
 
 const playDown = {
@@ -15,7 +16,8 @@ const playDown = {
     username:input => playDownUser(input),
     fullname:input => playDownFullName(input),
     birthdate:input => playDownBirthdate(input),
-    cep:input => playDownCep(input)
+    cep:input => playDownCep(input),
+    cpf:input => playDownCpf(input)
 }
 
 
@@ -93,6 +95,12 @@ function playDownCep(input) {
     image.src = './media/img/black-address.svg'
 }
 
+function playDownCpf(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/black-cpf.svg'
+}
+
 /*
 ****************************
 Highlights unique fuctions
@@ -132,4 +140,10 @@ function highlightCep(input) {
     var target = input.parentElement
     var image = target.querySelector('img')
     image.src = './media/img/onfocus-address.svg'
+}
+
+function highlightCpf(input) {
+    var target = input.parentElement
+    var image = target.querySelector('img')
+    image.src = './media/img/onfocus-cpf.svg'
 }
