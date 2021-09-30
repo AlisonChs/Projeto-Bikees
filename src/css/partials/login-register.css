@@ -169,7 +169,7 @@ form#register {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 810px) {
     .login-register form,
     form#login,
     form#register  {
@@ -177,7 +177,7 @@ form#register {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
     .login-register form .special-input input[type=date] {
         padding-left: 0.05rem;
         font-size: 1.4rem;

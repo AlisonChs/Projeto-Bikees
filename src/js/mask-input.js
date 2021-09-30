@@ -16,9 +16,7 @@ const masks = {
 
 function maskCep(input) {
     var inputValue = input.value
-    while (inputValue.match(/[\s\D]/)) {
-        inputValue = inputValue.replace(/[\s\D]/, '')
-    }
+    inputValue = inputValue.replace(/\s\D/, '')
     inputValue = inputValue.replace(/([0-9]{5})([0-9]{1,})/, "$1-$2")
     input.value = inputValue
 }

@@ -11,7 +11,8 @@ export function validateInput(input) {
 const validators = {
     confirmPassword:input => checkPasswordValidity(input),
     birthdate:input => checkDateValidity(input),
-    cep:input => checkCepValidity(input)
+    cep:input => checkCepValidity(input),
+    cpf:input => checkCpfValidity(input)
 }
 
 function checkPasswordValidity(confirmPassword) {
@@ -26,7 +27,6 @@ function checkPasswordValidity(confirmPassword) {
 function checkDateValidity(input) {
     if (input.value) {
         if (input.classList.contains("empty")) {
-            console.log("Entrou no remover")
             input.classList.remove("empty")
         }
         var birthdate = new Date(input.value)
@@ -37,7 +37,6 @@ function checkDateValidity(input) {
         input.setCustomValidity(message)
     } else {
         if (!input.classList.contains("empty")) {
-            console.log("Entrou no adicionar")
             input.classList.add("empty")
         }        
     }
@@ -63,9 +62,7 @@ function checkCepValidity(input) {
             inputCepValue = input.value
 
             if (input.validity.valid) { 
-                while (inputCepValue.match(/[\s\D]/)) {
-                    inputCepValue = inputCepValue.replace(/[\s\D]/, '')
-                }
+                inputCepValue = inputCepValue.replace(/\s\D/, '')
                 var url = "https://viacep.com.br/ws/" + inputCepValue + "/json/"
                 getRequest(url, thisCepIsValid, cannotCheckCepValidity);
             }
@@ -101,6 +98,45 @@ function cannotCheckCepValidity(reqStatus) {
     console.error(reqStatus);
 }
 
+function checkCpfValidity(input) {
+    const formattedCpf = input.value.replace('/\D/g', '')
+    let message = ''
+
+    if (!checkDuplicateCpf(formattedCpf)) {
+        message = 'O CPF digitado não é válido'
+    }
+
+    input.setCustomValidity(message)
+}
+
+function checkDuplicateCpf(cpf) {
+    const duplicatesValues = [
+        "00000000000",
+        "11111111111",
+        "22222222222",
+        "33333333333",
+        "44444444444",
+        "55555555555",
+        "66666666666",
+        "77777777777",
+        "88888888888",
+        "99999999999",
+    ]
+
+    let cpfIsValid = true
+
+    duplicatesValues.forEach(value => {
+        if(value == cpf) {
+            cpfIsValid = false
+        }
+    })
+
+    return cpfIsValid
+}
+
+/**************
+REQUEST FUNCTION
+***************/
 function getRequest(url, success, error) {
     var req = false;
 
