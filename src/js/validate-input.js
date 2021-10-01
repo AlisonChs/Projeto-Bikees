@@ -57,14 +57,14 @@ function checkAgeMajority(birthdate) {
 function checkCepValidity(input) {
     var message = ''
     if (input.value.length == 9) {
-        if (input.value != inputCepValue) {
+        let cep = input.value.replace(/\D/g, '')
+        if (cep != inputCepValue) {
             input.setCustomValidity(message)        
-            inputCepValue = input.value
+            inputCepValue = cep
 
-            if (input.validity.valid) { 
-                inputCepValue = inputCepValue.replace(/\s\D/, '')
-                var url = "https://viacep.com.br/ws/" + inputCepValue + "/json/"
-                getRequest(url, thisCepIsValid, cannotCheckCepValidity);
+            if (input.validity.valid) {
+                var url = `https://viacep.com.br/ws/${cep}/json/`
+                getRequest(url, thisCepIsValid, cannotCheckCepValidity)
             }
         }
     } else {
@@ -73,25 +73,17 @@ function checkCepValidity(input) {
     input.setCustomValidity(message)      
 }
 
-function thisCepIsValid(cepInString) {
-    var cepInJson = JSON.parse(cepInString)
+function thisCepIsValid(cepInJson) {
     var address = ["cep", "logradouro", "complemento", "bairro", "localidade", "uf", "ibge", "gia", "ddd", "siafi"]
-    var input = document.querySelector("input#cep")
-    var message = ''
 
-    if (!("erro" in cepInJson)) {
-        address.forEach(addressElement => {
-            var newInput = document.getElementById(addressElement);
-            if(cepInJson[addressElement]) {
-                newInput.value = cepInJson[addressElement]    
-            } else {
-                newInput.value = null
-            }
-        })
-    } else {
-        message = 'Você precisa digitar um cep válido!'
-    }
-    input.setCustomValidity(message)
+    address.forEach(addressElement => {
+        var newInput = document.getElementById(addressElement);
+        if(cepInJson[addressElement]) {
+            newInput.value = cepInJson[addressElement]    
+        } else {
+            newInput.value = null
+        }
+    })
 }
 
 function cannotCheckCepValidity(reqStatus) {
@@ -99,14 +91,47 @@ function cannotCheckCepValidity(reqStatus) {
 }
 
 function checkCpfValidity(input) {
-    const formattedCpf = input.value.replace('/\D/g', '')
+    const formattedCpf = input.value.replace(/\D/g, '')
     let message = ''
 
-    if (!checkDuplicateCpf(formattedCpf)) {
+    if (!checkDuplicateCpf(formattedCpf) || !checkCpfStructureValidity(formattedCpf)) {
         message = 'O CPF digitado não é válido'
     }
 
     input.setCustomValidity(message)
+}
+
+function checkCpfStructureValidity(cpf) {
+    const multiplier = 10
+    return checkVerificationNumber(cpf, multiplier)
+}
+
+function checkVerificationNumber(cpf, multiplier) {
+    if (multiplier >= 12) {
+        return true
+    }
+
+    let initialMultiplier = multiplier
+    let amount = 0
+    const cpfWithoutDigits = cpf.substr(0, multiplier - 1).split('')
+    const verificationNumber = cpf.charAt(multiplier - 1)
+    
+    for(let count = 0; initialMultiplier > 1; initialMultiplier--) {
+        amount += (Number(cpfWithoutDigits[count]) * Number(initialMultiplier))
+        count++
+    }
+
+    if (verificationNumber == confirmCpfDigit(amount)) {
+        return checkVerificationNumber(cpf, multiplier + 1)
+    }
+
+    return false
+}
+
+function confirmCpfDigit(amount) {
+    amount = Number(amount)
+    let conta = (11 - (amount % 11))
+    return conta
 }
 
 function checkDuplicateCpf(cpf) {
@@ -137,37 +162,23 @@ function checkDuplicateCpf(cpf) {
 /**************
 REQUEST FUNCTION
 ***************/
-function getRequest(url, success, error) {
-    var req = false;
-
-    try{
-        // most browsers
-        req = new XMLHttpRequest();
-    } catch (e){
-        // IE
-        try{
-            req = new ActiveXObject("Msxml2.XMLHTTP");
-        } catch(e) {
-            // try an older version
-            try{
-                req = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch(e) {
-                return false;
-            }
+async function getRequest(url, success, error) {
+    const options = {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+            'content-type': 'application/json;charset=utf-8'
         }
     }
-    
-    if (!req) return false;
+
     if (typeof success != 'function') success = function () {};
     if (typeof error!= 'function') error = function () {};
-    req.onreadystatechange = function(){
-        if(req.readyState == 4) {
-            return req.status === 200 ?
-                success(req.responseText) : error(req.status);
-        }
-    }
 
-    req.open("GET", url, true);
-    req.send(null)
-    return req;
+    try {
+        const response = await fetch(url, options)
+        const data = await response.json()
+        success(data)
+    } catch (e) {
+        error(e)
+    }
 }

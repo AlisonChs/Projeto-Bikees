@@ -46,7 +46,7 @@
             </div>
             <div class="special-input">
                 <img src="./media/img/black-cpf.svg" alt="">
-                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" autocomplete="cpf" data-type="cpf" required>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" autocomplete="cpf" data-type="cpf" maxlength="14" required>
             </div>
             <div class="special-input">
                 <img src="./media/img/black-email.svg" alt="">
