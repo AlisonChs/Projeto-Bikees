@@ -13,7 +13,7 @@
       require('./html-partials/preloader.html');
     ?>
 
-    <div class="container"></div>
+    <div class="container">
       <?php
         require('./php-partials/header.php');
       ?>
@@ -22,13 +22,25 @@
 
         <form action="./php-partials/login-partials/acess-restricted-page.php" method="post" id="form-rent-bikee">
 
+        <fieldset id="1">
+
           <h1>Alugue uma Bikee</h1>
+
+          <hr>
+          <br>
 
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipada com um guidão e quadro step thru ultra resistente juntamente do melhor dos acolchoamentos em seu banco, a nossa nova bicicleta da Bikees é capaz de dar o melhor dos dois mundos (conforto e segurança).</p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seu design é feito para se adaptar perfeitamente em qualquer tipo de físico, podendo suportar até 115 quilos e contém aros tamanho 24 para atender as mais variadas estaturas. Fora isso, ela tem um banco de altura adaptável, correntes com proteção para evitar acidentes e uma cestinha adaptável que não acumula líquidos ou sujeira – ótimas para trazer as compras. </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As nossas Bikees foram feitas para você, especialmente, para você que preza pelo conforto e pela sua segurança no dia a dia; de modo que tanto você quanto sua família possam usar sem se preocupar.</p>
+        
+        </fieldset>
+
+        <fieldset id="2">
           
-          <fieldset>
+        </fieldset>
+
+          <fieldset id="3">
+
             <section id="map-a-bikee">
 
             <div class="map">
@@ -62,17 +74,22 @@
                     } else {
                       echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>';
                     }
-                    
-                ?>
+
+                  ?>
 
               </div>
 
               </section>
+
           </fieldset>
+          
+          <br>
+          <hr>
 
           <div class="div-bt">
             <button type="submit" id="bt-submit">Alugar</button>
-          </div>
+            <button type="button" id="bt-next">Próximo</button>
+          </div>          
 
         </form>
 

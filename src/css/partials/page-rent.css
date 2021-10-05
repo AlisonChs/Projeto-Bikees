@@ -35,7 +35,7 @@
 #page-rent #rent-a-bikee #form-rent-bikee fieldset {
     margin-top: 4rem;
     padding: 2rem;
-    border-radius: 20px;
+    border: 0;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {
@@ -100,7 +100,7 @@
     display: flex;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee button#bt-submit {
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt button {
     width: 90%;
     height: 4rem;
     margin: 3rem auto 0 auto;
@@ -119,9 +119,10 @@
     cursor: pointer;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee #bt-submit:hover {
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt button:hover {
     background-color: var(--color-primary-dark);
 }
+
 #page-rent footer {
     box-shadow: 0px -3px 10px 3px rgba(0, 0, 0, 0.131);
 }
