@@ -36,7 +36,11 @@
     margin-top: 4rem;
     padding: 2rem;
     border-radius: 20px;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {
     display: flex;
+    flex-direction: row;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee #maps {
