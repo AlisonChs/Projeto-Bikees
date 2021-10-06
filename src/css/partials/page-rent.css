@@ -92,17 +92,27 @@
     font-size: 1.2rem;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee #bt-submit {
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt {
+    display: flex;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee button#bt-submit {
     width: 90%;
     height: 4rem;
     margin: 3rem auto 0 auto;
-    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: Poppins;
     line-height: 4rem;
+    border: none;
     text-align: center;
     border-radius: 13px;
     background-color: var(--color-primary);
     color: #fff6f6;
     transition-duration: .8s;
+    text-emphasis: none;
+    cursor: pointer;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee #bt-submit:hover {

@@ -20,7 +20,17 @@
             </ul>
 
             <ul class="nav" id="nav-login">
-              <li><a href="./log-in.php">Entrar</a></li>
+              <?php
+              if (isset($_SESSION['login'])) {
+                  if ($_SESSION['login'] != "sim") {
+                    echo '<li><a href="./log-in.php">Entrar</a></li>';
+                  } else {
+                    echo '<li><a href="./php-partials/login-partials/close-session.php">sair</a></li>';
+                  }
+              } else {
+                echo '<li><a href="./log-in.php">Entrar</a></li>';
+              }
+              ?>
             </ul>
 
           </div>
