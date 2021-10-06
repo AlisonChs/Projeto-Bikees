@@ -38,6 +38,49 @@ btnext.addEventListener('click', (event) => {
     
 })
 
+// Choose-a-bikee
+
+// Temporary/Basic function to passing bikees
+
+const color = $('.color');
+
+color.each(function() {
+
+    $(this).on("click", function () {
+
+        var idx = $(this).attr('data-idx');
+
+        const imgs = document.getElementById('carousel');
+        
+        if (color.hasClass('selected')) {
+            color.removeClass('selected') // Remove a classe "selecionado" de quaisquer divs que a contenham
+        }
+
+        $(this).addClass('selected') // Adiciona a classe "selecionado" a div que foi clicada
+
+        setTimeout(function(){ $(this).css('position', 'absolute'); }, 3000);
+        
+        if (idx == 0) {
+            imgs.style.transform = `translateX(152%)`;
+        }
+
+        else if (idx == 1) {
+            imgs.style.transform = `translateX(60%)`;
+        }
+
+        else if (idx == 2) {
+            imgs.style.transform = `translateX(-32%)`;
+        }
+
+        else {
+            imgs.style.transform = `translateX(-124%)`;
+        }
+
+    })
+    
+})
+
+
 
 
 

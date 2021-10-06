@@ -15,6 +15,7 @@
     padding: 3% 5% 6% 5%;
     border-radius: 20px;
     background-color: rgb(244, 247, 255);
+    overflow: hidden;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee h1 {
@@ -33,9 +34,78 @@
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset {
-    margin-top: 4rem;
     padding: 2rem;
     border: 0;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel {
+    transform: translateX(152%);
+}
+
+/* Anotações
+
+    Há um espaço de 30% entre cada imagem (margin)
+
+    Para centralizar cada imagem no form: 92% (translateX)
+
+*/
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel img{
+    object-fit: cover;
+    width: 60%;
+    margin: 0 30% 0 2%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color {
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span {
+    width: 45px;
+    display: flex;
+    position: relative;
+    height: 45px;
+    transform: translate(0, 0);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 18px rgba(145,145,145,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 18px rgba(145,145,145,0);
+    transform: translateY(-5px);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.black {
+    background-color: black;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.white {
+    border: solid black 1px;
+    background-color: white;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.green {
+    background-color: green;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.yellow {
+    background-color: yellow;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.selected {
+    transform: translate(0, 85px);
+    width: 75px;
+    height: 25px;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {

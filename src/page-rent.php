@@ -36,6 +36,31 @@
         </fieldset>
 
         <fieldset id="2">
+
+          <section id="choose-a-bikee" class="flex flex-center flex-column">
+
+            <div class="carousel flex flex-center flex-row" id="carousel">
+              
+                <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela" />
+              
+                <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde" />
+              
+                <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca" />
+        
+                <img src="./media/img/black-bikee-slider.png" alt="Bikee Preta" />
+        
+            </div>
+
+            <div class="choose-a-color flex flex-row">
+              <span class="color yellow" data-idx="0"></span>
+              <span class="color green" data-idx="1"></span>
+              <span class="color white" data-idx="2"></span>
+              <span class="color black" data-idx="3"></span>
+            </div>
+
+            <p> Cor selecionada: </p>
+
+          </section>
           
         </fieldset>
 
