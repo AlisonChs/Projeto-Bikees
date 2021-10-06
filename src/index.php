@@ -1,3 +1,6 @@
+<?php
+  require('./php-partials/start-session.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <?php
@@ -12,7 +15,7 @@
     <div id="container">
 
       <?php
-        require('./html-partials/header.html');
+        require('./php-partials/header.php');
       ?>
 
       <section id="welcome-area">
