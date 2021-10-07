@@ -23,6 +23,7 @@ Import partials
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
 @import url(./partials/login-register.css);
+@import url(./partials/page-purchase.css);
 
 /* 
 ---------------------------------------------
@@ -148,6 +149,13 @@ small {
 }
 
 .flex {
+<<<<<<< HEAD
+=======
+  display: flex;
+}
+
+.flex-center {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
   display: flex;
 }
 
@@ -161,7 +169,11 @@ small {
 
 .flex-row{flex-direction: row;}
 
+<<<<<<< HEAD
 .flex-wrap {flex-wrap: wrap;}
+=======
+.dsp-none {display: none!important;}
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
 
 /*
 ---------------------------------------------
