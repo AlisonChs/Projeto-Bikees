@@ -50,11 +50,8 @@
 }
 
 /* Anotações
-
     Há um espaço de 30% entre cada imagem (margin)
-
     Para centralizar cada imagem no form: 92% (translateX)
-
 */
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel img{
@@ -65,36 +62,47 @@
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color {
     margin-top: 5%;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color input {
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span {
+    width: 45px;
+    display: flex;
     position: relative;
+    height: 45px;
     transform: translate(0, 0);
     border-radius: 10px;
-    border: none;
     margin: 10px;
-    width: 27px;
-    height: 27px;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color input:checked.black {
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 18px rgba(145,145,145,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 18px rgba(145,145,145,0);
+    transform: translateY(-5px);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.black {
     background-color: black;
-    color: black;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color input.white {
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.white {
     border: solid black 1px;
     background-color: white;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color input.green {
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.green {
     background-color: green;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color input.yellow {
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.yellow {
     background-color: yellow;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.selected {
+    transform: translate(0, 85px);
+    width: 75px;
+    height: 25px;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {
@@ -135,7 +143,6 @@
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
     height: 2.6rem;
     width: 31%;
-    min-width: 100px;
     margin-bottom: 10px;
     margin-right: 9px;
     border-color: rgba(46, 46, 46, 0.541);
@@ -186,7 +193,6 @@
 #page-rent footer {
     box-shadow: 0px -3px 10px 3px rgba(0, 0, 0, 0.131);
 }
-
 @media (max-width: 1100px) {
     #page-rent #rent-a-bikee #form-rent-bikee {
         width: 75%;

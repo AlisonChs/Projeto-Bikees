@@ -71,8 +71,3 @@ color.each(function() {
     })
     
 })
-
-
-
-
-

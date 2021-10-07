@@ -36,14 +36,21 @@
         </fieldset>
 
         <fieldset id="2">
+
           <section id="choose-a-bikee" class="flex flex-center flex-column">
+
             <div class="carousel flex flex-center flex-row" id="carousel">
               
                 <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela" />
+              
                 <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde" />
+              
                 <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca" />
+        
                 <img src="./media/img/black-bikee-slider.png" alt="Bikee Preta" />
+        
             </div>
+
             <div class="choose-a-color flex flex-row">
 
               <div class="colors flex flex-row">
@@ -59,38 +66,56 @@
                 <input type="radio" data-idx="2" name="selected-bikee" value="white">
                 <input type="radio" data-idx="3" name="selected-bikee" value="black">
               </div>
+
             </div>
+
+            <p> Cor selecionada: </p>
 
           </section>
-        </fieldset>
-        
-        <fieldset id="3">
-
-          <section id="map-a-bikee">
-
-          <div class="map">
-
-            <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
-            
-          </div>
           
-            <div class="right-text">
-              <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
+        </fieldset>
 
-              <div class="input-area">
-                <h5>Coloque o horário que deseja devolver com a Bikee</h5>
+          <fieldset id="3">
 
-                <div class="input-div">
-                  <input type="number" name="number" id="number" min="1" required>
+            <section id="map-a-bikee">
 
-                  <p>R$ 4,00 por minuto</p>
+            <div class="map">
+
+              <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
+             
+            </div>
+            
+              <div class="right-text">
+                <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
+
+                <div class="input-area">
+                  <h5>Coloque o tempo desejado para ficar com a Bikee</h5>
+
+                  <div class="input-div">
+                    <input type="time" name="time" id="time">
+
+                    <p>R$ 4,00 por minuto</p>
+                  </div>
+
                 </div>
 
-              </div>
-              <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
-            </div>
+                  <?php
 
-            </section>
+                  // Se o usuário não estiver logado, aparecerá a mensagem de alerta. Caso esteja, não aparecerá nada.
+                    
+                    if (isset($_SESSION['login'])) {
+                        if ($_SESSION['login'] != "sim") {
+                          echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>';
+                        } 
+                    } else {
+                      echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>';
+                    }
+
+                  ?>
+
+              </div>
+
+              </section>
 
           </fieldset>
           
