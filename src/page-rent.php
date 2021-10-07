@@ -85,7 +85,7 @@
 
             <div class="flex flex-row" style="margin-top: 5%">
 
-              <p> Cor selecionada: </p> <span class="static-selected-color"></span>
+              <p> Modelo selecionado: </p> <span class="static-selected-color"></span>
 
             </div>
 
@@ -109,30 +109,16 @@
                 <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
 
                 <div class="input-area">
-                  <h5>Coloque o tempo desejado para ficar com a Bikee</h5>
+                  <h5>Coloque os minutos desejados para ficar com a Bikee</h5>
 
                   <div class="input-div">
-                    <input type="time" name="time" id="time">
+                    <input type="number" name="minutes" id="minutes" min="0" max="540" required>
 
                     <p>R$ 4,00 por minuto</p>
                   </div>
 
                 </div>
-
-                  <?php
-
-                  // Se o usuário não estiver logado, aparecerá a mensagem de alerta. Caso esteja, não aparecerá nada.
-                    
-                    if (isset($_SESSION['login'])) {
-                        if ($_SESSION['login'] != "sim") {
-                          echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>';
-                        } 
-                    } else {
-                      echo '<p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>';
-                    }
-
-                  ?>
-
+                <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
               </div>
 
               </section>
