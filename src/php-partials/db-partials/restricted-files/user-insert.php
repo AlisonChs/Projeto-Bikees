@@ -1,18 +1,9 @@
 <?php 
     require "./connect-db.php";
-<<<<<<< HEAD
-    
-    $fullname = $_POST['fullname'];
-    $username = $_POST['username'];
-    $birthdate = $_POST['birthdate'];
-    $cep = $_POST['cep'];
-=======
-
     $fullname = $_POST['fullname'];
     $username = $_POST['username'];
     $birthdate = $_POST['birthdate'];
     $cpf = $_POST['cpf'];
->>>>>>> 1984f058428c6a72686b30abad0cb4d5ece867e2
     $email = $_POST['email'];
     $password = $_POST['password'];
     $cash = 0.00;
@@ -32,34 +23,20 @@
     $cpf = str_replace('.', '', $cpf);
     $cpf = str_replace('-', '', $cpf);
 
-<<<<<<< HEAD
-    $cep = str_replace('-', '', $cep);
-
-=======
->>>>>>> 1984f058428c6a72686b30abad0cb4d5ece867e2
     $strSQL = "INSERT INTO tb_user(";
     $strSQL .= "user_full_name, ";
     $strSQL .= "user_name, ";
     $strSQL .= "user_birthdate, ";
-<<<<<<< HEAD
-    $strSQL .= "user_cep, ";
-    $strSQL .= "user_email, ";
-=======
     $strSQL .= "user_cpf, ";
     $strSQL .= "user_email, ";
     $strSQL .= "user_cash, ";
->>>>>>> 1984f058428c6a72686b30abad0cb4d5ece867e2
     $strSQL .= "user_password) ";
 
     $strSQL .= "VALUES(";
     $strSQL .= "'". $fullname ."', ";
     $strSQL .= "'". $username ."', ";
     $strSQL .= "'". $birthdate ."', ";
-<<<<<<< HEAD
-    $strSQL .= "'". $cep ."', ";
-=======
     $strSQL .= "'". $cpf ."', ";
->>>>>>> 1984f058428c6a72686b30abad0cb4d5ece867e2
     $strSQL .= "'". $email ."', ";
     $strSQL .= "'". $cash ."', ";
     $strSQL .= "'". $password ."')";

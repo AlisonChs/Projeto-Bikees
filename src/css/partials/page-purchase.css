@@ -73,6 +73,24 @@
 
 }
 
+@media (max-width: 1300px) {
+    #page-purchase form {
+      width: 50%;
+    }
+}
+  
+@media (max-width: 1200px) {
+    #page-purchase form {
+      width: 70%;
+    }
+}
+
+@media (max-width: 810px) {
+    #page-purchase form {
+      width: 80%;
+    }
+}
+
 @media (max-width: 800px) {
     #page-purchase .row {
         flex-direction: column;
@@ -80,5 +98,18 @@
 
     #page-purchase .input {
         width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    #page-purchase form {
+        padding-left: 1.95rem;
+        padding-right: 1.95rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 350px) {
+    #page-purchase form {
+        width: 96%;
     }
 }

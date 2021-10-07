@@ -1,5 +1,12 @@
 <?php
-  require('./php-partials/start-session.php');
+  session_start();
+  if (isset($_SESSION['login'])) {
+      if ($_SESSION['login'] != "sim") {
+        header('location: ./log-in.php');
+      }
+  } else {
+    header('location: ./log-in.php');
+  }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">  
@@ -16,14 +23,21 @@
       require('./php-partials/header.php');
     ?>
     <section>
-      <form action="/action_page.php">
+      <form action="./restricted-page.php">
           <h3>Pagamento</h3>
           <div class="inputs">
 
             <div class="label">
               <label for="fullname">Títular do cartão</label>
               <div class="input special-input">
-                <input type="text" id="fullname" name="fullname" placeholder="Ex: Fulano da Silva" required>
+                <input type="text" id="fullname" name="fullname" placeholder="Ex: Fulano da Silva" required 
+                <?php
+                  if (isset($_SESSION['fullname'])) {
+                    echo 'value="'. $_SESSION['fullname'] .'"';
+                    echo ' disabled';
+                  }
+                ?>
+                >
               </div>
             </div>
 

@@ -93,6 +93,10 @@ header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
 
+fieldset {
+  border: none;
+}
+
 a {
   text-decoration: none !important;
   color: var(--color-text);
@@ -149,13 +153,10 @@ small {
 }
 
 .flex {
-<<<<<<< HEAD
-=======
   display: flex;
 }
 
 .flex-center {
->>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
   display: flex;
 }
 
@@ -169,11 +170,7 @@ small {
 
 .flex-row{flex-direction: row;}
 
-<<<<<<< HEAD
-.flex-wrap {flex-wrap: wrap;}
-=======
 .dsp-none {display: none!important;}
->>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
 
 /*
 ---------------------------------------------
