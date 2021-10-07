@@ -52,10 +52,21 @@
             </div>
 
             <div class="choose-a-color flex flex-row">
-              <span class="color yellow" data-idx="0"></span>
-              <span class="color green" data-idx="1"></span>
-              <span class="color white" data-idx="2"></span>
-              <span class="color black" data-idx="3"></span>
+
+              <div class="colors flex flex-row">
+                <span class="color yellow" data-idx="0"></span>
+                <span class="color green" data-idx="1"></span>
+                <span class="color white" data-idx="2"></span>
+                <span class="color black" data-idx="3"></span>
+              </div>
+
+              <div class="radio-colors dsp-none">
+                <input type="radio" data-idx="0" name="selected-bikee" value="yellow">
+                <input type="radio" data-idx="1" name="selected-bikee" value="green">
+                <input type="radio" data-idx="2" name="selected-bikee" value="white">
+                <input type="radio" data-idx="3" name="selected-bikee" value="black">
+              </div>
+
             </div>
 
             <p> Cor selecionada: </p>
