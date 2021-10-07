@@ -45,7 +45,8 @@ form#register {
     text-align: center;
 }
     
-.login-register form h3 {
+.login-register form h3,
+form h3 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
@@ -53,7 +54,8 @@ form#register {
     font-weight: 600;
 }
 
-.login-register form .special-input {
+.login-register form .special-input,
+.special-input {
     height: 5rem;
     display: flex;
     align-items: center;
@@ -72,7 +74,8 @@ form#register {
     width: 35px;
 }
 
-.login-register form .special-input input {
+.login-register form .special-input input,
+.special-input input {
     height: 100%;
     width: 90%;
     border-radius: 10px;
@@ -86,29 +89,34 @@ form#register {
     cursor: text;
 }
 
-.login-register form .special-input:nth-child(2) {
+.login-register form .special-input:nth-child(2),
+.special-input:nth-child(2) {
     margin-top: 2rem;
 }
 
-.login-register form .special-input input::placeholder {
+.login-register form .special-input input::placeholder,
+.special-input input::placeholder {
     font-size: 1.56rem;
     letter-spacing: .2px;
     font-weight: 500;
     font-family: Poppins;
 }
 
-.login-register form .special-input input:focus {
+.login-register form .special-input input:focus,
+.special-input input:focus {
     border: none;
     outline: none;
 }
 
-.login-register form .special-input input[type=date] {
+.login-register form .special-input input[type=date],
+.special-input input[type=date] {
     transition: 0.8s;
     text-align: right;
     padding-left: 0.03rem;
 }
 
 .login-register form .special-input input[type=date]::before,
+.special-input input[type=date]::before,
 .login-register form .special-input input[type=date].empty::before {
     font-size: 1.56rem;
     letter-spacing: .2px;
@@ -122,7 +130,8 @@ form#register {
     transition: 0.8s;
 }
 
-.login-register form .special-button {
+.login-register form .special-button,
+.special-button {
     height: 5rem;
     width: 100%;
     letter-spacing: 1px;
@@ -139,15 +148,18 @@ form#register {
     transition-duration: 0.8s;
 }
   
-.login-register form .special-button:hover {
+.login-register form .special-button:hover,
+form .special-button:hover {
     background-color: rgb(12, 117, 49);
 }
   
-.login-register form p {
+.login-register form p,
+form p {
     margin-top: 1.3rem;
 }
   
-.login-register form p em {
+.login-register form p em,
+form p em {
     font-weight: 600;
     cursor: pointer;
     word-wrap: unset;
@@ -156,7 +168,7 @@ form#register {
 @media (max-width: 1300px) {
     .login-register form,
     form#login,
-    form#register  {
+    form#register {
       width: 50%;
     }
 }
@@ -164,7 +176,7 @@ form#register {
 @media (max-width: 1200px) {
     .login-register form,
     form#login,
-    form#register  {
+    form#register {
       width: 70%;
     }
 }
@@ -172,39 +184,46 @@ form#register {
 @media (max-width: 810px) {
     .login-register form,
     form#login,
-    form#register  {
+    form#register {
       width: 80%;
     }
 }
 
 @media (max-width: 710px) {
-    .login-register form .special-input input[type=date] {
+    .login-register form .special-input input[type=date],
+    form .special-input input[type=date] {
         padding-left: 0.05rem;
         font-size: 1.4rem;
     }
 
-    .login-register form .special-input input[type=date].empty {
+    .login-register form .special-input input[type=date].empty,
+    form .special-input input[type=date].empty {
         color: rgba(0, 0, 0, 0.00);
     }
 
     
-    .login-register form .special-input input[type=date].empty::before {
+    .login-register form .special-input input[type=date].empty::before,
+    form .special-input input[type=date].empty::before {
         font-size: 1.4rem;
         content: attr(placeholder) !important;
         color: var(--color-text);
     }
 
-    .login-register form .special-input input[type=date]::before {
+    .login-register form .special-input input[type=date]::before,
+    form .special-input input[type=date]::before {
         font-size: 1.4rem;
         content: '';
     }
 
-    .login-register form .special-input input[type=date]:focus {
+    .login-register form .special-input input[type=date]:focus,
+    form .special-input input[type=date]:focus {
         color: black;
     }
 
     .login-register form .special-input input[type=date]:focus:before,
-    .login-register form .special-input input[type=date].empty:focus:before {
+    form .special-input input[type=date]:focus:before,
+    .login-register form .special-input input[type=date].empty:focus:before,
+    form .special-input input[type=date].empty:focus:before {
         content: '';
         font-size: 0px;
         color: rgba(0, 0, 0, 0.00);
@@ -212,15 +231,18 @@ form#register {
 }
 
 @media (max-width: 670px) {
-    .login-register form .special-input input[type=date] {
+    .login-register form .special-input input[type=date],
+    form .special-input input[type=date] {
         padding-left: 0.05rem;
     }
 
-    .login-register form .special-input input::placeholder {
+    .login-register form .special-input input::placeholder,
+    form .special-input input::placeholder {
         font-size: 1.4rem;
     }
 
-    .login-register form .special-input input[type=date]::before {
+    .login-register form .special-input input[type=date]::before,
+    form .special-input input[type=date]::before {
         font-size: 1.3rem;
     }
 }
@@ -238,7 +260,8 @@ form#register {
         min-height: calc(100vh - 5rem);
     }
 
-    .login-register form h3 {
+    .login-register form h3,
+    form h3  {
         font-size: 2.4rem;
     }
 
@@ -251,7 +274,9 @@ form#register {
     }
 
     .login-register form input,
-    .login-register form input::placeholder {
+    form input,
+    .login-register form input::placeholder,
+    form input::placeholder {
         font-size: 1.3rem;
     }
 }
@@ -263,8 +288,8 @@ form#register {
         width: 96%;
     }
 
-    .login-register form .special-input {
-        
+    .login-register form .special-input,
+    form .special-input {
         margin: 0.7rem 0;
     }
 
@@ -273,24 +298,29 @@ form#register {
         width: 30px;
     }
 
-    .login-register form .special-input input {
+    .login-register form .special-input input,
+    form .special-input input {
         font-size: 1.25rem;
         padding-left: 1rem;
     }
 
-    .login-register form .special-input input::placeholder {
+    .login-register form .special-input input::placeholder,
+    form .special-input input::placeholder {
         font-size: 1.25rem;
         padding-left: .5rem;
     }
 
     .login-register form .special-input input[type=date]::before,
-    .login-register form .special-input input[type=date].empty::before {
+    form .special-input input[type=date]::before,    
+    .login-register form .special-input input[type=date].empty::before,
+    form .special-input input[type=date].empty::before {
         font-size: 1.25rem;
         padding-left: 1rem;
         text-align: left;
     }
 
-    .login-register form .special-button {
+    .login-register form .special-button,
+    form .special-button {
         height: 4.5rem;
     }
 }
