@@ -47,16 +47,18 @@ color.each(function() {
 
     $(this).on("click", function () {
 
+        const divModel = $('.static-bikee-model');
         const divSelectedColor = $('.static-selected-color');
         const carousel = document.getElementById('carousel');
         const radio = $('input[name=selected-bikee]');
-
+        
+        var modelDataText = $(this).attr('data-text');
         var rgbaSelectedColor = $(this).css('background-color');
-
-        divSelectedColor.css('background-color', rgbaSelectedColor);
-
         var isChecked = radio.attr('checked');
         var idx = $(this).attr('data-idx');
+
+        divModel.text(modelDataText);
+        divSelectedColor.css('background-color', rgbaSelectedColor);
 
         if (typeof isChecked !== typeof undefined && isChecked !== false) {
             radio.removeAttr('checked'); // Remove o atributo "checked" de quaisquer inputs que a contenham (lembrando, será atualizado)
@@ -64,7 +66,7 @@ color.each(function() {
 
         $('input[data-idx=' + idx + ']').prop('checked', true); // Seleciona o radio-button de acordo com o span que foi clicado (variavel idx passada dentro do data-idx)
 
-        carousel.style.transform = `translateX(` + (152 - (92 * idx)) + `%)`; // (Valor inicial) - (Espaço entre as bikees) * (Valor da bikee clicada)
+        carousel.style.transform = `translateX(` + (108 - (93 * idx)) + `%)`; // (Valor inicial) - (Espaço entre as bikees) * (Valor da bikee clicada)
 
     })
     
