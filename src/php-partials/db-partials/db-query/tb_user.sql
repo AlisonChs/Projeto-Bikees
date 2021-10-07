@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Set-2021 às 15:12
+-- Tempo de geração: 04-Out-2021 às 19:11
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 8.0.2
 
@@ -24,17 +24,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tbusuario`
+-- Estrutura da tabela `tb_user`
 --
 
-CREATE TABLE `tbusuario` (
-  `idUsuario` int(11) NOT NULL,
-  `nomeUsuario` text NOT NULL,
-  `emailUsuario` text NOT NULL,
-  `senhaUsuario` text NOT NULL,
-  `pontosUsuario` int(11) NOT NULL,
-  `formasPagUsuario` text NOT NULL,
-  `hisBikeUsadasUsuario` text NOT NULL
+CREATE TABLE `tb_user` (
+  `id_user` int(11) NOT NULL,
+  `user_name` varchar(100) NOT NULL,
+  `user_full_name` varchar(150) NOT NULL,
+  `user_email` varchar(100) NOT NULL,
+  `user_cpf` varchar(11) NOT NULL,
+  `user_birthdate` date NOT NULL,
+  `user_password` varchar(30) NOT NULL,
+  `user_cash` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -42,21 +43,21 @@ CREATE TABLE `tbusuario` (
 --
 
 --
--- Índices para tabela `tbusuario`
+-- Índices para tabela `tb_user`
 --
-ALTER TABLE `tbusuario`
-  ADD PRIMARY KEY (`idUsuario`),
-  ADD UNIQUE KEY `emailUsuario` (`emailUsuario`) USING HASH;
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id_user`),
+  ADD UNIQUE KEY `user_email` (`user_email`(11));
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `tbusuario`
+-- AUTO_INCREMENT de tabela `tb_user`
 --
-ALTER TABLE `tbusuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `tb_user`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
