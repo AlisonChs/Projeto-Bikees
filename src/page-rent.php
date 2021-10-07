@@ -24,6 +24,8 @@
 
         <fieldset id="1">
 
+          <!-- Apresentation section -->
+
           <h1>Alugue uma Bikee</h1>
 
           <hr>
@@ -36,56 +38,90 @@
         </fieldset>
 
         <fieldset id="2">
+
+          <!-- Choose a bike section -->
+
           <section id="choose-a-bikee" class="flex flex-center flex-column">
+
             <div class="carousel flex flex-center flex-row" id="carousel">
               
                 <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela" />
+              
                 <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde" />
+              
                 <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca" />
+        
                 <img src="./media/img/black-bikee-slider.png" alt="Bikee Preta" />
+        
             </div>
 
-            
-            <div class="choose-a-color align-items-center flex-column">
-              <p> Modelo Selecionado: </p>
-              <div class="flex flex-center align-items-center justify-content-center">
-                <input type="radio" name="choosen-bike" value="yellow" class="color yellow" data-idx="0" checked/>
-                <input type="radio" name="choosen-bike" value="green" class="color green" data-idx="1"/>
-                <input type="radio" name="choosen-bike" value="white" class="color white" data-idx="2"/>
-                <input type="radio" name="choosen-bike" value="black" class="color black" data-idx="3"/>
+            <div class="choose-a-color flex flex-row">
+
+              <div class="colors flex flex-row">
+
+                <span class="color yellow" data-idx="0"></span>
+
+                <span class="color green" data-idx="1"></span>
+
+                <span class="color white" data-idx="2"></span>
+
+                <span class="color black" data-idx="3"></span>
+
               </div>
+
+              <div class="radio-colors dsp-none">
+
+                <input type="radio" data-idx="0" name="selected-bikee" value="yellow">
+
+                <input type="radio" data-idx="1" name="selected-bikee" value="green">
+
+                <input type="radio" data-idx="2" name="selected-bikee" value="white">
+
+                <input type="radio" data-idx="3" name="selected-bikee" value="black">
+
+              </div>
+
+            </div>
+
+            <div class="flex flex-row" style="margin-top: 5%">
+
+              <p> Modelo selecionado: </p> <span class="static-selected-color"></span>
+
             </div>
 
           </section>
-        </fieldset>
-        
-        <fieldset id="3">
-
-          <section id="map-a-bikee">
-
-          <div class="map">
-
-            <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
-            
-          </div>
           
-            <div class="right-text">
-              <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
+        </fieldset>
 
-              <div class="input-area">
-                <h5>Coloque o horário que deseja devolver com a Bikee</h5>
+          <fieldset id="3">
 
-                <div class="input-div">
-                  <input type="number" name="number" id="number" min="1" required>
+          <!-- Map a bike section -->
 
-                  <p>R$ 4,00 por minuto</p>
-                </div>
+            <section id="map-a-bikee">
 
+              <div class="map">
+
+                <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
+              
               </div>
-              <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
-            </div>
+            
+              <div class="right-text">
+                <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
 
-            </section>
+                <div class="input-area">
+                  <h5>Coloque os minutos desejados para ficar com a Bikee</h5>
+
+                  <div class="input-div">
+                    <input type="number" name="minutes" id="minutes" min="0" max="540" required>
+
+                    <p>R$ 4,00 por minuto</p>
+                  </div>
+
+                </div>
+                <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
+              </div>
+
+              </section>
 
           </fieldset>
           

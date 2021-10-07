@@ -5,7 +5,6 @@ var one = document.getElementById("1")
 var two = document.getElementById("2")
 var three = document.getElementById("3")
 
-
 window.addEventListener('DOMContentLoaded', () => {
     two.classList.add('dsp-none')
     three.classList.add('dsp-none')
@@ -40,7 +39,7 @@ btnext.addEventListener('click', (event) => {
 
 // Choose-a-bikee
 
-// Temporary/Basic function to passing bikees
+// Temporary/Basic function to passing and choosing bikees
 
 const color = $('.color');
 
@@ -48,39 +47,25 @@ color.each(function() {
 
     $(this).on("click", function () {
 
+        const divSelectedColor = $('.static-selected-color');
+        const carousel = document.getElementById('carousel');
+        const radio = $('input[name=selected-bikee]');
+
+        var rgbaSelectedColor = $(this).css('background-color');
+
+        divSelectedColor.css('background-color', rgbaSelectedColor);
+
+        var isChecked = radio.attr('checked');
         var idx = $(this).attr('data-idx');
 
-        const imgs = document.getElementById('carousel');
-        
-        if (color.hasClass('selected')) {
-            color.removeClass('selected') // Remove a classe "selecionado" de quaisquer divs que a contenham
+        if (typeof isChecked !== typeof undefined && isChecked !== false) {
+            radio.removeAttr('checked'); // Remove o atributo "checked" de quaisquer inputs que a contenham (lembrando, será atualizado)
         }
 
-        $(this).addClass('selected') // Adiciona a classe "selecionado" a div que foi clicada
+        $('input[data-idx=' + idx + ']').prop('checked', true); // Seleciona o radio-button de acordo com o span que foi clicado (variavel idx passada dentro do data-idx)
 
-        setTimeout(function(){ $(this).css('position', 'absolute'); }, 3000);
-        
-        if (idx == 0) {
-            imgs.style.transform = `translateX(152%)`;
-        }
-
-        else if (idx == 1) {
-            imgs.style.transform = `translateX(60%)`;
-        }
-
-        else if (idx == 2) {
-            imgs.style.transform = `translateX(-32%)`;
-        }
-
-        else {
-            imgs.style.transform = `translateX(-124%)`;
-        }
+        carousel.style.transform = `translateX(` + (152 - (92 * idx)) + `%)`; // (Valor inicial) - (Espaço entre as bikees) * (Valor da bikee clicada)
 
     })
     
 })
-
-
-
-
-
