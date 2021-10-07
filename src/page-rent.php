@@ -24,6 +24,8 @@
 
         <fieldset id="1">
 
+          <!-- Apresentation section -->
+
           <h1>Alugue uma Bikee</h1>
 
           <hr>
@@ -36,6 +38,8 @@
         </fieldset>
 
         <fieldset id="2">
+
+          <!-- Choose a bike section -->
 
           <section id="choose-a-bikee" class="flex flex-center flex-column">
 
@@ -54,22 +58,36 @@
             <div class="choose-a-color flex flex-row">
 
               <div class="colors flex flex-row">
+
                 <span class="color yellow" data-idx="0"></span>
+
                 <span class="color green" data-idx="1"></span>
+
                 <span class="color white" data-idx="2"></span>
+
                 <span class="color black" data-idx="3"></span>
+
               </div>
 
               <div class="radio-colors dsp-none">
+
                 <input type="radio" data-idx="0" name="selected-bikee" value="yellow">
+
                 <input type="radio" data-idx="1" name="selected-bikee" value="green">
+
                 <input type="radio" data-idx="2" name="selected-bikee" value="white">
+
                 <input type="radio" data-idx="3" name="selected-bikee" value="black">
+
               </div>
 
             </div>
 
-            <p> Cor selecionada: </p>
+            <div class="flex flex-row" style="margin-top: 5%">
+
+              <p> Cor selecionada: </p> <span class="static-selected-color"></span>
+
+            </div>
 
           </section>
           
@@ -77,13 +95,15 @@
 
           <fieldset id="3">
 
+          <!-- Map a bike section -->
+
             <section id="map-a-bikee">
 
-            <div class="map">
+              <div class="map">
 
-              <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
-             
-            </div>
+                <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
+              
+              </div>
             
               <div class="right-text">
                 <h4>Reserve sua bikee aqui e busque-a no local mostrado pelo mapa.</h4>
