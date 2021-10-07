@@ -45,7 +45,7 @@
 
             <h1> Escolha a Bikee que mais te agrada </h1>
 
-            <p> Que tal escolher a sua Bikee? Temos várias opções por vir, mas por ora estamos com estes modelos livres.
+            <p style="color: black;"> Que tal escolher a sua Bikee? Temos várias opções por vir, mas por ora estamos com estes modelos livres.
               Apenas clique em uma cor e veja o modelo aproximado da Bikee. </p>
 
             <hr>
