@@ -33,7 +33,6 @@
     line-height: 2.8rem;
 }
 
-
 #page-rent #rent-a-bikee #form-rent-bikee hr {
     display: flex;
     width: 100%;
@@ -108,10 +107,10 @@
     background-color: pink;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.prot {
+/* #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.prot {
     background-color: whitesmoke;
     border: dashed black 1px;
-}
+} */
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.yellow {
     background-color: yellow;

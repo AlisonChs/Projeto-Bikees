@@ -23,6 +23,8 @@ btnext.addEventListener('click', (event) => {
     function jumpTo2ndSection() {
         one.classList.add('dsp-none')
         two.classList.remove('dsp-none')
+
+        btnext.classList.add('dsp-none')
     }
 
     function jumpTo3ndSection() {
@@ -47,11 +49,18 @@ color.each(function() {
 
     $(this).on("click", function () {
 
+        btnext.classList.remove('dsp-none');
+
         const divModel = $('.static-bikee-model');
         const divSelectedColor = $('.static-selected-color');
+        
+        const divPrice = $('.bikee-price');
+        
         const carousel = document.getElementById('carousel');
+
         const radio = $('input[name=selected-bikee]');
         
+        var price = $('.price');
         var modelDataText = $(this).attr('data-text');
         var rgbaSelectedColor = $(this).css('background-color');
         var isChecked = radio.attr('checked');
@@ -67,6 +76,9 @@ color.each(function() {
         $('input[data-idx=' + idx + ']').prop('checked', true); // Seleciona o radio-button de acordo com o span que foi clicado (variavel idx passada dentro do data-idx)
 
         carousel.style.transform = `translateX(` + (108 - (93 * idx)) + `%)`; // (Valor inicial) - (Espaço entre as bikees) * (Valor da bikee clicada)
+
+        idx == 0 ? price.text('4,00 por hora') : price.text('7,00 por hora');
+        idx == 0 ? divPrice.text('Selecionando esta Bikee, você pagará apenas R$ 4,00 por hora para poder se divertir e se exercitar durante o seu dia. ') : divPrice.text('Selecionando esta Bikee, você pagará apenas R$ 7,00 por hora para poder se divertir e se exercitar durante o seu dia. ')
 
     })
     

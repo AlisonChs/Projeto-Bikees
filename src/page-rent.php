@@ -62,7 +62,7 @@
               
                 <img src="./media/img/rose-bikee-slider.png" alt="Bikee para Passeio Rosa" />
         
-                <!-- <img src="./media/img/work-bikee-slider.png" alt="Bikee-Protype Branca" /> -->
+                <!-- Prototype <img src="./media/img/work-bikee-slider.png" alt="Bikee-Protype Branca" /> -->
         
             </div>
 
@@ -76,7 +76,7 @@
 
                 <span class="color pink" data-text="Bikee para Passeio Rosa" data-idx="2"></span>
 
-                <span class="prot"></span>
+                <!-- <span onclick="alert('Estamos construindo mais protótipos!')" class="prot"></span> -->
 
               </div>
 
@@ -87,8 +87,6 @@
                 <input type="radio" data-idx="1" name="selected-bikee" value="sport">
 
                 <input type="radio" data-idx="2" name="selected-bikee" value="tour">
-
-                <input type="radio" name="selected-bikee" value="prototype">
 
               </div>
 
@@ -108,9 +106,7 @@
 
             <p> 
 
-              Selecionando esta Bikee, você pagará apenas R$ 4,00 por hora para poder se divertir e se exercitar
-              durante o seu dia. Você também pode optar pelos nossos <a href="./php-partials/login-partials/acess-restricted-page.php">planos</a> para economizar
-              mais e não se preocupar com o dinheiro, além de incluir mais benefícios e saúde para toda a sua família.
+              <p class="bikee-price"></p> Você também pode optar pelos nossos <a href="./php-partials/login-partials/acess-restricted-page.php">planos</a> para economizar mais e não se preocupar com o dinheiro, além de incluir mais benefícios e saúde para toda a sua família.
 
             </p>
 
@@ -139,7 +135,7 @@
                   <div class="input-div">
                     <input type="time" name="time" id="time">
 
-                    <p>R$ 4,00 por minuto</p>
+                    <p class="price"></p>
                   </div>
 
                 </div>
