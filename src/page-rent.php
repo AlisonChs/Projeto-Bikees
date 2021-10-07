@@ -109,6 +109,6 @@
     <?php
         require('./html-partials/import-scripts.html');
     ?>
-
+    <script type="text/javascript" src="./js/rent.js"></script>
   </body>
 </html>
