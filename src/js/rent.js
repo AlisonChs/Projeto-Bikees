@@ -48,9 +48,15 @@ color.each(function() {
 
     $(this).on("click", function () {
 
+        const carousel = document.getElementById('carousel');
+        const color_radio = $('input[name=selected-bikee]');
+
+        var isChecked = color_radio.attr('checked');
         var idx = $(this).attr('data-idx');
 
-        const imgs = document.getElementById('carousel');
+        if (typeof isChecked !== typeof undefined && isChecked !== false) {
+            color_radio.removeAttr('checked'); // Remove o atributo "checked" de quaisquer inputs que a contenham (lembrando, será atualizado)
+        }
         
         if (color.hasClass('selected')) {
             color.removeClass('selected') // Remove a classe "selecionado" de quaisquer divs que a contenham
@@ -58,23 +64,9 @@ color.each(function() {
 
         $(this).addClass('selected') // Adiciona a classe "selecionado" a div que foi clicada
 
-        setTimeout(function(){ $(this).css('position', 'absolute'); }, 3000);
-        
-        if (idx == 0) {
-            imgs.style.transform = `translateX(152%)`;
-        }
+        $('input[data-idx=' + idx + ']').prop('checked', true); // Seleciona o radio-button de acordo com o span que foi clicado (variavel idx passada dentro do data-idx)
 
-        else if (idx == 1) {
-            imgs.style.transform = `translateX(60%)`;
-        }
-
-        else if (idx == 2) {
-            imgs.style.transform = `translateX(-32%)`;
-        }
-
-        else {
-            imgs.style.transform = `translateX(-124%)`;
-        }
+        carousel.style.transform = `translateX(` + (152 - (92 * idx)) + `%)`; // (Valor inicial) - (Espaço entre as bikees) * (Valor da bikee clicada)
 
     })
     

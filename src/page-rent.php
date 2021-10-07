@@ -44,15 +44,20 @@
                 <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca" />
                 <img src="./media/img/black-bikee-slider.png" alt="Bikee Preta" />
             </div>
+            <div class="choose-a-color flex flex-row">
 
-            
-            <div class="choose-a-color align-items-center flex-column">
-              <p> Modelo Selecionado: </p>
-              <div class="flex flex-center align-items-center justify-content-center">
-                <input type="radio" name="choosen-bike" value="yellow" class="color yellow" data-idx="0" checked/>
-                <input type="radio" name="choosen-bike" value="green" class="color green" data-idx="1"/>
-                <input type="radio" name="choosen-bike" value="white" class="color white" data-idx="2"/>
-                <input type="radio" name="choosen-bike" value="black" class="color black" data-idx="3"/>
+              <div class="colors flex flex-row">
+                <span class="color yellow" data-idx="0"></span>
+                <span class="color green" data-idx="1"></span>
+                <span class="color white" data-idx="2"></span>
+                <span class="color black" data-idx="3"></span>
+              </div>
+
+              <div class="radio-colors dsp-none">
+                <input type="radio" data-idx="0" name="selected-bikee" value="yellow">
+                <input type="radio" data-idx="1" name="selected-bikee" value="green">
+                <input type="radio" data-idx="2" name="selected-bikee" value="white">
+                <input type="radio" data-idx="3" name="selected-bikee" value="black">
               </div>
             </div>
 
