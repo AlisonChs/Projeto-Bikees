@@ -23,7 +23,7 @@
       require('./php-partials/header.php');
     ?>
     <section>
-      <form action="./restricted-page.php">
+      <form action="./restricted-page.php" method="POST" class="special-input">
           <h3>Pagamento</h3>
           <div class="inputs">
 

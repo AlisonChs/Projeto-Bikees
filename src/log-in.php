@@ -17,7 +17,7 @@
 
     <div class="container login-register">
 
-        <form action="./php-partials/login-partials/restricted-files/do-login.php" method="post" id="login">
+        <form action="./php-partials/login-partials/restricted-files/do-login.php" method="post" class="special-form">
             <h3>Login</h3>
             <div class="special-input">
                 <img src="./media/img/black-email.svg" alt="">
