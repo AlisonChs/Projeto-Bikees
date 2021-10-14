@@ -24,8 +24,8 @@ const playDown = {
 export function highlightInput(input) {
     const inputType = input.dataset.type
 
+    highlightInputParent(input)
     if(highlight[inputType]) {
-        highlightInputParent(input)
         highlight[inputType](input)
     }
 }
@@ -33,8 +33,8 @@ export function highlightInput(input) {
 export function playDownInput(input) {
     const inputType = input.dataset.type
 
+    playDownInputParent(input)
     if(playDown[inputType]) {
-        playDownInputParent(input)
         playDown[inputType](input)
     }
 }
@@ -55,9 +55,9 @@ function playDownInputParent(input) {
 }
 
 /*
-*********************
+***************************
 Playdown unique fuctions
-**********************
+***************************
 */
 function playDownPassword(input) {
     var target = input.parentElement
