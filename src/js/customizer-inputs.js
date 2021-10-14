@@ -26,5 +26,3 @@ specialInputs.forEach(input => {
         highlightInput(event.target)
     })    
 })
-
-console.log(specialInputs)
