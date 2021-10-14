@@ -50,8 +50,8 @@ function maskCpf(input) {
     var inputValue = input.value
     inputValue = inputValue.trim()
     inputValue = inputValue.replace(/\D/g, '')
-    inputValue = inputValue.replace(/([0-9]{3})([0-9]{1,3})/, "$1.$2")
-    inputValue = inputValue.replace(/([0-9]{3})([0-9]{1,3})/, "$1.$2")
-    inputValue = inputValue.replace(/([0-9]{3})([0-9]{1,2})/, "$1-$2")
+    inputValue = inputValue.replace(/([0-9]{3})([0-9]{1,})/, "$1.$2")
+    inputValue = inputValue.replace(/([0-9]{3})([0-9]{1,})/, "$1.$2")
+    inputValue = inputValue.replace(/([0-9]{3})([0-9]{1,})/, "$1-$2")
     input.value = inputValue
 }
