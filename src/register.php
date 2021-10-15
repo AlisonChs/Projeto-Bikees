@@ -70,7 +70,7 @@
             </p>
         </form>
         <?php
-            require('./html-partials/import-form-scripts.html');
+            require('./html-partials/import-scripts.html');
         ?>
     </div>
 </body>

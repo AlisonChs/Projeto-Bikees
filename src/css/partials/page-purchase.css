@@ -11,27 +11,9 @@
     align-items: center;
 }
 
-#page-purchase form {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 5rem;
-    margin: 6rem auto;
-    padding: 5rem 4rem;
-    border-radius: 12px;
-    background: rgb(250, 250, 250);
-    box-shadow: 2px 2px 2px 2px rgba(12, 12, 12, 0.105);
-    width: 50%;
-    max-width: 646px;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 #page-purchase .inputs {
     margin: 4rem 0;
+    margin-bottom: 2.5rem;
 }
 
 #page-purchase .row {
@@ -43,13 +25,15 @@
     flex-direction: row;
 }
 
-#page-purchase label,
 #page-purchase .label {
     text-align: left;
+    margin-bottom: 3rem;
 }
 
-#page-purchase form .label {
-    margin-bottom: 3rem;
+#page-purchase label {
+    padding-left: 1rem;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
 }
 
 #page-purchase .special-input {
@@ -57,59 +41,22 @@
     padding: 0;
 }
 
-#page-purchase .input {
-    width: 100%;
-}
-
 #page-purchase form input {
     width: 100%;
-    height: 7rem;
-    border: 1px solid rgba(0, green, blue, 0);
 }
 
-#page-purchase label {
-    margin-bottom: 10px;
-    font-size: 1.7rem;
-
+#page-purchase .value {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
 }
 
-@media (max-width: 1300px) {
-    #page-purchase form {
-      width: 50%;
-    }
-}
-  
-@media (max-width: 1200px) {
-    #page-purchase form {
-      width: 70%;
-    }
-}
-
-@media (max-width: 810px) {
-    #page-purchase form {
-      width: 80%;
-    }
-}
-
-@media (max-width: 800px) {
-    #page-purchase .row {
-        flex-direction: column;
-    }
-
-    #page-purchase .input {
-        width: 100%;
-    }
-}
-@media (max-width: 500px) {
-    #page-purchase form {
-        padding-left: 1.95rem;
-        padding-right: 1.95rem;
-        width: 90%;
-    }
-}
-
-@media (max-width: 350px) {
-    #page-purchase form {
-        width: 96%;
-    }
+#page-purchase .value p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: rgb(87, 87, 87);
 }
