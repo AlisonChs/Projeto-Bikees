@@ -60,7 +60,7 @@
             <div class="label">
               <label for="expyear">Data de Validade</label>
               <div class="input special-input">
-                <input type="date" id="date-expiration" name="date-expiration" placeholder="Ex: 10/10/2025" data-type="dateExpiration" min='<?php echo $date; ?>' required>
+                <input type="date" id="date-expiration" name="date-expiration" placeholder="Ex: 10/10/2025" data-type="dateExpiration" class="empty" min='<?php echo $date; ?>' required>
               </div>
             </div>
 

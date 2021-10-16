@@ -77,7 +77,7 @@
 
                   <input type="radio" data-idx="1" name="selected-bikee" value="green">
 
-                  <input type="radio" data-idx="2" name="selected-bikee" value="white">
+                  <input type="radio" data-idx="2" name="selected-bikee" value="white" checked>
 
                   <input type="radio" data-idx="3" name="selected-bikee" value="black">
 

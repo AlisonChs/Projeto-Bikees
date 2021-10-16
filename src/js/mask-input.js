@@ -47,7 +47,7 @@ function maskFullName(input) {
 function maskUserName(input) {
     var inputValue = input.value
     inputValue = inputValue.trim()
-    inputValue = inputValue.replace(/\d\000\xFF\uFFFF\cI\cZ\cA\t\n\v\f\r/g, '')
+    inputValue = inputValue.replace(/[^A-Z|a-z|0-9|\-_.]/, '')
     input.value = inputValue
 }
 
