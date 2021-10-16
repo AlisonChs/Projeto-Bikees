@@ -24,7 +24,7 @@
                 } else {
                     echo "./index.php";
                 }
-            ?> id="login">
+            ?> class="special-form">
             <input type="hidden" name="previous-page" value="<?php echo $_SESSION['url']?>">
             <h3>Infelizmente a página acessada ainda não está pronta</h3>
                 <button type="submit" class="special-button">
@@ -36,7 +36,7 @@
     </div>
     
     <?php
-        require('./html-partials/import-form-scripts.html');
+        require('./html-partials/import-scripts.html');
     ?>
 
 </body>

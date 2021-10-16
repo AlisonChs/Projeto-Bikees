@@ -24,6 +24,9 @@ Import partials
 @import url(./partials/page-rent.css);
 @import url(./partials/login-register.css);
 @import url(./partials/page-purchase.css);
+@import url(./partials/special-input.css);
+@import url(./partials/special-button.css);
+@import url(./partials/special-form.css);
 
 /* 
 ---------------------------------------------
