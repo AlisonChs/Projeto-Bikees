@@ -28,7 +28,7 @@ function maskFullName(input) {
     while (inputValue.match(/[\w]{1,}[\s]{2,}[\w]{1,}/)) {
         inputValue = inputValue.replace(/([\w]{1,})([\s]){2,}([\w]{1,})/, '$1 $3')
     }
-    inputValue = inputValue.replace(/\d\+\000\xFF\uFFFF\u{FFFF}\cI\cZ\cA\t\n\v\f\r\=´`~\*,\|''\;/, '')
+    inputValue = inputValue.replace(/[^A-Z|a-z|çóáéíòàèìõãôûîâêÇÓÁÉÍÒÀÈÌÕÃÔÛÎÂÊ\s]/, '')
     input.value = inputValue
 }
 
