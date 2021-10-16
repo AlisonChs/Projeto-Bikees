@@ -33,6 +33,12 @@
     line-height: 2.8rem;
 }
 
+#page-rent #rent-a-bikee #form-rent-bikee hr {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
 #page-rent #rent-a-bikee #form-rent-bikee fieldset {
     padding: 2rem;
     border: 0;
@@ -46,17 +52,18 @@
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel {
-    transform: translateX(152%);
+    transform: translateX(108%);
 }
 
 /* Anotações
     Há um espaço de 30% entre cada imagem (margin)
-    Para centralizar cada imagem no form: 92% (translateX)
+
+    Para centralizar cada imagem no form: 93% (translateX)
 */
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel img{
     object-fit: cover;
-    width: 60%;
+    width: 60%!important;
     margin: 0 30% 0 2%;
 }
 
@@ -94,14 +101,14 @@
     background-color: black;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.white {
-    border: solid black 1px;
-    background-color: white;
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.pink {
+    background-color: pink;
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.green {
-    background-color: green;
-}
+/* #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.prot {
+    background-color: whitesmoke;
+    border: dashed black 1px;
+} */
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.yellow {
     background-color: yellow;
