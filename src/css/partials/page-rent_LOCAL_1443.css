@@ -27,7 +27,6 @@
 
 #page-rent #rent-a-bikee #form-rent-bikee p {
     width: 90%;
-    margin-left: 5%;
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
     line-height: 2.8rem;
@@ -89,6 +88,17 @@
     box-shadow: 0;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee hr {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    padding: 2rem;
+    border: 0;
+=======
 #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.not-selected .right-text {
     display: none;
 }
@@ -136,6 +146,14 @@
 
 #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
     margin-top: 4rem;
+>>>>>>> e35bc6aa7c18a61a5ec76409b3e62d02006d458f
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee {
@@ -227,27 +245,24 @@
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text h4 {
     font-size: 1.9rem;
     font-weight: 500;
-    padding-left: 1rem;
     color: rgb(43, 43, 43);
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-area h5 {
     font-weight: 500;
-    padding-left: 1rem;
-    margin: 4rem 0 1.5rem 0;
+    margin: 2rem 0;
     color: rgb(61, 59, 59);
 }
 
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
     margin-bottom: 2.5rem;
-    padding-left: 1rem;
     display: flex;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
     height: 2.6rem;
-    width: 31%;
+    min-width: 31%;
     margin-bottom: 10px;
     margin-right: 9px;
     border-color: rgba(46, 46, 46, 0.541);
@@ -259,13 +274,23 @@
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    width: 100%;
+    word-wrap: none;
     margin: 0;
     color: rgb(68, 65, 65);
 }
 
-#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text p small {
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text small  {
     font-size: 1.2rem;
+    margin-right: 0;
+}
+
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset .right-text .obs {
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee .div-bt {
@@ -306,7 +331,11 @@
 
 @media (max-width: 910px) {
     #page-rent #rent-a-bikee #form-rent-bikee {
-        width: 80%;
+        width: 95%;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        max-width: 365px;
     }
 }
 
@@ -321,8 +350,6 @@
     
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
         width: 100%;
-        margin: 0;
-        padding-left: 0px;
         text-align: center;
     }
     
@@ -344,6 +371,29 @@
     }
 }
 
+@media (max-width: 805px) {
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {
+        flex-direction: column;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        padding-left: 0;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
+        justify-content: center;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        padding: 0;
+        margin: 0 10% 0 0;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 750px) {
     #page-rent #rent-a-bikee #form-rent-bikee {
         width: 90%;
@@ -354,9 +404,24 @@
     :root {
         font-size: 60%;
     }
+<<<<<<< HEAD
 }
 
 @media (max-width: 480px) {
+=======
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        margin-left: 10%;
+    }
+
+>>>>>>> e35bc6aa7c18a61a5ec76409b3e62d02006d458f
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
         font-size: 1.2rem;
     }

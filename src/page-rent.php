@@ -116,11 +116,11 @@
                   <div class="input-div">
                     <input type="number" name="minutes" id="minutes" min="0" max="540" required>
 
-                    <small><p class="price"></p></small>
+                    <p class="price"></p>
                   </div>
 
                 </div>
-                <p class="obs"><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
+                <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
               </div>
 
               </section>
