@@ -14,8 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let section = 1;
 
-// Section 1 (one) -> Section 2 (two) -> Section 3 (three)
-
 btnext.addEventListener('click', (event) => { 
 
     section++;
@@ -39,9 +37,7 @@ btnext.addEventListener('click', (event) => {
     
 })
 
-// Choose-a-bikee
-
-// Temporary/Basic function to passing and choosing bikees
+// Choose-a-bikee - Temporary/Basic function to passing and choosing bikees
 
 const color = $('.color');
 
@@ -51,22 +47,19 @@ color.each(function() {
 
         btnext.classList.remove('dsp-none');
 
-        const divModel = $('.static-bikee-model');
+        const modelTitle = $('.static-bikee-model');
         const divSelectedColor = $('.static-selected-color');
-        
         const divPrice = $('.bikee-price');
-        
         const carousel = document.getElementById('carousel');
-
         const radio = $('input[name=selected-bikee]');
         
         var price = $('.price');
-        var modelDataText = $(this).attr('data-text');
+        var modelDescription = $(this).attr('data-text');
         var rgbaSelectedColor = $(this).css('background-color');
         var isChecked = radio.attr('checked');
         var idx = $(this).attr('data-idx');
 
-        divModel.text(modelDataText);
+        modelTitle.text(modelDescription);
         divSelectedColor.css('background-color', rgbaSelectedColor);
 
         if (typeof isChecked !== typeof undefined && isChecked !== false) {
