@@ -1,0 +1,428 @@
+#page-rent #rent-a-bikee {
+    padding: 18rem 0 20rem 0;
+    width: 100vw;
+    background-image: url(../../media/img/bike-background.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 200px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee {
+    width: 65%;
+    padding: 3% 5% 6% 5%;
+    border-radius: 20px;
+    background-color: rgb(244, 247, 255);
+    overflow: hidden;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee h1 {
+    color: var(--color-primary);
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 2rem 0 4rem 0;    
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee p {
+    width: 90%;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan {
+    width: 47%;
+    height: 100%;
+    background: rgb(34,195,80);
+    background: linear-gradient(0deg, rgba(34,195,80,1) 0%, rgba(253,187,45,1) 100%);
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 9px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+@media (max-width: 910px) {
+    #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan {
+        width: 100%;
+    }  
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan .right-text {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 60%;
+    text-align: center;
+    background: #5CA40D;
+    color: black;
+    transform: rotate(90deg);
+    align-items: center;
+    justify-content: center;
+    margin-left: 96%;
+}  
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.selected {
+    border: 9px inset #5CA40D;
+    background: rgb(253,187,45);
+    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,195,80,1) 100%);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.selected h1 {
+    color: #f5f788;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.selected .right-text {
+    display: flex;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.not-selected {
+    box-shadow: 0;
+}
+
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee hr {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    padding: 2rem;
+    border: 0;
+=======
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan.not-selected .right-text {
+    display: none;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .radio input {
+    display: none;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan details[open] summary ~ * {
+    animation: sweepin 0.5s ease-in-out;
+}
+
+@keyframes sweepin {
+    0%    {opacity: 0; margin-left: -20px}
+    50% {opacity: 0.6; margin-left: 30px}
+    100%  {opacity: 1;}
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan span {
+    margin-bottom: 4vh;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan span p {
+    color: white;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan .slider {
+    width: 100%;
+    transition: transform 0.5 ease-in-out;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan #card-group .card-plan .slider img {
+   object-fit: cover;
+   width: 100%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee, #page-rent #rent-a-bikee #form-rent-bikee #choose-a-plan {
+    display: none;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
+    margin-top: 4rem;
+>>>>>>> e35bc6aa7c18a61a5ec76409b3e62d02006d458f
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel {
+    transform: translateX(108%);
+}
+
+/* Anotações
+    Há um espaço de 30% entre cada imagem (margin)
+
+    Para centralizar cada imagem no form: 93% (translateX)
+*/
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .carousel img{
+    object-fit: cover;
+    width: 60%!important;
+    margin: 0 30% 0 2%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color {
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span {
+    width: 45px;
+    display: flex;
+    position: relative;
+    height: 45px;
+    transform: translate(0, 0);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 18px rgba(145,145,145,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px 18px rgba(145,145,145,0);
+    transform: translateY(-5px);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee span.static-selected-color {
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 65px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.black {
+    background-color: black;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.pink {
+    background-color: pink;
+}
+
+/* #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.prot {
+    background-color: whitesmoke;
+    border: dashed black 1px;
+} */
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.yellow {
+    background-color: yellow;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {
+    display: flex;
+    flex-direction: row;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee #maps {
+    height: 30rem;
+    width: 100%;
+}
+
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+    width: 50%;
+    padding-left: 5%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text h4 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-area h5 {
+    font-weight: 500;
+    margin: 2rem 0;
+    color: rgb(61, 59, 59);
+}
+
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
+    margin-bottom: 2.5rem;
+    display: flex;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+    height: 2.6rem;
+    min-width: 31%;
+    margin-bottom: 10px;
+    margin-right: 9px;
+    border-color: rgba(46, 46, 46, 0.541);
+    border-radius: 5px;
+    background-color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
+    font-size: 1.3rem;
+    width: 100%;
+    word-wrap: none;
+    margin: 0;
+    color: rgb(68, 65, 65);
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text small  {
+    font-size: 1.2rem;
+    margin-right: 0;
+}
+
+
+#page-rent #rent-a-bikee #form-rent-bikee fieldset .right-text .obs {
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt {
+    display: flex;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt button {
+    width: 90%;
+    height: 4rem;
+    margin: 3rem auto 0 auto;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: Poppins;
+    line-height: 4rem;
+    border: none;
+    text-align: center;
+    border-radius: 13px;
+    background-color: var(--color-primary);
+    color: #fff6f6;
+    transition-duration: .8s;
+    text-emphasis: none;
+    cursor: pointer;
+}
+
+#page-rent #rent-a-bikee #form-rent-bikee .div-bt button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+#page-rent footer {
+    box-shadow: 0px -3px 10px 3px rgba(0, 0, 0, 0.131);
+}
+@media (max-width: 1100px) {
+    #page-rent #rent-a-bikee #form-rent-bikee {
+        width: 75%;
+    }
+}
+
+@media (max-width: 910px) {
+    #page-rent #rent-a-bikee #form-rent-bikee {
+        width: 95%;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 850px) {
+    #page-rent #rent-a-bikee {
+        padding-bottom: 30rem;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
+        flex-flow: column;
+    }
+    
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text h4 {
+        margin-top: 3rem;
+        padding-left: 0px;
+     }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
+        justify-content: space-around;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        width: 9rem;
+        margin: 0 10px 0 30%;
+        
+    }
+}
+
+@media (max-width: 805px) {
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee {
+        flex-direction: column;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        padding-left: 0;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
+        justify-content: center;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        padding: 0;
+        margin: 0 10% 0 0;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    #page-rent #rent-a-bikee #form-rent-bikee {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    :root {
+        font-size: 60%;
+    }
+<<<<<<< HEAD
+}
+
+@media (max-width: 480px) {
+=======
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+        margin-left: 10%;
+    }
+
+>>>>>>> e35bc6aa7c18a61a5ec76409b3e62d02006d458f
+    #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
+        font-size: 1.2rem;
+    }
+}

@@ -25,7 +25,7 @@
                   if ($_SESSION['login'] != "sim") {
                     echo '<li><a href="./log-in.php">Entrar</a></li>';
                   } else {
-                    echo '<li><a href="./php-partials/login-partials/close-session.php">sair</a></li>';
+                    echo '<li><a href="./php-partials/login-partials/close-session.php">Sair</a></li>';
                   }
               } else {
                 echo '<li><a href="./log-in.php">Entrar</a></li>';

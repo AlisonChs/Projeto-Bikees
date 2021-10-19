@@ -33,7 +33,12 @@
     line-height: 2.8rem;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
+    margin-top: 4rem;
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     padding: 2rem;
     border: 0;
 }
@@ -94,6 +99,9 @@
     background-color: black;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee #maps {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #choose-a-bikee .choose-a-color span.white {
     border: solid black 1px;
     background-color: white;
@@ -113,36 +121,57 @@
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee #maps {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     height: 30rem;
     width: 100%;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     width: 50%;
     padding-left: 5%;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text h4 {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text h4 {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     font-size: 1.9rem;
     font-weight: 500;
     padding-left: 1rem;
     color: rgb(43, 43, 43);
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-area h5 {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-area h5 {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     font-weight: 500;
     padding-left: 1rem;
     margin: 4rem 0 1.5rem 0;
     color: rgb(61, 59, 59);
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     margin-bottom: 2.5rem;
     padding-left: 1rem;
     display: flex;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div input {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     height: 2.6rem;
     width: 31%;
     margin-bottom: 10px;
@@ -155,13 +184,21 @@
     line-height: 1rem;
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div p {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     font-size: 1.4rem;
     margin: 0;
     color: rgb(68, 65, 65);
 }
 
+<<<<<<< HEAD
+#page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text p small {
+=======
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text p small {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     font-size: 1.2rem;
 }
 
@@ -170,6 +207,10 @@
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee .div-bt button {
+<<<<<<< HEAD
+    display: block;
+=======
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
     width: 90%;
     height: 4rem;
     margin: 3rem auto 0 auto;
@@ -191,7 +232,10 @@
 #page-rent #rent-a-bikee #form-rent-bikee .div-bt button:hover {
     background-color: var(--color-primary-dark);
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
 #page-rent footer {
     box-shadow: 0px -3px 10px 3px rgba(0, 0, 0, 0.131);
 }
@@ -212,29 +256,45 @@
         padding-bottom: 30rem;
     }
 
-    #page-rent #rent-a-bikee #form-rent-bikee fieldset {
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee fieldset {
         flex-flow: column;
     }
 
+<<<<<<< HEAD
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text {
+=======
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
         width: 100%;
         margin: 0;
         padding-left: 0px;
         text-align: center;
     }
     
+<<<<<<< HEAD
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text h4 {
+=======
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text h4 {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
         margin-top: 3rem;
         padding-left: 0px;
      } 
 
+<<<<<<< HEAD
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div {
+=======
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
         justify-content: space-around;
         text-align: left;
         padding-left: 0px;
     }
 
+<<<<<<< HEAD
+    #page-rent #rent-a-bikee #form-rent-bikee .right-text #map-a-bikee .input-div input {
+=======
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
         width: 9rem;
         margin: 0 10px 0 30%;
         
@@ -251,17 +311,29 @@
     :root {
         font-size: 60%;
     }
+<<<<<<< HEAD
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div input {
+=======
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
         margin-left: 22%;
     }
 }
 
 @media (max-width: 480px) {
+<<<<<<< HEAD
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div input {
+        margin-left: 10%;
+    }
+
+    #page-rent #rent-a-bikee #form-rent-bikee #map-a-bikee .right-text .input-div p {
+=======
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
         margin-left: 10%;
     }
 
     #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
+>>>>>>> e1ddbcbe923579e95cc7d948440e235bd5436cce
         font-size: 1.2rem;
     }
 }

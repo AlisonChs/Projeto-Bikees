@@ -70,8 +70,8 @@ color.each(function() {
 
         carousel.style.transform = `translateX(` + (108 - (93 * idx)) + `%)`; // (Valor inicial) - (Espaço entre as bikees) * (Valor da bikee clicada)
 
-        idx == 0 ? price.text('R$ 0,50 por minuto') : price.text('R$ 1,00 por minuto');
-        idx == 0 ? divPrice.text('Selecionando esta Bikee, você pagará apenas R$ 0,50 por minuto para poder se divertir e se exercitar durante o seu dia. ') : divPrice.text('Selecionando esta Bikee, você pagará apenas R$ 1,00 por minuto para poder se divertir e se exercitar durante o seu dia. ')
+        idx == 0 ? price.text('4,00 por hora') : price.text('7,00 por hora');
+        idx == 0 ? divPrice.text('Selecionando esta Bikee, você pagará apenas R$ 4,00 por hora para poder se divertir e se exercitar durante o seu dia. ') : divPrice.text('Selecionando esta Bikee, você pagará apenas R$ 7,00 por hora para poder se divertir e se exercitar durante o seu dia. ')
 
     })
     

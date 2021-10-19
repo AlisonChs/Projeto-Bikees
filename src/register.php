@@ -17,7 +17,7 @@
 
     <div class="container login-register">
 
-        <form action="./php-partials/db-partials/restricted-files/user-insert.php" method="post" id="register">
+        <form action="./php-partials/db-partials/restricted-files/user-insert.php" method="post" class="special-form">
             <h3>Registre-se</h3>
             <div class="special-input">
                 <img src="./media/img/black-fullname.svg" alt="">
@@ -70,7 +70,7 @@
             </p>
         </form>
         <?php
-            require('./html-partials/import-form-scripts.html');
+            require('./html-partials/import-scripts.html');
         ?>
     </div>
 </body>

@@ -21,10 +21,12 @@
       <?php
         require('./php-partials/header.php');
       ?>
+      
+      <!-- Nesta seção, há 3 sections, que serão passadas, cada uma contendo seu respectivo conteúdo. -->
 
       <section id="rent-a-bikee">
 
-        <form action="./php-partials/login-partials/acess-restricted-page.php" method="post" id="form-rent-bikee">
+        <form action="./page-purchase.php" method="post" id="form-rent-bikee">
 
           <fieldset id="1">
 
@@ -81,7 +83,7 @@
                   <input type="radio" data-idx="2" name="selected-bikee" value="tour">
                 </div>
 
-              </div>
+                <div class="radio-colors dsp-none">
 
               <div class="flex flex-row" style="margin-top: 5%">
                 <p> Modelo selecionado: </p> <span class="static-selected-color"></span>
@@ -99,7 +101,7 @@
 
           <fieldset id="3">
 
-          <!-- Map a bike section -->
+            <!-- Map a bike section -->
 
             <section id="map-a-bikee">
 
@@ -116,17 +118,17 @@
                   <div class="input-div">
                     <input type="number" name="minutes" id="minutes" min="0" max="540" required>
 
-                    <small><p class="price"></p></small>
+                    <p class="price"></p>
                   </div>
 
                 </div>
-                <p class="obs"><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
+                <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
               </div>
 
               </section>
 
           </fieldset>
-          
+            
           <br>
           <hr>
 
@@ -148,6 +150,6 @@
     <?php
         require('./html-partials/import-scripts.html');
     ?>
-
+    <script type="text/javascript" src="./js/rent.js"></script>
   </body>
 </html>
