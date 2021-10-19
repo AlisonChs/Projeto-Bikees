@@ -23,6 +23,10 @@ Import partials
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
 @import url(./partials/login-register.css);
+@import url(./partials/page-purchase.css);
+@import url(./partials/special-input.css);
+@import url(./partials/special-button.css);
+@import url(./partials/special-form.css);
 
 /* 
 ---------------------------------------------
@@ -96,6 +100,10 @@ header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
 
+fieldset {
+  border: none;
+}
+
 a {
   text-decoration: none !important;
   color: var(--color-text);
@@ -157,6 +165,9 @@ small {
 
 .flex-center {
   display: flex;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
   text-align: center;
