@@ -56,7 +56,7 @@
                 Apenas clique em uma cor e veja o modelo aproximado da Bikee. 
               
               </p>
-
+              
               <hr>
 
               <p class="static-bikee-model"> Selecione um modelo abaixo! </p>
@@ -83,13 +83,15 @@
                   <input type="radio" data-idx="2" name="selected-bikee" value="tour">
                 </div>
 
-                <div class="radio-colors dsp-none">
-
+              </div>
+              
               <div class="flex flex-row" style="margin-top: 5%">
                 <p> Modelo selecionado: </p> <span class="static-selected-color"></span>
               </div>
 
-              <br><hr><br>
+              <br>
+              <hr>
+              <br>
 
               <p> 
                 <p class="bikee-price"></p> Você também pode optar pelos nossos <a href="./php-partials/login-partials/acess-restricted-page.php">planos</a> para economizar mais e não se preocupar com o dinheiro, além de incluir mais benefícios e saúde para toda a sua família.
