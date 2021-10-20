@@ -98,7 +98,7 @@
         </div-->
         <div class="special-input">
             <img src="./media/img/black-fullname.svg" alt="">
-            <input type="text" name="fullname" id="fullname" placeholder="Digite seu seu nome completo" autocomplete="fullname" autocomplete="name" pattern="^(?![\W\d]+[^\sa-zA-Z\w]+)([a-z]|[A-Z]){2,}([\s]{1}([a-z]|[A-Z]){2,}){1,}$" title="Digite seu nome completo, incluindo sobrenome. Separe-os com somente 1 espaço e não deixe espaços no começo e no fim" data-type="fullname" required
+            <input type="text" name="fullname" id="fullname" placeholder="Digite seu nome completo" autocomplete="fullname" autocomplete="name" pattern="^(?![\W\d]+[^\sa-zA-Z\w]+)([a-z]|[A-Z]){2,}([\s]{1}([a-z]|[A-Z]){2,}){1,}$" title="Digite seu nome completo, incluindo sobrenome. Separe-os com somente 1 espaço e não deixe espaços no começo e no fim" data-type="fullname" required
             <?php
               if (isset($_SESSION['fullname'])) {
                 echo 'value="'. $_SESSION['fullname'] . '"';
@@ -128,7 +128,7 @@
         </div>
         <div class="special-input">
             <img src="./media/img/black-address.svg" alt="">
-            <input type="text" name="cep" id="cep" placeholder="Digite seu Cep" autocomplete="cep" data-type="cep" maxlength="9" minlength="9" 
+            <input type="text" name="cep" id="cep" placeholder="Digite um novo cep" autocomplete="cep" data-type="cep" maxlength="9" minlength="9" 
             <?php
               if (isset($_SESSION['cep'])) {
                 echo 'value="'. $_SESSION['cep'] . '"';
@@ -147,7 +147,7 @@
         </div>
         <div class="special-input">
             <img src="./media/img/black-cpf.svg" alt="">
-            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" autocomplete="cpf" data-type="cpf" maxlength="14" required
+            <input type="text" name="cpf" id="cpf" placeholder="Digite um novo CPF" autocomplete="cpf" data-type="cpf" maxlength="14" required
             <?php
               if (isset($_SESSION['cpf'])) {
                 echo 'value="'. $_SESSION['cpf'] . '"';
@@ -157,7 +157,7 @@
         </div>
         <div class="special-input">
             <img src="./media/img/black-email.svg" alt="">
-            <input type="email" name="email" id="email" placeholder="Digite seu Email" autocomplete="email" data-type="email" required
+            <input type="email" name="email" id="email" placeholder="Digite um novo email" autocomplete="email" data-type="email" required
             <?php
               if (isset($_SESSION['email'])) {
                 echo 'value="'. $_SESSION['email'] . '"';
@@ -167,13 +167,11 @@
         </div>
         <div class="special-input">
             <img src="./media/img/black-password.svg" alt="">                  
-            <input type="password" name="password" id="password" placeholder="Digite sua Senha" autocomplete="new-password" pattern="^(?!.*\s)(?=.*\d)(?=.*[a-z])(?=.*[\W])(?=.*[A-Z])(?=.*[a-zA-Z\d\W]).{8,}$" title="A senha deve conter, no mínimo, 8 caracteres, com pelo menos uma letra maiúscula, uma minúscula, um número e um símbolo. Não pode conter espaços" data-type="password" required
-            <?php
-              if (isset($_SESSION['password'])) {
-                echo 'value="'. $_SESSION['password'] . '"';
-              }
-            ?>
-            >
+            <input type="password" name="old_password" id="old_password" placeholder="Digite sua antiga senha" autocomplete="new-password" pattern="^(?!.*\s)(?=.*\d)(?=.*[a-z])(?=.*[\W])(?=.*[A-Z])(?=.*[a-zA-Z\d\W]).{8,}$" title="A senha deve conter, no mínimo, 8 caracteres, com pelo menos uma letra maiúscula, uma minúscula, um número e um símbolo. Não pode conter espaços" data-type="password" required>
+        </div>
+        <div class="special-input">
+            <img src="./media/img/black-password.svg" alt="">                  
+            <input type="password" name="new_password" id="new_password" placeholder="Digite a senha nova ou antiga" autocomplete="new-password" pattern="^(?!.*\s)(?=.*\d)(?=.*[a-z])(?=.*[\W])(?=.*[A-Z])(?=.*[a-zA-Z\d\W]).{8,}$" title="A senha deve conter, no mínimo, 8 caracteres, com pelo menos uma letra maiúscula, uma minúscula, um número e um símbolo. Não pode conter espaços" data-type="password" required>
         </div>
         <button type="submit" class="special-button">
             Atualizar

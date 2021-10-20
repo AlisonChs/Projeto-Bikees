@@ -99,11 +99,11 @@
     
     if (isset($oldPassword) && $oldPassword == $_SESSION['password']) {
         if (isset($newPassword) && $newPassword != $_SESSION['password']) {
-            $strSQL = "UPDATE tb_user SET user_password = '". $password ."' WHERE id_user = '" . $_SESSION['id'] ."'";
+            $strSQL = "UPDATE tb_user SET user_password = '". $newPassword ."' WHERE id_user = '" . $_SESSION['id'] ."'";
             $consult = mysqli_query($connection, $strSQL);
             
             if ($consult) {
-                $_SESSION['password'] = $password;
+                $_SESSION['password'] = $newPassword;
             }
         }
     }
