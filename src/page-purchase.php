@@ -16,6 +16,15 @@
   $month = date('Y') + 1 . '-' . date('m') ;
   $date =  $month . "-01";
   $time = $_POST['minutes'];
+  $bike = $_POST['selected-bikee'];
+
+  if ($bike == "normal") {
+    $price = $time * 0.5;
+    $price = number_format($price, 2, ',', '.');
+  } else {
+    $price = $time * 1;
+    $price = number_format($price, 2, ',', '.');
+  }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">  
@@ -77,7 +86,7 @@
           <b><em>Valor:</em></b>
           <p>R$ 
             <?php
-              echo ($time * 4) . ',00';
+              echo $price
             ?>
           </p>
         </div>
