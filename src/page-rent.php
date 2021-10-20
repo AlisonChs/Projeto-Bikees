@@ -124,7 +124,7 @@
                   </div>
 
                 </div>
-                <p><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
+                <p class="obs"><small>Obs: Você precisa ter uma conta para reservar uma bikee</small></p>
               </div>
 
               </section>
