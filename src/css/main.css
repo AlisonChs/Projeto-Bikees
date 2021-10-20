@@ -22,6 +22,7 @@ Import partials
 
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
+@import url(./partials/page-user.css);
 @import url(./partials/login-register.css);
 @import url(./partials/page-purchase.css);
 @import url(./partials/special-input.css);

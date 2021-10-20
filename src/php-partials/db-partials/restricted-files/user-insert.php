@@ -93,6 +93,8 @@
         $_SESSION['login'] = "sim";
         $_SESSION['fullname'] = $fullname;
         $_SESSION['username'] = $username;
+        $_SESSION['id'] = $id;
+        $_SESSION['password'] = $password;
         $_SESSION['cep'] = $cep;
         $_SESSION['email'] = $email;
         $_SESSION['cpf'] = $cpf;

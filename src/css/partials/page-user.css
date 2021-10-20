@@ -1,0 +1,75 @@
+#page-user .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+    background-image: url(../../media/img/bike-background.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 200px 120px;
+}
+
+#page-user .infos-profile {
+    text-align: left;
+}
+
+#page-user .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#page-user .title h3 {
+    margin-bottom: 0rem;
+}
+
+
+#page-user .title a {
+    margin-top: none;
+    text-transform: uppercase;
+}
+
+
+#page-user .title a:hover {
+    color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+
+#page-user .infos-user {
+    font-weight: 400;
+    color: #87909b;
+}
+
+#page-user .infos-user p {
+    font-size: 1.9rem;
+}
+
+#page-user .title-update {
+    color: #19A64B;
+    font-weight: 700;
+    margin-left: 25%;
+}
+
+#page-user .form-update-infos {
+    display: block;
+}
+
+#page-user .flex-column {
+    flex-direction: column;
+}
+
+#page-user .me-auto {
+    margin-right: auto;
+}
+
+#page-user .mb-2 {
+    margin-bottom: .5rem;
+}
+
+@media (min-width:992px) {
+    #page-user .mb-lg-0 {
+        margin-bottom: 0;
+    }
+}
