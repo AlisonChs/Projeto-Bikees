@@ -96,6 +96,7 @@
         $_SESSION['id'] = $id;
         $_SESSION['password'] = $password;
         $_SESSION['cep'] = $cep;
+        $_SESSION['birthdate'] = $birthdate;
         $_SESSION['email'] = $email;
         $_SESSION['cpf'] = $cpf;
         $_SESSION['cash'] = $cash;
