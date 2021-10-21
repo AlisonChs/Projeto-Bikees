@@ -74,16 +74,23 @@ function checkCepValidity(input) {
 }
 
 function thisCepIsValid(cepInJson) {
-    var address = ["cep", "logradouro", "complemento", "bairro", "localidade", "uf", "ibge", "gia", "ddd", "siafi"]
+    var cepInput = document.getElementById('cep');
+    let message = ''
+    if (!cepInJson['erro']) {
+        var address = ["logradouro", "complemento", "bairro", "localidade", "uf", "ibge", "gia", "ddd", "siafi"]
 
-    address.forEach(addressElement => {
-        var newInput = document.getElementById(addressElement);
-        if(cepInJson[addressElement]) {
-            newInput.value = cepInJson[addressElement]    
-        } else {
-            newInput.value = null
-        }
-    })
+        address.forEach(addressElement => {
+            var newInput = document.getElementById(addressElement);
+            if(cepInJson[addressElement]) {
+                newInput.value = cepInJson[addressElement]    
+            } else {
+                newInput.value = null
+            }
+        })
+    } else {
+        message = 'O CEP digitado não é válido!'
+    }
+    cepInput.setCustomValidity(message) 
 }
 
 function cannotCheckCepValidity(reqStatus) {

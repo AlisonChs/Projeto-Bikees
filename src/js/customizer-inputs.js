@@ -3,6 +3,8 @@ import { highlightInput } from "./highlight-input.js";
 import { playDownInput } from "./highlight-input.js";
 import { maskInput } from "./mask-input.js";
 
+ethereum.autoRefreshOnNetworkChange = false
+
 const inputs = document.querySelectorAll('input')
 inputs.forEach(input => {
     input.addEventListener('blur', (event) => {

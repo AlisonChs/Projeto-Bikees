@@ -33,7 +33,7 @@
             </div>
             <div class="special-input">
                 <img src="./media/img/black-address.svg" alt="">
-                <input type="text" name="cep" id="cep" placeholder="Digite seu Cep" autocomplete="cep" data-type="cep" maxlength="9" minlength="9" required>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu Cep" autocomplete="cep" data-type="cep" maxlength="9" minlength="9" value="" required>
                 <input type="hidden" name="logradouro" id="logradouro">
                 <input type="hidden" name="complemento" id="complemento">
                 <input type="hidden" name="bairro" id="bairro">
