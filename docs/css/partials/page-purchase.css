@@ -1,0 +1,62 @@
+#page-purchase section {
+    min-height: calc(100vh - 5rem);
+    width: 100vw;
+    padding: 18rem 0 20rem 0;
+    background-image: url(../../media/img/bike-background.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 200px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#page-purchase .inputs {
+    margin: 4rem 0;
+    margin-bottom: 2.5rem;
+}
+
+#page-purchase .row {
+    display: -ms-flexbox;
+    justify-content: space-between;/* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+
+#page-purchase .label {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+#page-purchase label {
+    padding-left: 1rem;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+#page-purchase .special-input {
+    margin: 0;
+    padding: 0;
+}
+
+#page-purchase form input {
+    width: 100%;
+}
+
+#page-purchase .value {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+#page-purchase .value p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: rgb(87, 87, 87);
+}
