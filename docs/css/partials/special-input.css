@@ -1,0 +1,163 @@
+.special-input {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.56rem;
+    letter-spacing: .2px;
+    font-weight: 500;
+    font-family: Poppins;
+    border-radius: 10px;
+    border: 3px solid rgba(25, 166, 75, 0);
+    background: rgba(0, 0, 0, 0.04);
+    margin: 1rem 0;
+}
+
+.special-input img {
+    width: 35px;
+}
+
+.special-input input {
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 1.56rem;
+    letter-spacing: .2px;
+    font-weight: 500;
+    font-family: Poppins;
+    background: none;
+    border: 3px solid rgba(25, 166, 75, 0);
+    transition: 0.01s;
+    cursor: text;
+}
+
+.special-input select {
+    border-radius: 7px;
+    border: 1px solid var(--color-line);
+    height: 75%;
+    width: max-content;
+    max-width: 50%;
+    padding: 0 1rem;
+}
+
+.special-input:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.special-input input::placeholder,
+.special-input label {
+    font-size: 1.56rem;
+    letter-spacing: .2px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.special-input input:focus {
+    border: none;
+    outline: none;
+}
+
+.special-input input[type=date] {
+    transition: 0.8s;
+    text-align: right;
+    padding-left: 0.03rem;
+}
+
+.special-input input[type=date]::before,
+.special-input input[type=date].empty::before {
+    font-size: 1.56rem;
+    letter-spacing: .2px;
+    text-align: center;    
+    font-weight: 500;
+    font-family: Poppins;
+    content: attr(placeholder);
+    right: 0.5rem;
+    opacity: 0.65;
+    border: none;
+    transition: 0.8s;
+}
+
+@media (max-width: 710px) {
+    .special-input input[type=date] {
+        padding-left: 0.05rem;
+        font-size: 1.4rem;
+    }
+
+    .special-input input[type=date].empty {
+        color: rgba(0, 0, 0, 0.00);
+    }
+
+    .special-input input[type=date].empty::before {
+        font-size: 1.4rem;
+        content: attr(placeholder) !important;
+        color: var(--color-text);
+    }
+
+    .special-input input[type=date]::before {
+        font-size: 1.4rem;
+        content: '';
+    }
+
+    .special-input input[type=date]:focus {
+        color: black;
+    }
+
+    .special-input input[type=date]:focus:before,
+    .special-input input[type=date].empty:focus:before {
+        content: '';
+        font-size: 0px;
+        color: rgba(0, 0, 0, 0.00);
+    }
+}
+
+@media (max-width: 670px) {
+    .special-input input[type=date] {
+        padding-left: 0.05rem;
+    }
+
+    .special-input input::placeholder,
+    .special-input label  {
+        font-size: 1.4rem;
+    }
+
+    .special-input input[type=date]::before {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .special-input input,
+    .special-input input::placeholder,
+    .special-input label {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .special-input {
+        margin: 0.7rem 0;
+    }
+
+    .special-input img {
+        padding-left: .55rem;
+        width: 30px;
+    }
+
+    .special-input input {
+        font-size: 1.25rem;
+        padding-left: 1rem;
+    }
+
+    .special-input input::placeholder,
+    .special-input label {
+        font-size: 1.25rem;
+        padding-left: .5rem;
+    }
+
+    .special-input input[type=date]::before,    
+    .special-input input[type=date].empty::before {
+        font-size: 1.25rem;
+        padding-left: 1rem;
+        text-align: left;
+    }
+}

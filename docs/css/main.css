@@ -22,7 +22,12 @@ Import partials
 
 @import url(./partials/page-landing.css);
 @import url(./partials/page-rent.css);
+@import url(./partials/page-user.css);
 @import url(./partials/login-register.css);
+@import url(./partials/page-purchase.css);
+@import url(./partials/special-input.css);
+@import url(./partials/special-button.css);
+@import url(./partials/special-form.css);
 
 /* 
 ---------------------------------------------
@@ -49,6 +54,10 @@ figure, header, nav, section, article, aside, footer, figcaption {
   padding: 0;
   border: 0;
   outline: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 html, body {
@@ -90,6 +99,10 @@ ul, li {
 
 header, nav, section, article, aside, footer, hgroup {
   display: block;
+}
+
+fieldset {
+  border: none;
 }
 
 a {
@@ -147,8 +160,15 @@ small {
   opacity: 0.9;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-center {
   display: flex;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -157,6 +177,8 @@ small {
 .flex-column {flex-direction: column;}
 
 .flex-row{flex-direction: row;}
+
+.dsp-none {display: none!important;}
 
 /*
 ---------------------------------------------

@@ -257,12 +257,11 @@
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div {
     margin-bottom: 2.5rem;
     display: flex;
-
 }
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div input {
     height: 2.6rem;
-    min-width: 30%;
+    min-width: 31%;
     margin-bottom: 10px;
     margin-right: 9px;
     border-color: rgba(46, 46, 46, 0.541);
@@ -275,7 +274,7 @@
 
 #page-rent #rent-a-bikee #form-rent-bikee fieldset #map-a-bikee .right-text .input-div p {
     font-size: 1.3rem;
-    width: fit-content;
+    width: 100%;
     word-wrap: none;
     margin: 0;
     color: rgb(68, 65, 65);

@@ -1,0 +1,180 @@
+<section id="choose-a-plan" class="flex flex-center flex-column">
+
+    <h1>Escolha um plano</h1>
+
+    <h3> Vamos economizar? </h3>
+
+    <p> 
+      Escolhendo um plano mensal na Bikees, você ganha um desconto e tem suas bikees reservadas
+      para usar quando quiser, sem burocracia e sem filas.  
+    </p>
+
+    <hr />
+
+    <br>
+
+    <div id="card-group" class="flex flex-wrap">
+
+      <label class="card-plan flex flex-center flex-column not-selected" id="normal-plan">
+
+        <span> <h1> Normal </h1> </span>
+
+        <span> <p> Com este plano, você tem direito aos benefícios básicos, alguns deles são: </p>   
+
+        <br>
+
+        <details>
+          <summary> 2 BIKEES diferentes </summary>
+          <br>
+          <p><small>Você tem o direito de escolher uma das duas bicicletas inclusas no plano.</small></p>
+        </details>
+
+        <br>
+
+        <details>
+          <summary> Bikees perto de você, na sua cidade </summary>
+          <br>
+          <p><small>Os pontos Bikees estão disponibilizados na maioria da grande São Paulo.</small></p>
+        </details>
+
+        <br>
+
+        <details>
+          <summary> 4 horas por dia para pedalar </summary>
+          <br>
+          <p><small>Você pode utilizar das bikees por até quatro horas durante um único dia.</small></p>
+        </details>
+
+        <br>
+
+        <details>
+          <summary> Suporte básico no Bikees System </summary>
+          <br>
+          <p><small>Para qualquer problema, você tem o suporte básico do sistema para utilizar.</small></p>
+        </details>
+
+        <br>
+
+        <div id="slider_one" class="slider flex flex-row">
+          <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
+          <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde">
+        </div>
+
+        <p> Tudo isto pelo baixíssimo e econômico preço de: </p> </span>
+
+        <span class="right-text"><h3> Selecionado </h3></span>
+
+        <span> 
+          <h2> 28,90 R$ </h2> 
+          <small> mensais </small> 
+        </span>
+
+        <span>
+          
+          <details>
+
+            <summary> Saiba mais </summary>
+
+            <br>
+
+            <p> Selecionando este plano, você tem um desconto de aproximadamente 13,50 R$,
+            que clientes pagam usando as Bikees em dias aleatórios. </p>
+
+          </details>
+
+          <br>
+
+        </span>
+
+      </label>
+
+      <label class="card-plan flex flex-center flex-column not-selected" id="premium-plan">
+
+        <span> <h1> Premium </h1> </span>
+
+        <span> <p> Com este plano, você tem direito aos benefícios PREMIUM, alguns deles são: </p>
+
+        <br>
+
+        <details>
+          <summary> 5 BIKEES diferentes </summary>
+          <br>
+          <p><small>Você tem o direito de escolher até duas das cinco bicicletas inclusas no plano.</small></p>
+        </details>
+
+        <br>
+
+        <details>
+          <summary> Bikees perto de você, na sua cidade </summary>
+          <br>
+          <p><small>Os pontos Bikees estão disponibilizados na maioria da grande São Paulo.</small></p>
+        </details>
+
+        <br>
+
+        <details>
+          <summary> Até 7 horas por dia para pedalar </summary>
+          <br>
+          <p><small>Você pode utilizar das bikees por até sete horas durante um único dia.</small></p>
+        </details>
+
+        <br>
+
+        <details>
+          <summary> Suporte prioritário no Bikees System </summary>
+          <br>
+          <p><small>Para qualquer problema, você tem o suporte prioritário do sistema para utilizar.</small></p>
+        </details>
+
+        <br>
+
+        <div id="slider_two" class="slider flex flex-row">
+          <img src="./media/img/yellow-bikee-slider.png" alt="Bikee Amarela">
+          <img src="./media/img/green-bikee-slider.png" alt="Bikee Verde">
+          <img src="./media/img/white-bikee-slider.png" alt="Bikee Branca">
+          <img src="./media/img/black-bikee-slider.png" alt="Bikee Preta">
+        </div>
+
+        <p> Tudo isto pelo baixíssimo e econômico preço de: </p> </span>
+
+        <span> 
+          <h2><del> 60,90 R$ </del></h2> 
+          <small> mensais </small> 
+        </span>
+
+        <span class="right-text"><h3> Selecionado </h3></span>
+
+        <span> 
+          <h2> 48,90 R$ </h2> 
+          <small> mensais </small> 
+        </span>
+
+        <span>
+          
+          <details>
+
+            <summary> Saiba mais </summary>
+
+            <br>
+
+            <p> Selecionando este plano, você tem um desconto de aproximadamente 18,50 R$,
+            que clientes pagam usando as Bikees em dias aleatórios. </p>
+
+          </details>
+
+          <br>
+
+        </span>
+        
+      </label>
+
+      <span>
+          <label class="radio"> 
+            <input type="radio" name="selected-plan" id="selected-plan" value="Normal"></input>
+            <input type="radio" name="selected-plan" id="selected-plan" value="Premium"></input>
+          </label>
+      </span>
+
+    </label>
+
+  </section>

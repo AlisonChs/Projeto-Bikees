@@ -12,7 +12,7 @@
       require('./html-partials/preloader.html');
     ?>
 
-    <div id="container">
+    <div class="container">
 
       <?php
         require('./php-partials/header.php');
