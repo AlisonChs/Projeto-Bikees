@@ -1,5 +1,4 @@
 <?php 
-    require "./connect-db.php";
     $fullname = $_POST['fullname'];
     $username = $_POST['username'];
     $birthdate = $_POST['birthdate'];
@@ -100,18 +99,9 @@
         $_SESSION['email'] = $email;
         $_SESSION['cpf'] = $cpf;
         $_SESSION['cash'] = $cash;
-
-        if ("./index.php" != $_SESSION['url']) {
-            header("location:". $_SESSION['url']);
-        } else {
-            header("location: ../../../page-rent.php");
-        }
-
     } else {
-        header("location: ../../../register.php");
         //echo 'erro';
         //echo mysqli_error($connection);
         //echo mysqli_connect_error();
     }
-    require './disconnect-db.php';
 ?>

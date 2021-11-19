@@ -82,7 +82,7 @@
         </a>
       </div>
 
-      <form action="./php-partials/db-partials/restricted-files/alter-user-data.php" method="post" class="special-form">
+      <form action="./php-partials/db-partials/alter-user-data-web.php" method="post" class="special-form">
         <h3>Atualize seus dados</h3>
         <!--div class="special-input">
           <label for="data">Dado para atualizar</label>

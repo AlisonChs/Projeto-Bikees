@@ -1,5 +1,4 @@
 <?php 
-    require "./connect-db.php";
     session_start();
     $fullname = $_POST['fullname'];
     $username = $_POST['username'];
@@ -108,10 +107,8 @@
             }
         }
     }
+
     //echo 'erro';
     //echo mysqli_error($connection);
     //echo mysqli_connect_error();
-    require './disconnect-db.php';
-
-    header("location: ../../../page-user.php");
 ?>
