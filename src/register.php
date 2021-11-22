@@ -21,11 +21,11 @@
             <h3>Registre-se</h3>
             <div class="special-input">
                 <img src="./media/img/black-fullname.svg" alt="">
-                <input type="text" name="fullname" id="fullname" placeholder="Digite seu seu nome completo" autocomplete="fullname" autocomplete="name" pattern="^(?![\W\d]+[^\sa-zA-Z\w]+)([a-z]|[A-Z]){2,}([\s]{1}([a-z]|[A-Z]){2,}){1,}$" title="Digite seu nome completo, incluindo sobrenome. Separe-os com somente 1 espaço e não deixe espaços no começo e no fim" data-type="fullname" required>
+                <input type="text" name="fullname" id="fullname" placeholder="Digite seu seu nome completo" autocomplete="fullname" autocomplete="name" pattern="^(?![\W\d]+[^\sa-zA-Z\w]+)([a-z]|[A-Z]|[çóáéíòàèìõãôûîâêÇÓÁÉÍÒÀÈÌÕÃÔÛÎÂÊ]){2,}([\s]{1}([a-z]|[A-Z]|[çóáéíòàèìõãôûîâêÇÓÁÉÍÒÀÈÌÕÃÔÛÎÂÊ]){2,}){1,}$" title="Digite seu nome completo, incluindo sobrenome. Separe-os com somente 1 espaço e não deixe espaços no começo e no fim" data-type="fullname" required>
             </div>
             <div class="special-input">
                 <img src="./media/img/black-usuario.svg" alt="">
-                <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário" autocomplete="username" data-type="username" required>
+                <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário" pattern="^(?![\s]+)([a-z]|[A-Z]|[çóáéíòàèìõãôûîâêÇÓÁÉÍÒÀÈÌÕÃÔÛÎÂÊ]|[0-9]|[_\-\.]){2,10}$" title="Digite um nome de usuário de 2 a 10 letras, que tenha somente letras, números, hífen, underscore e ponto. ex: bik_k-es.s" autocomplete="username" data-type="username" required>
             </div>
             <div class="special-input">
                 <img src="./media/img/black-birthdate.svg" alt="">

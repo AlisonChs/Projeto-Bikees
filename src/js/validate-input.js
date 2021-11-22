@@ -100,8 +100,8 @@ function cannotCheckCepValidity(reqStatus) {
 function checkCpfValidity(input) {
     const formattedCpf = input.value.replace(/\D/g, '')
     let message = ''
-
-    if (!checkDuplicateCpf(formattedCpf) || !checkCpfStructureValidity(formattedCpf)) {
+    
+    if (Number(formattedCpf.length) !== 11 || !checkDuplicateCpf(formattedCpf) || !checkCpfStructureValidity(formattedCpf)) {
         message = 'O CPF digitado não é válido'
     }
 
@@ -128,7 +128,7 @@ function checkVerificationNumber(cpf, multiplier) {
         count++
     }
 
-    if (verificationNumber == confirmCpfDigit(amount)) {
+    if (Number(verificationNumber) === confirmCpfDigit(amount)) {
         return checkVerificationNumber(cpf, multiplier + 1)
     }
 
@@ -137,7 +137,10 @@ function checkVerificationNumber(cpf, multiplier) {
 
 function confirmCpfDigit(amount) {
     amount = Number(amount)
-    let conta = (11 - (amount % 11))
+    let conta = ((amount * 10) % 11)
+    if (conta >= 10) {
+        return 0
+    }
     return conta
 }
 
