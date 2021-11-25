@@ -2,7 +2,7 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if ($email != null && $password != null) {
+    if (isset($email) && isset($password)) {
         $strSQL = "SELECT id_user, user_name, user_full_name, user_birthdate, user_cpf, user_email, user_password, user_cash FROM tb_user WHERE user_email = '$email'";
 
         $consult = mysqli_query($connection, $strSQL);
