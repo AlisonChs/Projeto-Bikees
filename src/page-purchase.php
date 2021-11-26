@@ -41,9 +41,12 @@
       require('./php-partials/header.php');
     ?>
     <section>
-      <form action="./restricted-page.php" method="POST" class="special-form">
+      <form action="./php-partials/db-partials/rent-bikee-web.php" method="POST" class="special-form">
           <h3>Pagamento</h3>
           <div class="inputs">
+
+            <input type="text" name="bikee" id="bikee" value="<?php echo $bike;?>" hidden>
+            <input type="text" name="price" id="price" value="<?php echo $price;?>" hidden>
 
             <div class="label">
               <label for="fullname">Títular do cartão</label>
@@ -52,7 +55,7 @@
                 <?php
                   if (isset($_SESSION['fullname'])) {
                     echo 'value="'. $_SESSION['fullname'] .'"';
-                    echo ' disabled';
+                    echo ' readonly';
                   }
                 ?>
                 >

@@ -106,9 +106,8 @@
             <!-- Map a bike section -->
 
             <section id="map-a-bikee">
-
               <div class="map">
-                <iframe id="maps" src="https://www.google.com/maps/embed/v1/search?q=bike%20itau&amp;key=AIzaSyAGb12yL0LK59e7SqGfX3bGOxyNxVxmGxo" width="450" height="450" loading="lazy"></iframe>            
+                <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=1wcgCW28NoijN1gIdfdL0k9tfxbo&hl=pt-BR&z=13" loading="lazy" ></iframe>            
               </div>
             
               <div class="right-text">

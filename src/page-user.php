@@ -75,7 +75,7 @@
             ?>  
           </p>
         </div>
-        <a href="./restricted-page.php">
+        <a href="./bikee-historical.php">
           <button class="special-button">
             Histórico de Bikees
           </button>
