@@ -1,0 +1,20 @@
+#page-success {
+    background-image: url(../../media/img/bike-background-invert-small.png);
+}
+
+#page-success h3 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 0 2.2rem;
+}
+
+#page-success p {
+    font-size: 1.6rem;
+    padding: 0 2.2rem;
+    text-align: left;
+}
+
+#page-success iframe {
+    margin: 4rem auto;
+    width: 95%;
+}

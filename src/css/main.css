@@ -25,6 +25,8 @@ Import partials
 @import url(./partials/page-user.css);
 @import url(./partials/login-register.css);
 @import url(./partials/page-purchase.css);
+@import url(./partials/page-success.css);
+@import url(./partials/bikee-historical.css);
 @import url(./partials/special-input.css);
 @import url(./partials/special-button.css);
 @import url(./partials/special-form.css);

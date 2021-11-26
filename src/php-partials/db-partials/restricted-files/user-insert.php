@@ -86,6 +86,9 @@
                 $_SESSION['neighborhood'] = $neighborhood;
                 $_SESSION['city'] = $location;
                 $_SESSION['uf'] = $uf;
+                $_SESSION['log'] = $log;
+                $_SESSION['uf'] = $uf;
+                $_SESSION['ddd'] = $ddd;
             }
         }     
 
