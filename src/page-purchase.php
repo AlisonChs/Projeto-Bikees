@@ -45,7 +45,7 @@
           <h3>Pagamento</h3>
           <div class="inputs">
 
-            <input type="text" name="bikee" id="bikee" value="<?php echo $_POST['selected-bikee'];?>" hidden>
+            <input type="text" name="bikee" id="bikee" value="<?php echo $bike;?>" hidden>
             <input type="text" name="price" id="price" value="<?php echo $price;?>" hidden>
 
             <div class="label">

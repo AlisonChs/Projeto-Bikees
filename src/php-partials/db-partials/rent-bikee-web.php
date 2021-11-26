@@ -14,6 +14,7 @@
 
     if ( (!isset($_POST['price'])) || (!isset($_POST['bikee'])) || (!isset($_POST['fullname'])) || (!isset($_POST['card-number'])) || (!isset($_POST['date-expiration'])) || (!isset($_POST['security-code'])) ) {
         header('location: ../../page-purchase.php');
+        //echo 'erro isset tudo';
     }
 
     $price = $_POST['price'];
@@ -22,6 +23,7 @@
         $id_bikee = $bikees[$_POST['bikee']];
     } else {
         header('location: ../../page-rent.php');
+        //echo 'erro isset ' . $_POST['bikee'];
     }
 
     $date = date('Y') . '-' . date('m') . '-' . date('d');
@@ -44,7 +46,7 @@
         header("location: ../../page-success.php");
     } else {
         header("location: ../../page-purchase.php");
-        //echo mysqli_error($connection);
+        //echo 'erro:' . mysqli_error($connection);
     }
 
     //echo 'erro';

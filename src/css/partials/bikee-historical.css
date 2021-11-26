@@ -42,3 +42,32 @@
 #bikee-historical .item img {
     max-width: 90%;
 }
+@media (max-width: 650px) {
+    #bikee-historical .special-form#historical {
+        width: 96%;
+    }
+
+    #bikee-historical .item {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    #bikee-historical .special-form#historical {
+        width: 98%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #bikee-historical .item {
+        font-size: 1.3rem;
+    }
+
+    #bikee-historical .item.name {
+        min-width: 40%;
+    }
+    
+    #bikee-historical .item.price {
+        min-width: 19%;
+    }
+}

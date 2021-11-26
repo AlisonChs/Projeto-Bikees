@@ -24,7 +24,7 @@
 
     <div class="container">
 
-        <div class="special-form">
+        <div class="special-form" id="historical">
             <h3>Histórico de Bikees</h3>
             <?php
                 require './php-partials/db-partials/restricted-files/connect-db.php';
