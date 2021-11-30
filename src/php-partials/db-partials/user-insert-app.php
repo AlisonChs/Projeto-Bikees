@@ -3,7 +3,7 @@
     require './restricted-files/user-insert.php';
 
     if ($sql) {
-        $player = array("id"=>$_SESSION['id']);
+        $player = array("id"=>$id);
     } else {
         $player = array("erro"=>mysqli_error($connection));
     }

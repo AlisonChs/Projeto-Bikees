@@ -1,13 +1,13 @@
 <?php
     require "./restricted-files/connect-db.php";
     session_start();
-
     $bikees = array('normal'=>1, 'sport'=>2, 'tour'=>3);
 
-    if ( (!isset($_POST['price'])) || (!isset($_POST['bikee'])) || (!isset($_POST['fullname'])) || (!isset($_POST['card-number'])) || (!isset($_POST['date-expiration'])) || (!isset($_POST['security-code'])) ) {
+    if ( (!isset($_POST['price'])) || (!isset($_POST['bikee'])) || (!isset($_POST['fullname'])) || (!isset($_POST['card-number'])) || (!isset($_POST['date-expiration'])) || (!isset($_POST['security-code'])) || (!isset($_POST['id']))) {
         $player = array("erro"=>"É necessário enviar todas as informações antes de continuar");
     } else {
         $price = $_POST['price'];
+        $_SESSION['id'] = $_POST['id'];
 
         if ($bikees[$_POST['bikee']]) {
             $id_bikee = $bikees[$_POST['bikee']];

@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     $fullname = $_POST['fullname'];
     $username = $_POST['username'];
     $birthdate = $_POST['birthdate'];

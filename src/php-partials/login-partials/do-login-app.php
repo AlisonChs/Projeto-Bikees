@@ -1,7 +1,6 @@
 <?php
     require '../db-partials/restricted-files/connect-db.php';
     require './restricted-files/do-login.php';
-    require '../db-partials/restricted-files/disconnect-db.php';
 
     if (isset($address_consult) && isset($consult)) {
        if ($consult && $address_consult) {
@@ -12,4 +11,5 @@
     }
 
     echo json_encode($player);
+    require '../db-partials/restricted-files/disconnect-db.php';
 ?>
