@@ -3,7 +3,7 @@ import { highlightInput } from "./highlight-input.js";
 import { playDownInput } from "./highlight-input.js";
 import { maskInput } from "./mask-input.js";
 
-ethereum.autoRefreshOnNetworkChange = false
+//ethereum.autoRefreshOnNetworkChange = false
 
 const inputs = document.querySelectorAll('input')
 inputs.forEach(input => {

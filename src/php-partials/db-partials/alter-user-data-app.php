@@ -31,11 +31,12 @@
                 $_SESSION['uf'] = $row['uf_address'];
                 $_SESSION['ddd'] = $row['ddd_address'];
             }  
-        
-            require './restricted-files/alter-user-data.php';
+
+            $oldPassword = $_POST['old_password'];
         
             if (isset($oldPassword) && $oldPassword == $_SESSION['password']) {
                 $player = array("success"=>true);
+                require './restricted-files/alter-user-data.php';
             } else {
                 $player = array("erro"=>"Senha incorreta");
             }
@@ -45,6 +46,7 @@
     } else {
         $player = array("erro"=>"O id não foi enviado");
     }
+    
     echo json_encode($player);
     require './restricted-files/disconnect-db.php';
 ?>
